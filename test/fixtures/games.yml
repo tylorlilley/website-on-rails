@@ -1,0 +1,12 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Example Game
+  description: |+
+    This is an example game description.
+    This is another line of the description.
+    
+    Concluding game description.
+  date: 2019-10-08
+  tagline: This is an example tagline.
+  filename: example

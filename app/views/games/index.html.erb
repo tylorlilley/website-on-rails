@@ -1,0 +1,15 @@
+<% provide(:title, "All Games") %>
+
+<div class="jumbotron">
+  <section class="game title">
+    <%= tag.h1 "All Games" %>
+    <hr />
+  </section>
+  <section class="game content">
+    <ul>
+      <% @games.each_with_index do |game, index| %>
+        <%= render partial: 'teaser', locals: { game: game, index: index } %>
+      <% end %>
+    </ul>
+  </section>
+</div>

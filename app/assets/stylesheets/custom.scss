@@ -1,0 +1,247 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$light-shade:   #EFF0F0;
+$light-accent:  #88A4A1;
+$brand:         #426768;
+$dark-accent:   #628C93;
+$dark-shade:    #191A1F;
+
+
+$gray-medium-light: #eaeaea;
+$gray-bg-checker-front: lighten($dark-shade, 4%);
+$gray-bg-checker-back: lighten($dark-shade, 0%);
+$checker-size: 32px;
+
+/* universal */
+
+body {
+  padding-top: 60px;
+
+  /* checkerboard background */
+  background-color: $gray-bg-checker-back;
+  background-image:
+     -moz-linear-gradient(45deg, $gray-bg-checker-front 25%, transparent 25%),
+     -moz-linear-gradient(-45deg, $gray-bg-checker-front 25%, transparent 25%),
+     -moz-linear-gradient(45deg, transparent 75%, $gray-bg-checker-front 75%),
+     -moz-linear-gradient(-45deg, transparent 75%, $gray-bg-checker-front 75%);
+   background-image:
+     -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, $gray-bg-checker-front), color-stop(.25, transparent)),
+     -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, $gray-bg-checker-front), color-stop(.25, transparent)),
+     -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, $gray-bg-checker-front)),
+     -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, $gray-bg-checker-front));
+
+   -moz-background-size: $checker-size $checker-size;
+   background-size: $checker-size $checker-size;
+   -webkit-background-size: $checker-size $checker-size+1; /* override value for shitty webkit */
+
+   background-position:0 0, $checker-size/2 0, $checker-size/2 0-($checker-size/2), 0px $checker-size/2;
+}
+
+.row {
+  padding-bottom: 30px;
+}
+
+.jumbotron {
+  /* Jumbotron properties */
+  padding: 12px;
+  background-color: $light-shade;
+  font-size: 1.5em;
+  line-height: 1.7em;
+
+  /* Standard jumbotron parts */
+  .title {
+    text-align: center;
+    display: block;
+    color: $brand;
+  }
+  .content {
+    display: block;
+    color: $light-accent;
+  }
+  .rider {
+    text-align: center;
+    display: block;
+    color: $brand;
+  }
+  .description {
+    width: 95%;
+    margin: 2%;
+    font-style: italic;
+    font-size: 0.8em;
+    line-height: 1.6em;
+  }
+
+  /* Standard html subparts */
+  p {
+    text-indent: 2em;
+  }
+  h1 {
+      color: $brand;
+      font-size: 2.8em;
+  }
+  a {
+    color: $dark-accent;
+    border-bottom: 1px dashed $dark-accent;
+    &:hover {
+      color: $brand;
+      border-bottom: 1px dashed $brand;
+      text-decoration: none;
+    }
+  }
+}
+
+.thumbnail {
+  margin: 2%;
+  background-color: $brand;
+  .caption {
+    color: $light-accent;
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.col-centered {
+  padding: 6px;
+  .thumbnail {
+    margin: auto;
+    display: block;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  color: $brand;
+  font-size: 3em;
+  letter-spacing: -2px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  color: $light-accent;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+h3 {
+  color: $brand;
+  font-size: 1.5em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h4 {
+  color: $brand;
+  font-size: 1.2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+.faded {
+  color: $light-accent;
+}
+
+/* header */
+
+.nav.navbar-nav.navbar-right li a {
+  color: $light-shade;
+  &:hover {
+    color: $light-accent;
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  background-color: $dark-accent;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: $light-shade;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: $light-shade;
+    text-decoration: none;
+  }
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $dark-accent;
+  color: $light-accent;
+  a {
+    color: $light-accent;
+    &:hover {
+      color: lighten($light-accent, 15%);
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+/* follow me page */
+
+.container .row .text-left {
+  text-align: center;
+}
+
+.container .row .text-left ul {
+  text-align: left;
+  display: inline-block;
+}
+
+/* about me page */
+
+.about-me {
+  max-width: 30%;
+  border: 2px solid $light-accent;
+  border-radius: 4%;
+  margin: 0% 5% 0% 0%;
+  border-color: $light-shade;
+}

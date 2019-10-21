@@ -1,0 +1,7 @@
+example:
+  title: Example Title
+  content: |+
+    This is an example of a post's first paragraph. It has two sentances!
+    This is an example of a post's second paragraph. It is a bit longer. It has three sentences.
+    This is a concluding paragraph of a post, and it's only one sentance long.
+  date: 2019-10-07

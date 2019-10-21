@@ -1,0 +1,32 @@
+<% provide(:title, @game.name) %>
+
+<div class="jumbotron">
+
+  <section class="game title">
+    <%= tag.h1 @game.name %>
+    <%= tag.h2 "#{formated_date_for(@game)}", style: "margin-top:-6px"  %>
+  </section>
+  <div class = "container">
+    <div class="row">
+      <section class="game content">
+        <%= render partial: 'screenshot', locals: { num: 1, size: 1,
+          caption: formated_tagline_for(@game), classes: "pull-right" } %>
+        <%= sanitize formated_description_for(@game) %>
+      </section>
+    </div>
+    <div class="row" >
+      <div class="col-xs-12">
+        <div class = "container">
+          <%= tag.div render(partial: 'screenshot', locals: { num: 2, size: 0.5 }), class: "col-md-4 col-centered" %>
+          <%= tag.div render(partial: 'screenshot', locals: { num: 3, size: 0.5 }), class: "col-md-4 col-centered" %>
+          <%= tag.div render(partial: 'screenshot', locals: { num: 4, size: 0.5 }), class: "col-md-4 col-centered" %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <section class="game rider">
+        <%= tag.h2 link_to "Download Now", download_game_path(@game), target: "_blank" %>
+      </section>
+    </div>
+  </div>
+</div>
