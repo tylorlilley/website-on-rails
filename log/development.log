@@ -25235,3 +25235,195 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 55ms (Views: 47.7ms | ActiveRecord: 0.7ms | Allocations: 23537)
 
 
+Started GET "/" for ::1 at 2019-10-21 14:50:39 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 216.0ms | Allocations: 176544)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 218.0ms | Allocations: 176993)
+  Rendered layouts/_rails_default.html.erb (Duration: 1099.9ms | Allocations: 1408800)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 308)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 222)
+Completed 200 OK in 1346ms (Views: 1327.3ms | ActiveRecord: 0.9ms | Allocations: 1594738)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:00:45 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 221.7ms | Allocations: 181555)
+  Rendered layouts/_rails_default.html.erb (Duration: 1001.9ms | Allocations: 1387246)
+  Rendered layouts/_shim.html.erb (Duration: 0.6ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 308)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 222)
+Completed 200 OK in 1241ms (Views: 1231.8ms | ActiveRecord: 1.0ms | Allocations: 1573557)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:35:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1709)
+  Rendered layouts/_rails_default.html.erb (Duration: 21.7ms | Allocations: 17006)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.6ms | Allocations: 19644)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:35:31 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1676)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.3ms | Allocations: 16999)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms | Allocations: 19601)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:36:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1686)
+  Rendered layouts/_rails_default.html.erb (Duration: 2407.2ms | Allocations: 1379015)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 2413ms (Views: 2411.8ms | ActiveRecord: 0.1ms | Allocations: 1381633)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:36:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1676)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.4ms | Allocations: 17534)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.1ms | Allocations: 20130)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:36:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1686)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.0ms | Allocations: 17003)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms | Allocations: 19615)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:37:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1676)
+  Rendered layouts/_rails_default.html.erb (Duration: 2048.7ms | Allocations: 1367506)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 68)
+Completed 200 OK in 2055ms (Views: 2053.8ms | ActiveRecord: 0.1ms | Allocations: 1370109)
+
+
+Started GET "/posts/1" for ::1 at 2019-10-21 15:37:14 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.8ms | Allocations: 899)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1293)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.4ms | Allocations: 16761)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 33ms (Views: 21.6ms | ActiveRecord: 0.2ms | Allocations: 22363)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:37:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1681)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.6ms | Allocations: 16759)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms | Allocations: 19364)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:37:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1686)
+  Rendered layouts/_rails_default.html.erb (Duration: 2088.6ms | Allocations: 1366835)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 2.6ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 1.7ms | Allocations: 68)
+Completed 200 OK in 2105ms (Views: 2103.0ms | ActiveRecord: 0.1ms | Allocations: 1369452)
+
+
+Started GET "/posts/2" for ::1 at 2019-10-21 15:37:30 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 2.0ms | Allocations: 819)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 953)
+  Rendered layouts/_rails_default.html.erb (Duration: 20.7ms | Allocations: 16817)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.1ms | Allocations: 19162)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:38:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1900)
+  Rendered layouts/_rails_default.html.erb (Duration: 20.6ms | Allocations: 16913)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 215)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.1ms | Allocations: 21646)
+
+
+Started GET "/posts" for ::1 at 2019-10-21 15:38:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1683)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.1ms | Allocations: 17537)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms | Allocations: 20144)
+
+

@@ -7,13 +7,15 @@
   </section>
   <section class="post content">
     <ul>
-      <% @posts.each do |post| %>
-        <div class="row">
-          <div class="col-xs-12">
-            <%= tag.li sanitize "#{tag.h4(link_to formated_title_for(post), post)} #{tag.div formated_intro_for(post), class: 'post description'}" %>
+      <div class="container">
+        <% @posts.each do |post| %>
+          <div class="row">
+            <div class="col-xs-12">
+              <%= tag.li sanitize "#{tag.h4(link_to formated_title_for(post), post)} #{tag.div formated_intro_for(post), class: 'post description'}" %>
+            </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </ul>
   </section>
 </div>

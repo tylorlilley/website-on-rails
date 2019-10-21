@@ -35706,3 +35706,777 @@ Processing by StaticPagesController#contact as HTML
   Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
 Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 8652)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[36mTruncate Tables (3.8ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (4.2ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.9ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.3ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.6ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 18:53:16.102427', '2019-10-21 18:53:16.102427');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 18:53:16.105325', '2019-10-21 18:53:16.105325')[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 18:53:16.102679', '2019-10-21 18:53:16.102679');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 18:53:16.105930', '2019-10-21 18:53:16.105930')[0m
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_root
+---------------------------------
+-----------------------------------------------
+SiteLayoutTest: test_layout_links
+---------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2019-10-21 14:53:16 -0400
+Started GET "/" for 127.0.0.1 at 2019-10-21 14:53:16 -0400
+  [1m[36mFixtures Load (1.0ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 18:53:16.155430', '2019-10-21 18:53:16.155430');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 18:53:16.158008', '2019-10-21 18:53:16.158008')[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 18:53:16.155399', '2019-10-21 18:53:16.155399');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 18:53:16.157882', '2019-10-21 18:53:16.157882')[0m
+  [1m[36mFixtures Load (1.2ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 18:53:16.155227', '2019-10-21 18:53:16.155227');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 18:53:16.158042', '2019-10-21 18:53:16.158042')[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 18:53:16.155779', '2019-10-21 18:53:16.155779');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 18:53:16.157940', '2019-10-21 18:53:16.157940')[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+StaticPagesControllerTest: test_should_get_follow
+-------------------------------------------------
+-----------------------------------------------
+------------------------------------------------
+StaticPagesControllerTest: test_should_get_home
+StaticPagesControllerTest: test_should_get_about
+-----------------------------------------------
+--------------------------------------------------
+------------------------------------------------
+StaticPagesControllerTest: test_should_get_contact
+--------------------------------------------------
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/follow" for 127.0.0.1 at 2019-10-21 14:53:16 -0400
+Started GET "/contact" for 127.0.0.1 at 2019-10-21 14:53:16 -0400
+Started GET "/" for 127.0.0.1 at 2019-10-21 14:53:16 -0400
+Started GET "/about" for 127.0.0.1 at 2019-10-21 14:53:16 -0400
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendering static_pages/home.html.erb within layouts/application
+Processing by StaticPagesController#contact as HTML
+Processing by StaticPagesController#follow as HTML
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#about as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendering static_pages/follow.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 1.5ms | Allocations: 285)
+  Rendered static_pages/follow.html.erb within layouts/application (Duration: 1.9ms | Allocations: 448)
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 191.8ms | Allocations: 176434)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 194.8ms | Allocations: 176869)
+  Rendered layouts/_post.html.erb (Duration: 193.8ms | Allocations: 176434)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 197.0ms | Allocations: 176869)
+  Rendered layouts/_post.html.erb (Duration: 148.1ms | Allocations: 176430)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 150.1ms | Allocations: 176869)
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2368.3ms | Allocations: 1369938)
+  Rendered layouts/_rails_default.html.erb (Duration: 2375.0ms | Allocations: 1376615)
+  Rendered layouts/_rails_default.html.erb (Duration: 2375.0ms | Allocations: 1376616)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 104)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 104)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 346)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 350)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 229)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 229)
+Completed 200 OK in 2394ms (Views: 2386.0ms | ActiveRecord: 0.0ms | Allocations: 1380416)
+Completed 200 OK in 2393ms (Views: 2385.5ms | ActiveRecord: 0.0ms | Allocations: 1380574)
+  Rendered layouts/_rails_default.html.erb (Duration: 9.7ms | Allocations: 7622)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 350)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 228)
+Completed 200 OK in 2395ms (Views: 2386.8ms | ActiveRecord: 0.0ms | Allocations: 1381074)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------
+GamesHelperTest: test_formated_release_date_for
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+GamesHelperTest: test_screenshot_filename_for
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+GamesHelperTest: test_formated_tagline_for
+------------------------------------------
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+GamesHelperTest: test_screenshot_width_for
+------------------------------------------
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+GamesHelperTest: test_screenshot_height_for
+-------------------------------------------
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_rails_default.html.erb (Duration: 2296.9ms | Allocations: 1376580)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 316)
+  Rendered layouts/_rails_default.html.erb (Duration: 2307.2ms | Allocations: 1376580)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 229)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 104)
+Completed 200 OK in 2468ms (Views: 2455.8ms | ActiveRecord: 0.3ms | Allocations: 1560747)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 316)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 229)
+Completed 200 OK in 2532ms (Views: 2517.6ms | ActiveRecord: 0.5ms | Allocations: 1560747)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+GamesHelperTest: test_formated_name_for
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+GamesHelperTest: test_formated_description_for
+----------------------------------------------
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_rails_default.html.erb (Duration: 2320.9ms | Allocations: 1376580)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 104)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 316)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 229)
+Completed 200 OK in 2541ms (Views: 2527.1ms | ActiveRecord: 0.3ms | Allocations: 1560747)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+GamesHelperTest: test_formated_teaser_for
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+GamesHelperTest: test_download_filename_for
+-------------------------------------------
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+ApplicationHelperTest: test_formated_intro
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ApplicationHelperTest: test_formated_body
+-----------------------------------------
+Started GET "/contact" for 127.0.0.1 at 2019-10-21 14:53:18 -0400
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ApplicationHelperTest: test_formated_date
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+ApplicationHelperTest: test_full_title_helper
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PostsHelperTest: test_formated_intro_for
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PostsHelperTest: test_formated_title_for
+----------------------------------------
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+PostsHelperTest: test_formated_body_for
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+PostsHelperTest: test_formated_date_for
+---------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 0.6ms | Allocations: 158)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.9ms | Allocations: 7587)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 145)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 8652)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.7ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[36mTruncate Tables (4.3ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (4.6ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (3.8ms)[0m  [1m[31mDELETE FROM "games";
+DELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 19:40:45.025924', '2019-10-21 19:40:45.025924');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 19:40:45.029371', '2019-10-21 19:40:45.029371')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 19:40:45.025961', '2019-10-21 19:40:45.025961');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 19:40:45.029903', '2019-10-21 19:40:45.029903')[0m
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 19:40:45.026020', '2019-10-21 19:40:45.026020');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 19:40:45.029794', '2019-10-21 19:40:45.029794')[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 19:40:45.026020', '2019-10-21 19:40:45.026020');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 19:40:45.030253', '2019-10-21 19:40:45.030253')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+PostsHelperTest: test_formated_date_for
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+---------------------------------------
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+----------------------------------------
+PostsHelperTest: test_formated_title_for
+----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 19:40:45.027646', '2019-10-21 19:40:45.027646');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 19:40:45.033261', '2019-10-21 19:40:45.033261')[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+---------------------------------------
+PostsHelperTest: test_formated_body_for
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PostsHelperTest: test_formated_intro_for
+----------------------------------------
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "games";
+INSERT INTO "posts" ("id", "title", "content", "date", "created_at", "updated_at") VALUES (787258272, 'Example Title', 'This is an example of a post''s first paragraph. It has two sentances!
+This is an example of a post''s second paragraph. It is a bit longer. It has three sentences.
+This is a concluding paragraph of a post, and it''s only one sentance long.
+', '2019-10-07', '2019-10-21 19:40:45.028532', '2019-10-21 19:40:45.028532');
+INSERT INTO "games" ("id", "name", "description", "date", "tagline", "filename", "created_at", "updated_at") VALUES (980190962, 'Example Game', 'This is an example game description.
+This is another line of the description.
+
+Concluding game description.
+', '2019-10-08', 'This is an example tagline.', 'example', '2019-10-21 19:40:45.034288', '2019-10-21 19:40:45.034288')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+StaticPagesControllerTest: test_should_get_about
+------------------------------------------------
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_root
+-----------------------------------------------
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_contact
+StaticPagesControllerTest: test_should_get_home
+--------------------------------------------------
+-----------------------------------------------
+Started GET "/about" for 127.0.0.1 at 2019-10-21 15:40:45 -0400
+Started GET "/" for 127.0.0.1 at 2019-10-21 15:40:45 -0400
+Started GET "/contact" for 127.0.0.1 at 2019-10-21 15:40:45 -0400
+Started GET "/" for 127.0.0.1 at 2019-10-21 15:40:45 -0400
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#about as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendering static_pages/home.html.erb within layouts/application
+Processing by StaticPagesController#contact as HTML
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 1.6ms | Allocations: 282)
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ApplicationHelperTest: test_formated_body
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+StaticPagesControllerTest: test_should_get_follow
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+ApplicationHelperTest: test_full_title_helper
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ApplicationHelperTest: test_formated_date
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+ApplicationHelperTest: test_formated_intro
+------------------------------------------
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+SiteLayoutTest: test_layout_links
+---------------------------------
+Started GET "/follow" for 127.0.0.1 at 2019-10-21 15:40:45 -0400
+Started GET "/" for 127.0.0.1 at 2019-10-21 15:40:45 -0400
+Processing by StaticPagesController#follow as HTML
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/follow.html.erb within layouts/application
+  Rendered static_pages/follow.html.erb within layouts/application (Duration: 2.4ms | Allocations: 448)
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 2.1ms | Allocations: 1051)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1485)
+  Rendered layouts/_post.html.erb (Duration: 524.8ms | Allocations: 176416)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 527.1ms | Allocations: 176850)
+  Rendered layouts/_post.html.erb (Duration: 561.2ms | Allocations: 176434)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 565.8ms | Allocations: 176869)
+  Rendered layouts/_rails_default.html.erb (Duration: 2735.0ms | Allocations: 1376580)
+  Rendered layouts/_rails_default.html.erb (Duration: 2779.3ms | Allocations: 1376583)
+  Rendered layouts/_rails_default.html.erb (Duration: 2768.6ms | Allocations: 1376580)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 102)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 102)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 316)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 346)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 316)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 229)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 229)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 229)
+Completed 200 OK in 3343ms (Views: 3318.4ms | ActiveRecord: 0.7ms | Allocations: 1560747)
+Completed 200 OK in 2799ms (Views: 2791.2ms | ActiveRecord: 0.0ms | Allocations: 1380413)
+Completed 200 OK in 2789ms (Views: 2780.8ms | ActiveRecord: 0.2ms | Allocations: 1381616)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+GamesHelperTest: test_screenshot_width_for
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+GamesHelperTest: test_download_filename_for
+-------------------------------------------
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/contact" for 127.0.0.1 at 2019-10-21 15:40:48 -0400
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+GamesHelperTest: test_screenshot_filename_for
+---------------------------------------------
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+GamesHelperTest: test_formated_teaser_for
+-----------------------------------------
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+GamesHelperTest: test_formated_description_for
+----------------------------------------------
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by StaticPagesController#contact as HTML
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 3349.2ms | Allocations: 1369938)
+  Rendering static_pages/contact.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendered layouts/_rails_default.html.erb (Duration: 2782.5ms | Allocations: 1376580)
+-----------------------------------------------
+GamesHelperTest: test_formated_release_date_for
+-----------------------------------------------
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 0.5ms | Allocations: 158)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 102)
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 316)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 229)
+Completed 200 OK in 3328ms (Views: 3319.1ms | ActiveRecord: 0.2ms | Allocations: 1556987)
+  Rendered layouts/_rails_default.html.erb (Duration: 3322.2ms | Allocations: 1376616)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+GamesHelperTest: test_formated_tagline_for
+------------------------------------------
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 104)
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 350)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 229)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+Completed 200 OK in 3344ms (Views: 3333.7ms | ActiveRecord: 0.0ms | Allocations: 1380285)
+GamesHelperTest: test_formated_name_for
+---------------------------------------
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+-------------------------------------------
+GamesHelperTest: test_screenshot_height_for
+-------------------------------------------
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendered layouts/_rails_default.html.erb (Duration: 15.2ms | Allocations: 7622)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 350)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 228)
+Completed 200 OK in 3397ms (Views: 3383.0ms | ActiveRecord: 0.0ms | Allocations: 1381074)
+  Rendered layouts/_rails_default.html.erb (Duration: 20.7ms | Allocations: 7587)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 145)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 77)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 8652)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
