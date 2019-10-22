@@ -9,23 +9,19 @@ module GamesHelper
   # Returns download filename associated with a game
   def download_filename_for(game)
     return "" if game.nil? || game.filename.nil?
-    "#{Rails.root}/public/tylorlilley_#{game.filename}.zip"
+    "#{Rails.root}/app/assets/games/tylorlilley_#{game.filename}.zip"
   end
 
   # Returns the width of a screenshot associated with a game
-  def screenshot_width_for(game, num)
-    filename = screenshot_filename_for(game, num)
-    return 0 if filename.blank?
-    image = MiniMagick::Image.open("app/assets/images/#{filename}", ".png")
-    image[:width]
+  def screenshot_width_for(game)
+    return 0 if game.nil? || game.image_width.nil?
+    return game.image_width
   end
 
   # Returns the width of a screenshot associated with a game
-  def screenshot_height_for(game, num)
-    filename = screenshot_filename_for(game, num)
-    return 0 if filename.blank?
-    image = MiniMagick::Image.open("app/assets/images/#{filename}", ".png")
-    image[:height]
+  def screenshot_height_for(game)
+    return 0 if game.nil? || game.image_height.nil?
+    return game.image_height
   end
 
   # Returns the formatted post date

@@ -56,30 +56,24 @@ class GamesHelperTest < ActionView::TestCase
   end
 
   test "download filename for" do
-    assert_equal download_filename_for(@game), "#{Rails.root}/public/tylorlilley_example.zip"
+    assert_equal download_filename_for(@game), "#{Rails.root}/app/assets/games/tylorlilley_example.zip"
     assert_equal download_filename_for(nil), ""
     @game.filename = nil
     assert_equal download_filename_for(@game), ""
   end
 
   test "screenshot width for" do
-    @game.filename = "lightbringer"
-    assert_equal screenshot_width_for(@game, 1), 600
-    assert_equal screenshot_width_for(@game, 2), 600
-    assert_equal screenshot_width_for(@game, nil), 0
-    assert_equal screenshot_width_for(nil, 3), 0
-    @game.filename = nil
-    assert_equal screenshot_width_for(@game, 3), 0
+    assert_equal screenshot_width_for(@game), 600
+    assert_equal screenshot_width_for(nil), 0
+    @game.image_width = nil
+    assert_equal screenshot_width_for(@game), 0
   end
 
   test "screenshot height for" do
-    @game.filename = "lightbringer"
-    assert_equal screenshot_height_for(@game, 1), 500
-    assert_equal screenshot_height_for(@game, 2), 500
-    assert_equal screenshot_height_for(@game, nil), 0
-    assert_equal screenshot_height_for(nil, 3), 0
-    @game.filename = nil
-    assert_equal screenshot_height_for(@game, 3), 0
+    assert_equal screenshot_height_for(@game), 500
+    assert_equal screenshot_height_for(nil), 0
+    @game.image_height = nil
+    assert_equal screenshot_height_for(@game), 0
   end
 
 
