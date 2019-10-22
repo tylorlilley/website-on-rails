@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @post = Post.last
+    @post = Post.order(date: :desc).first
   end
 
   def help
