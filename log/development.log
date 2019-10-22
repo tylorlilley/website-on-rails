@@ -26106,3 +26106,16 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.1ms | Allocations: 18566)
 
 
+Started GET "/" for ::1 at 2019-10-22 10:10:40 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 116)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.1ms | Allocations: 17199)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 319)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 20777)
+
+
