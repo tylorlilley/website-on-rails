@@ -11,7 +11,7 @@
       <section class="game content">
         <%= render partial: 'screenshot', locals: { num: 1, size: 1,
           caption: formated_tagline_for(@game), classes: "pull-right" } %>
-        <%= sanitize formated_description_for(@game) %>
+        <%== formated_description_for(@game) %>
       </section>
     </div>
     <div class="row" >

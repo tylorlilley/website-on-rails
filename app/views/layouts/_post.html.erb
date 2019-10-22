@@ -4,7 +4,7 @@
     <%= tag.h2 "#{formated_date_for(@post)}", style: "margin-top:-6px" %>
   </section>
   <section class="post content">
-    <%= sanitize formated_body_for(@post) %>
+    <%== formated_body_for(@post) %>
   </section>
   <section class="post rider">
     <%= tag.h2 sanitize "View other updates #{link_to "here", posts_path }." %>

@@ -5,3 +5,11 @@ example:
     This is an example of a post's second paragraph. It is a bit longer. It has three sentences.
     This is a concluding paragraph of a post, and it's only one sentance long.
   date: 2019-10-07
+
+embeded-html-example:
+    title: Embedded Example Title
+    content: |+
+      This is an example of a post's first paragraph. It has <i>two</i> sentances!
+      This is an example of a post's second paragraph. It is a bit longer. It has <b>three</b> sentences.
+      This is a concluding paragraph of a <a href="example.com">post</a>, and it's only one sentance long.
+    date: 2019-10-07

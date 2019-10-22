@@ -3,7 +3,7 @@ require 'test_helper'
 class PostsHelperTest < ActionView::TestCase
 
   def setup
-    @post = Post.first
+    @post = Post.find_by(title: "Example Title")
   end
 
   test "formated date for" do
@@ -30,6 +30,9 @@ class PostsHelperTest < ActionView::TestCase
     assert_equal formated_intro_for(nil), ""
     @post.content = nil
     assert_equal formated_intro_for(@post), ""
+    @post = Post.find_by(title: "Embedded Example Title")
+    assert_equal formated_intro_for(@post),
+  "<p>This is an example of a post's first paragraph. It has <i>two</i> sentances...</p>"
   end
 
   test "formated body for" do
@@ -40,6 +43,11 @@ class PostsHelperTest < ActionView::TestCase
     assert_equal formated_body_for(nil), ""
     @post.content = nil
     assert_equal formated_intro_for(@post), ""
+    @post = Post.find_by(title: "Embedded Example Title")
+    assert_equal formated_body_for(@post),
+"<p>This is an example of a post's first paragraph. It has <i>two</i> sentances!</p>" +
+"<p>This is an example of a post's second paragraph. It is a bit longer. It has <b>three</b> sentences.</p>" +
+"<p>This is a concluding paragraph of a <a href=\"example.com\">post</a>, and it's only one sentance long.</p>"
   end
 
 end

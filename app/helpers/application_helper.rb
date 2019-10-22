@@ -19,7 +19,7 @@ module ApplicationHelper
   # Returns the first section of a block of content formated into a paragraph
   def formated_intro(content)
     return "" if content.blank? || content.split("\n").first.blank?
-    sanitize tag.p "#{content.split("\n").first[0...-1]}..."
+    tag.p raw "#{content.split("\n").first[0...-1]}..."
   end
 
   # Returns a block of content formated into a paragraph
@@ -27,9 +27,9 @@ module ApplicationHelper
     return "" if content.blank? || content.split("\n").first.blank?
     body = ""
     content.split("\n").each do |paragraph|
-      body += tag.p paragraph
+      body += tag.p raw paragraph
     end
-    sanitize body
+    body
   end
 
 end
