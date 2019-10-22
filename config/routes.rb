@@ -5,9 +5,5 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
   get '/follow', to: 'static_pages#follow'
   resources :posts
-  resources :games do
-    member do
-      get 'download'
-    end
-  end
+  resources :games
 end
