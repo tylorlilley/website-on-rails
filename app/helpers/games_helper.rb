@@ -9,7 +9,7 @@ module GamesHelper
   # Returns download filename associated with a game
   def download_filename_for(game)
     return "" if game.nil? || game.filename.nil?
-    "#{Rails.root}/app/assets/games/tylorlilley_#{game.filename}.zip"
+    "#{Rails.root}/public/games/tylorlilley_#{game.filename}.zip"
   end
 
   # Returns the width of a screenshot associated with a game

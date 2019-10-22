@@ -56,7 +56,7 @@ class GamesHelperTest < ActionView::TestCase
   end
 
   test "download filename for" do
-    assert_equal download_filename_for(@game), "#{Rails.root}/app/assets/games/tylorlilley_example.zip"
+    assert_equal download_filename_for(@game), "#{Rails.root}/public/games/tylorlilley_example.zip"
     assert_equal download_filename_for(nil), ""
     @game.filename = nil
     assert_equal download_filename_for(@game), ""
