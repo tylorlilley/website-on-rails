@@ -1,21 +1,19 @@
 <% provide(:title, "All Updates") %>
 
-<div class="jumbotron">
-  <section class="post title">
-    <%= tag.h1 "All Updates" %>
-    <hr />
-  </section>
-  <section class="post content">
-    <ul>
-      <div class="container">
-        <% @posts.each do |post| %>
-          <div class="row">
-            <div class="col-xs-12">
-              <%= tag.li raw "#{tag.h4(link_to formated_title_for(post), post)} #{tag.div formated_intro_for(post), class: 'post description'}" %>
-            </div>
+<section class="post title">
+  <%= tag.h1 "All Updates" %>
+  <hr />
+</section>
+<section class="post content">
+  <ul>
+    <div class="container">
+      <% @posts.each do |post| %>
+        <div class="row">
+          <div class="col-xs-12">
+            <%= tag.li raw "#{tag.h4(link_to formated_title_for(post), post)} #{tag.div formated_intro_for(post), class: 'post description'}" %>
           </div>
-        <% end %>
-      </div>
-    </ul>
-  </section>
-</div>
+        </div>
+      <% end %>
+    </div>
+  </ul>
+</section>

@@ -31583,3 +31583,2433 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 20242)
 
 
+Started GET "/" for ::1 at 2019-10-23 10:04:59 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 240.6ms | Allocations: 176085)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 243.5ms | Allocations: 176534)
+  Rendered layouts/_rails_default.html.erb (Duration: 1908.1ms | Allocations: 1404064)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 308)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 222)
+Completed 200 OK in 2181ms (Views: 2165.8ms | ActiveRecord: 1.7ms | Allocations: 1589684)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:05:16 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 431)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 502)
+  Rendered layouts/_rails_default.html.erb (Duration: 2278.3ms | Allocations: 1367415)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2282ms (Views: 2280.4ms | ActiveRecord: 0.2ms | Allocations: 1369431)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:06:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2572)
+  Rendered layouts/_rails_default.html.erb (Duration: 34.0ms | Allocations: 16906)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 0.2ms | Allocations: 20994)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:07:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2267)
+  Rendered layouts/_rails_default.html.erb (Duration: 2305.0ms | Allocations: 1367692)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2310ms (Views: 2309.7ms | ActiveRecord: 0.2ms | Allocations: 1370891)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:07:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.3ms | Allocations: 17414)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms | Allocations: 20591)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:20:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2283)
+  Rendered layouts/_rails_default.html.erb (Duration: 2404.0ms | Allocations: 1367720)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 68)
+Completed 200 OK in 2411ms (Views: 2409.9ms | ActiveRecord: 0.3ms | Allocations: 1370936)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:21:34 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 2509.7ms | Allocations: 1366774)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 68)
+Completed 200 OK in 2516ms (Views: 2514.7ms | ActiveRecord: 0.2ms | Allocations: 1369955)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:23:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 2412.3ms | Allocations: 1368183)
+  Rendered layouts/_shim.html.erb (Duration: 0.8ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 4.7ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 4.1ms | Allocations: 68)
+Completed 200 OK in 2438ms (Views: 2435.5ms | ActiveRecord: 0.2ms | Allocations: 1371367)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:23:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 2489.5ms | Allocations: 1368158)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2495ms (Views: 2494.4ms | ActiveRecord: 0.2ms | Allocations: 1371347)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:23:26 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.1ms | Allocations: 435)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 505)
+  Rendered layouts/_rails_default.html.erb (Duration: 20.2ms | Allocations: 16940)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 18969)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:23:30 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.4ms | Allocations: 1346)
+  Rendered games/_teaser.html.erb (Duration: 4.3ms | Allocations: 1966)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 25.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 25.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 2.2ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 2.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 57.6ms | Allocations: 21459)
+  Rendered layouts/_rails_default.html.erb (Duration: 12.8ms | Allocations: 16680)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 75ms (Views: 71.0ms | ActiveRecord: 1.9ms | Allocations: 40505)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:23:31 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 435)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 505)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.7ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms | Allocations: 18890)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:25:59 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2045.5ms | Allocations: 1367725)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 68)
+Completed 200 OK in 2050ms (Views: 2048.7ms | ActiveRecord: 0.2ms | Allocations: 1369714)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:26:25 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 1931.2ms | Allocations: 1368156)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 1935ms (Views: 1933.6ms | ActiveRecord: 0.2ms | Allocations: 1370145)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:27:15 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.5ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1188)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 14692)
+  Rendered layouts/_rails_default.html.erb (Duration: 1905.2ms | Allocations: 1366158)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1927ms (Views: 1926.1ms | ActiveRecord: 0.2ms | Allocations: 1381773)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:27:17 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.6ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 3.3ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 4.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 5.1ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 13.6ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 15.1ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 5.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 6.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 6.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 7.1ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 3.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 3.9ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 3.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 3.8ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 3.7ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 4.7ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 3.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 4.2ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 61.5ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 73.6ms | Allocations: 16776)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 138ms (Views: 137.0ms | ActiveRecord: 0.3ms | Allocations: 32395)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:27:25 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 26.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 988)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1191)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 44.0ms | Allocations: 14695)
+  Rendered layouts/_rails_default.html.erb (Duration: 2013.3ms | Allocations: 1367524)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2059ms (Views: 2058.5ms | ActiveRecord: 0.2ms | Allocations: 1383149)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:28:12 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.2ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 2125.3ms | Allocations: 1367053)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2146ms (Views: 2145.6ms | ActiveRecord: 0.2ms | Allocations: 1382668)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:29:07 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 2091.3ms | Allocations: 1366582)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2112ms (Views: 2111.0ms | ActiveRecord: 0.2ms | Allocations: 1382197)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:29:21 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 2088.9ms | Allocations: 1367527)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2109ms (Views: 2108.7ms | ActiveRecord: 0.2ms | Allocations: 1383147)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:29:53 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 1873.7ms | Allocations: 1367225)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1894ms (Views: 1893.3ms | ActiveRecord: 0.2ms | Allocations: 1382843)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:29:57 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 0.8ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.1ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.2ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.1ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.2ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.2ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.2ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.2ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 14694)
+  Rendered layouts/_rails_default.html.erb (Duration: 12.3ms | Allocations: 16775)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms | Allocations: 32394)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:30:01 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.3ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 26.8ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 27.3ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 988)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1187)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 49.2ms | Allocations: 14695)
+  Rendered layouts/_rails_default.html.erb (Duration: 2072.3ms | Allocations: 1367193)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2123ms (Views: 2122.5ms | ActiveRecord: 0.2ms | Allocations: 1382810)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:30:32 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 1909.6ms | Allocations: 1367361)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 5.7ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 2.0ms | Allocations: 68)
+Completed 200 OK in 1945ms (Views: 1944.1ms | ActiveRecord: 0.2ms | Allocations: 1382981)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:30:58 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 2015.2ms | Allocations: 1368419)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2036ms (Views: 2035.2ms | ActiveRecord: 0.2ms | Allocations: 1384037)
+
+
+Started GET "/games" for ::1 at 2019-10-23 10:31:43 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:10:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.1ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.2ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.2ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 1918.6ms | Allocations: 1367939)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 2.5ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 1.8ms | Allocations: 68)
+Completed 200 OK in 1952ms (Views: 1950.5ms | ActiveRecord: 0.1ms | Allocations: 1383556)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:31:57 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2270)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.9ms | Allocations: 16941)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.2ms | Allocations: 20139)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:32:15 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 40.7ms | Allocations: 16879)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.2ms | Allocations: 18877)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:33:33 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 600)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 926)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.5ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.2ms | Allocations: 21376)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:35:07 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 600)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 918)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms | Allocations: 21355)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:35:08 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 429)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 499)
+  Rendered layouts/_rails_default.html.erb (Duration: 35.1ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.2ms | Allocations: 18881)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:35:09 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 35.3ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 68)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.1ms | Allocations: 18874)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:35:21 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 20.9ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.2ms | Allocations: 18866)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:35:48 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.1ms | Allocations: 601)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 925)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.2ms | Allocations: 17033)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.2ms | Allocations: 21377)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:36:45 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.1ms | Allocations: 602)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 920)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.4ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 21356)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:37:09 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.8ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.2ms | Allocations: 21360)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:37:27 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.4ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.2ms | Allocations: 21352)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:39:40 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms | Allocations: 21358)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:41:23 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.0ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 21357)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:41:27 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms | Allocations: 21353)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:41:36 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 429)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 499)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.5ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 115)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.2ms | Allocations: 18882)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:41:45 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.6ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.2ms | Allocations: 21359)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:43:02 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms | Allocations: 21357)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:44:00 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.9ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms | Allocations: 21356)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:53:27 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 429)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 499)
+  Rendered layouts/_rails_default.html.erb (Duration: 2009.2ms | Allocations: 1368589)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 115)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2013ms (Views: 2011.1ms | ActiveRecord: 0.2ms | Allocations: 1370614)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:54:09 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2076.6ms | Allocations: 1368577)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2080ms (Views: 2078.8ms | ActiveRecord: 0.2ms | Allocations: 1370566)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:54:53 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 1856.5ms | Allocations: 1367660)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1860ms (Views: 1858.8ms | ActiveRecord: 0.2ms | Allocations: 1369654)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 10:55:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2496)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 16941)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms | Allocations: 20942)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:55:07 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 433)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 503)
+  Rendered layouts/_rails_default.html.erb (Duration: 40.0ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.2ms | Allocations: 18895)
+
+
+Started GET "/" for ::1 at 2019-10-23 10:56:06 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 1967.5ms | Allocations: 1368106)
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 2.4ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 1.8ms | Allocations: 68)
+Completed 200 OK in 1983ms (Views: 1979.7ms | ActiveRecord: 0.2ms | Allocations: 1370099)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:05:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2009.3ms | Allocations: 1368117)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2013ms (Views: 2011.5ms | ActiveRecord: 0.2ms | Allocations: 1370134)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:05:38 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.6ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2145.0ms | Allocations: 1367623)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2148ms (Views: 2147.2ms | ActiveRecord: 0.2ms | Allocations: 1369616)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:06:43 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2171.6ms | Allocations: 1368100)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2175ms (Views: 2173.9ms | ActiveRecord: 0.2ms | Allocations: 1370092)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:08:13 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2199.5ms | Allocations: 1368100)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2203ms (Views: 2201.8ms | ActiveRecord: 0.2ms | Allocations: 1370090)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:09:03 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2227.7ms | Allocations: 1366560)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2231ms (Views: 2229.6ms | ActiveRecord: 0.2ms | Allocations: 1368553)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:09:15 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2170.4ms | Allocations: 1367910)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2174ms (Views: 2172.6ms | ActiveRecord: 0.2ms | Allocations: 1369907)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:09:21 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2276)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 16938)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms | Allocations: 20136)
+
+
+Started GET "/posts/95" for ::1 at 2019-10-23 11:09:22 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.5ms | Allocations: 424)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 677)
+  Rendered layouts/_rails_default.html.erb (Duration: 38.9ms | Allocations: 16823)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 55ms (Views: 41.0ms | ActiveRecord: 0.1ms | Allocations: 21795)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:09:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2263)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.3ms | Allocations: 16880)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 20065)
+
+
+Started GET "/posts/93" for ::1 at 2019-10-23 11:09:26 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 391)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 525)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 18791)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:09:28 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 433)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 503)
+  Rendered layouts/_rails_default.html.erb (Duration: 36.5ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 70)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.2ms | Allocations: 18891)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:10:35 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.1ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 37.4ms | Allocations: 17472)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.2ms | Allocations: 19463)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:11:19 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2080.2ms | Allocations: 1368135)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 2085ms (Views: 2082.8ms | ActiveRecord: 0.2ms | Allocations: 1370137)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:11:35 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2123.4ms | Allocations: 1367193)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2127ms (Views: 2125.3ms | ActiveRecord: 0.2ms | Allocations: 1369191)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:11:52 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2138.6ms | Allocations: 1368100)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 2142ms (Views: 2140.9ms | ActiveRecord: 0.2ms | Allocations: 1370101)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:12:10 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2142.5ms | Allocations: 1366892)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2146ms (Views: 2144.4ms | ActiveRecord: 0.2ms | Allocations: 1368894)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:12:18 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2208.8ms | Allocations: 1368714)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2212ms (Views: 2211.0ms | ActiveRecord: 0.2ms | Allocations: 1370703)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:12:41 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2130.5ms | Allocations: 1367798)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2134ms (Views: 2132.8ms | ActiveRecord: 0.2ms | Allocations: 1369792)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:13:55 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.1ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 924)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.8ms | Allocations: 17091)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.2ms | Allocations: 21426)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:14:25 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 429)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 499)
+  Rendered layouts/_rails_default.html.erb (Duration: 38.4ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 115)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.2ms | Allocations: 18884)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:15:22 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 922)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.5ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.2ms | Allocations: 21374)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:18:14 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 429)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 499)
+  Rendered layouts/_rails_default.html.erb (Duration: 2269.8ms | Allocations: 1368713)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 2274ms (Views: 2272.2ms | ActiveRecord: 0.2ms | Allocations: 1370711)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:18:30 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2159.6ms | Allocations: 1368238)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2164ms (Views: 2162.2ms | ActiveRecord: 0.2ms | Allocations: 1370229)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:18:40 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2231.8ms | Allocations: 1368719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2236ms (Views: 2234.1ms | ActiveRecord: 0.2ms | Allocations: 1370715)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:19:08 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.3ms | Allocations: 17413)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms | Allocations: 19403)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:21:33 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 41.4ms | Allocations: 17414)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.2ms | Allocations: 19405)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:21:35 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.5ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 12.2ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms | Allocations: 18869)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:22:05 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2212.8ms | Allocations: 1370800)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2218ms (Views: 2216.5ms | ActiveRecord: 0.2ms | Allocations: 1372791)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:22:10 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.5ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.2ms | Allocations: 16937)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 18927)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:22:29 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2227.6ms | Allocations: 1369228)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2232ms (Views: 2230.3ms | ActiveRecord: 0.2ms | Allocations: 1371223)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:22:36 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2311.6ms | Allocations: 1369671)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2315ms (Views: 2313.7ms | ActiveRecord: 0.2ms | Allocations: 1371670)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:22:59 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2271.9ms | Allocations: 1369814)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2275ms (Views: 2274.1ms | ActiveRecord: 0.2ms | Allocations: 1371811)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:24:37 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.6ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.0ms | Allocations: 16937)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms | Allocations: 18923)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:24:49 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 39.4ms | Allocations: 17415)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.2ms | Allocations: 19409)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:24:57 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 2.9ms | Allocations: 1883)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 15532)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.5ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms | Allocations: 33758)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 11:24:58 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1173)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 1039)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 896)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 896)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4895)
+  Rendered layouts/_rails_default.html.erb (Duration: 33.9ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 142)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 70)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.1ms | Allocations: 23302)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:25:01 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 6.1ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 6.7ms | Allocations: 1409)
+  Rendered games/_screenshot.html.erb (Duration: 4.7ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 5.2ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 3.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 5.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.2ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.3ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 2.2ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 14727)
+  Rendered layouts/_rails_default.html.erb (Duration: 58.8ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.3ms | Allocations: 32362)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:25:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2484)
+  Rendered layouts/_rails_default.html.erb (Duration: 48.4ms | Allocations: 16883)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.2ms | Allocations: 20871)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:27:59 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.5ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 4.0ms | Allocations: 1898)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 15515)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.8ms | Allocations: 16870)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.2ms | Allocations: 35227)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:28:06 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.1ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 3.4ms | Allocations: 1896)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 21.6ms | Allocations: 15507)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.9ms | Allocations: 16870)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 215)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.2ms | Allocations: 35202)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:28:14 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 917)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.2ms | Allocations: 19893)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:28:28 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.2ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.7ms | Allocations: 17035)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 21356)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:28:38 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.5ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 3.6ms | Allocations: 1897)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 15508)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.0ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.2ms | Allocations: 33730)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:29:06 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 3.0ms | Allocations: 1896)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 2.2ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 15507)
+  Rendered layouts/_rails_default.html.erb (Duration: 52.5ms | Allocations: 16870)
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 215)
+Completed 200 OK in 89ms (Views: 87.8ms | ActiveRecord: 0.2ms | Allocations: 35210)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:29:12 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.2ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 3.8ms | Allocations: 1896)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 15507)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 16870)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.2ms | Allocations: 35214)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:29:17 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 3.1ms | Allocations: 1896)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 21.7ms | Allocations: 15507)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.2ms | Allocations: 16870)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.2ms | Allocations: 35213)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:29:55 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 3.0ms | Allocations: 1896)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 2.9ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 21.7ms | Allocations: 15507)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.0ms | Allocations: 16870)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 215)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.2ms | Allocations: 35205)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:29:57 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 1184)
+  Rendered games/_teaser.html.erb (Duration: 2.5ms | Allocations: 1414)
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 14703)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.4ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.2ms | Allocations: 32352)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:30:13 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1331)
+  Rendered games/_teaser.html.erb (Duration: 2.9ms | Allocations: 1899)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 15516)
+  Rendered layouts/_rails_default.html.erb (Duration: 2077.5ms | Allocations: 1367238)
+  Rendered layouts/_shim.html.erb (Duration: 0.8ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 215)
+Completed 200 OK in 2142ms (Views: 2110.0ms | ActiveRecord: 0.1ms | Allocations: 1385599)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:30:39 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.4ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 917)
+  Rendered layouts/_rails_default.html.erb (Duration: 32.7ms | Allocations: 16940)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.2ms | Allocations: 19938)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:31:00 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 2.0ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 29.1ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 215)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.2ms | Allocations: 21356)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:31:50 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 429)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 499)
+  Rendered layouts/_rails_default.html.erb (Duration: 2286.5ms | Allocations: 1367360)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 2291ms (Views: 2289.3ms | ActiveRecord: 0.2ms | Allocations: 1369364)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:31:59 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2371.0ms | Allocations: 1368305)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2375ms (Views: 2373.5ms | ActiveRecord: 0.1ms | Allocations: 1370294)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:32:21 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.2ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2433.6ms | Allocations: 1367348)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2438ms (Views: 2436.4ms | ActiveRecord: 0.2ms | Allocations: 1369344)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:32:36 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2310.5ms | Allocations: 1368300)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2314ms (Views: 2312.8ms | ActiveRecord: 0.2ms | Allocations: 1370292)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:32:56 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2343.1ms | Allocations: 1367385)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2347ms (Views: 2345.1ms | ActiveRecord: 0.2ms | Allocations: 1369382)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:33:12 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 1329)
+  Rendered games/_teaser.html.erb (Duration: 3.1ms | Allocations: 1898)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.3ms | Allocations: 1190)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 5.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 6.7ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 6.0ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 7.8ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 6.6ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 8.3ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 63.9ms | Allocations: 15519)
+  Rendered layouts/_rails_default.html.erb (Duration: 118.9ms | Allocations: 16779)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 70)
+Completed 200 OK in 188ms (Views: 185.9ms | ActiveRecord: 0.2ms | Allocations: 33810)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:33:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2472)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.6ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms | Allocations: 20852)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:33:14 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 433)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 503)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.2ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 18888)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:33:15 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.1ms | Allocations: 1184)
+  Rendered games/_teaser.html.erb (Duration: 2.6ms | Allocations: 1418)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 3.8ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 4.6ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 6.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 7.4ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 4.2ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 7.7ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 14.9ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 19.9ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 56.1ms | Allocations: 14707)
+  Rendered layouts/_rails_default.html.erb (Duration: 129.3ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 191ms (Views: 189.7ms | ActiveRecord: 0.2ms | Allocations: 32357)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:33:16 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 2.3ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 29.6ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 38ms (Views: 33.4ms | ActiveRecord: 0.2ms | Allocations: 18868)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:33:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 51.1ms | Allocations: 16880)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 68)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.3ms | Allocations: 20063)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:33:22 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.8ms | Allocations: 16879)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.2ms | Allocations: 20055)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:33:24 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.0ms | Allocations: 16879)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.1ms | Allocations: 20063)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:33:30 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 1179)
+  Rendered games/_teaser.html.erb (Duration: 2.3ms | Allocations: 1404)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 33.6ms | Allocations: 14693)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.2ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.3ms | Allocations: 32333)
+
+
+Started GET "/contact" for ::1 at 2019-10-23 11:33:39 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 0.6ms | Allocations: 162)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.7ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 18106)
+
+
+Started GET "/about" for ::1 at 2019-10-23 11:33:40 -0400
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.5ms | Allocations: 995)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.4ms | Allocations: 16720)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 18775)
+
+
+Started GET "/follow" for ::1 at 2019-10-23 11:33:42 -0400
+Processing by StaticPagesController#follow as HTML
+  Rendering static_pages/follow.html.erb within layouts/application
+  Rendered static_pages/follow.html.erb within layouts/application (Duration: 0.7ms | Allocations: 413)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.1ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 142)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 18353)
+
+
+Started GET "/follow" for ::1 at 2019-10-23 11:33:46 -0400
+Processing by StaticPagesController#follow as HTML
+  Rendering static_pages/follow.html.erb within layouts/application
+  Rendered static_pages/follow.html.erb within layouts/application (Duration: 0.1ms | Allocations: 102)
+  Rendered layouts/_rails_default.html.erb (Duration: 12.1ms | Allocations: 16879)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 17890)
+
+
+Started GET "/games" for ::1 at 2019-10-23 11:33:47 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.1ms | Allocations: 1184)
+  Rendered games/_teaser.html.erb (Duration: 2.6ms | Allocations: 1418)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1185)
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.2ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 2.3ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 3.2ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 2.1ms | Allocations: 985)
+  Rendered games/_teaser.html.erb (Duration: 2.9ms | Allocations: 1183)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 2.0ms | Allocations: 1189)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1186)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 986)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1185)
+  Rendered games/index.html.erb within layouts/application (Duration: 42.5ms | Allocations: 14707)
+  Rendered layouts/_rails_default.html.erb (Duration: 79.9ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 126ms (Views: 125.2ms | ActiveRecord: 0.2ms | Allocations: 32355)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 11:33:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2270)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.0ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.2ms | Allocations: 20082)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:33:50 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 428)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 498)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.2ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.4ms | Allocations: 18875)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:34:58 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2248.7ms | Allocations: 1367392)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2254ms (Views: 2251.6ms | ActiveRecord: 0.3ms | Allocations: 1369380)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:35:24 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2237.9ms | Allocations: 1367818)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2241ms (Views: 2240.0ms | ActiveRecord: 0.2ms | Allocations: 1369814)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:35:53 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.5ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2218.1ms | Allocations: 1368300)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2221ms (Views: 2220.2ms | ActiveRecord: 0.1ms | Allocations: 1370293)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:36:16 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 23.9ms | Allocations: 16937)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.2ms | Allocations: 18931)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:36:20 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 53.9ms | Allocations: 16879)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.2ms | Allocations: 18872)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:36:22 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2056.2ms | Allocations: 1367674)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 3.0ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 3.4ms | Allocations: 68)
+Completed 200 OK in 2072ms (Views: 2070.0ms | ActiveRecord: 0.2ms | Allocations: 1369666)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:42:59 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.8ms | Allocations: 16937)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 18945)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:43:00 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.3ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 18866)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:43:46 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 1902.2ms | Allocations: 1367812)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1906ms (Views: 1904.6ms | ActiveRecord: 0.2ms | Allocations: 1369805)
+
+
+Started GET "/follow" for ::1 at 2019-10-23 11:44:15 -0400
+Processing by StaticPagesController#follow as HTML
+  Rendering static_pages/follow.html.erb within layouts/application
+  Rendered static_pages/follow.html.erb within layouts/application (Duration: 0.2ms | Allocations: 102)
+  Rendered layouts/_rails_default.html.erb (Duration: 17.0ms | Allocations: 16938)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 17950)
+
+
+Started GET "/" for ::1 at 2019-10-23 11:44:17 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.5ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 18.1ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 18862)
+
+

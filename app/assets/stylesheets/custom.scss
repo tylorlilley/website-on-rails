@@ -4,9 +4,9 @@
 /* mixins, variables, etc. */
 
 $light-shade:   #EFF0F0;
-$light-accent:  #88A4A1;
-$brand:         #426768;
-$dark-accent:   #628C93;
+$light-accent:  #92A5B7;
+$brand:         #4C7799;
+$dark-accent:   #345468;
 $dark-shade:    #191A1F;
 
 
@@ -46,7 +46,9 @@ body {
 
 .jumbotron {
   /* Jumbotron properties */
-  padding: 12px;
+  padding: 2% 4% 2% 4%;
+  margin-top: 2%;
+  border-radius: 24px;
   background-color: $light-shade;
   font-size: 1.5em;
   line-height: 1.7em;
@@ -79,15 +81,15 @@ body {
     text-indent: 2em;
   }
   h1 {
-      color: $brand;
+      color: $dark-accent;
       font-size: 2.8em;
   }
   a {
-    color: $dark-accent;
+    color: $brand;
     border-bottom: 1px dashed $dark-accent;
     &:hover {
-      color: $brand;
-      border-bottom: 1px dashed $brand;
+      color: $dark-accent;
+      border-bottom: 1px dashed $dark-accent;
       text-decoration: none;
     }
   }
@@ -97,7 +99,7 @@ body {
   margin: 2%;
   background-color: $brand;
   .caption {
-    color: $light-accent;
+    color: $light-shade;
     font-style: italic;
     font-size: 0.8em;
     text-align: center;
@@ -165,14 +167,12 @@ h4 {
   margin-bottom: 30px;
 }
 
-.faded {
-  color: $light-accent;
-}
-
 /* header */
 
 .nav.navbar-nav.navbar-right li a {
   color: $light-shade;
+  font-size: 1.5em;
+  text-transform: uppercase;
   &:hover {
     color: $light-accent;
     text-decoration: none;
@@ -180,17 +180,17 @@ h4 {
 }
 
 .navbar {
-  background-color: $dark-accent;
+  background-color: $brand;
 }
 
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  font-size: 2em;
   color: $light-shade;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding: 5px;
   font-weight: bold;
   &:hover {
     color: $light-shade;
@@ -204,12 +204,12 @@ h4 {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $dark-accent;
-  color: $light-accent;
+  border-top: 1px solid $brand;
+  color: $brand;
   a {
-    color: $light-accent;
+    color: $brand;
     &:hover {
-      color: lighten($light-accent, 15%);
+      color: lighten($brand, 15%);
     }
   }
   small {
