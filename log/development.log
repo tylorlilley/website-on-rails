@@ -38619,3 +38619,32 @@ Processing by StaticPagesController#encrypt1 as HTML
 Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 587)
 
 
+Started GET "/.well-known/acme-challenge/E9i4kw3XP43Y2CQKiP_bvKFO_xjHdBKLb9dMz2Tk9gA" for ::1 at 2019-10-23 15:54:11 -0400
+Processing by StaticPagesController#encrypt2 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started GET "/" for ::1 at 2019-10-23 15:58:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 440)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 510)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.7ms | Allocations: 16843)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 24ms (Views: 17.2ms | ActiveRecord: 0.7ms | Allocations: 23283)
+
+
+Started GET "/.well-known/acme-challenge/ZEHgr2pKwlhRtFqILnwlPGrHgs8jTOayLbEOkyztF0I" for ::1 at 2019-10-23 15:58:41 -0400
+Processing by StaticPagesController#encrypt3 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 441)
+
+

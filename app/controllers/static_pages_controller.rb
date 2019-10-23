@@ -16,10 +16,14 @@ class StaticPagesController < ApplicationController
   end
 
   def encrypt1
-    render plain: "tBc2N67HZ66xVhKf4LBabXkwHiCX3XR78YXsM2grPVc.apAwhPX7rZpFf6lZJkT2c4AmgC7lyAWv3GRvqgb3luM"
+    render html: "tBc2N67HZ66xVhKf4LBabXkwHiCX3XR78YXsM2grPVc.apAwhPX7rZpFf6lZJkT2c4AmgC7lyAWv3GRvqgb3luM"
   end
 
   def encrypt2
-    render plain: "E9i4kw3XP43Y2CQKiP_bvKFO_xjHdBKLb9dMz2Tk9gA.apAwhPX7rZpFf6lZJkT2c4AmgC7lyAWv3GRvqgb3luM"
+    render html: "E9i4kw3XP43Y2CQKiP_bvKFO_xjHdBKLb9dMz2Tk9gA.apAwhPX7rZpFf6lZJkT2c4AmgC7lyAWv3GRvqgb3luM"
+  end
+
+  def encrypt3
+    render html: "ZEHgr2pKwlhRtFqILnwlPGrHgs8jTOayLbEOkyztF0I.apAwhPX7rZpFf6lZJkT2c4AmgC7lyAWv3GRvqgb3luM"
   end
 end
