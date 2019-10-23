@@ -38570,3 +38570,52 @@ Completed 200 OK in 1925ms (Views: 1923.0ms | ActiveRecord: 0.2ms | Allocations:
   [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."name" = ? LIMIT ?[0m  [["name", "Mighty Dive Bomber"], ["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."name" = ? LIMIT ?[0m  [["name", "Mighty Dive Bomber"], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-10-23 15:51:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 440)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 510)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.4ms | Allocations: 16901)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 24ms (Views: 17.8ms | ActiveRecord: 0.2ms | Allocations: 23052)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 15:51:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2340)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.9ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.3ms | Allocations: 20305)
+
+
+Started GET "/.well-known/acme-challenge/tBc2N67HZ66xVhKf4LBabXkwHiCX3XR78YXsM2grPVc" for ::1 at 2019-10-23 15:52:10 -0400
+Processing by StaticPagesController#encrypt1 as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1333)
+
+
+  
+ActionView::MissingTemplate (Missing template static_pages/encrypt1, application/encrypt1 with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/tlilley/environment/website-on-rails/app/views"
+  * "/Users/tlilley/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actiontext-6.0.0/app/views"
+  * "/Users/tlilley/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.0/app/views"
+):
+  
+app/controllers/static_pages_controller.rb:19:in `encrypt1'
+Started GET "/.well-known/acme-challenge/tBc2N67HZ66xVhKf4LBabXkwHiCX3XR78YXsM2grPVc" for ::1 at 2019-10-23 15:53:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#encrypt1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 587)
+
+
