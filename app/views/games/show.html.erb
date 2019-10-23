@@ -11,7 +11,7 @@
         <div class = "container">
           <%= tag.div render(partial: 'screenshot', locals: { num: 1, size: 1,
               caption: formated_tagline_for(@game), classes: "" }),
-              class: "col-md-8 col-centered",
+              class: "col-xs-12 col-md-6 col-centered",
               style: "margin: 12px" %>
           <%== formated_description_for(@game) %>
         </div>
