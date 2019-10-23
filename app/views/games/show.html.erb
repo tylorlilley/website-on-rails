@@ -5,11 +5,17 @@
   <%= tag.h2 "#{formated_date_for(@game)}", style: "margin-top:-6px"  %>
 </section>
 <div class = "container">
-  <div class="row">
+  <div class="row" >
     <section class="game content">
-      <%= render partial: 'screenshot', locals: { num: 1, size: 1,
-        caption: formated_tagline_for(@game), classes: "pull-right" } %>
-      <%== formated_description_for(@game) %>
+      <div class="col-xs-12">
+        <div class = "container">
+          <%= tag.div render(partial: 'screenshot', locals: { num: 1, size: 1,
+              caption: formated_tagline_for(@game), classes: "" }),
+              class: "col-md-8 col-centered",
+              style: "margin: 12px" %>
+          <%== formated_description_for(@game) %>
+        </div>
+      </div>
     </section>
   </div>
   <div class="row" >

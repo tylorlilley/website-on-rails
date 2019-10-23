@@ -8,6 +8,7 @@
   <ul>
     <% @games.each_with_index do |game, index| %>
       <%= render partial: 'teaser', locals: { game: game, index: index } %>
+      <br />
     <% end %>
   </ul>
 </section>

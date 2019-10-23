@@ -4,10 +4,11 @@
 /* mixins, variables, etc. */
 
 $light-shade:   #EFF0F0;
-$light-accent:  #92A5B7;
+$light-accent:  #788796;
 $brand:         #4C7799;
 $dark-accent:   #345468;
 $dark-shade:    #191A1F;
+$faded:         #A3B8CC;
 
 
 $gray-medium-light: #eaeaea;
@@ -70,7 +71,6 @@ body {
   }
   .description {
     width: 95%;
-    margin: 2%;
     font-style: italic;
     font-size: 0.8em;
     line-height: 1.6em;

@@ -3,6 +3,8 @@
 <%= tag.div sanitize(
   "#{image_tag screenshot_filename_for(@game, num),
     alt: formated_name_for(@game),
-    width: "#{screenshot_width_for(@game)*size}px"}
+    width: "#{screenshot_width_for(@game)*size}px",
+    height: "#{screenshot_height_for(@game)*size}px",
+    style: "max-width: #{screenshot_width_for(@game)*size}px"}
   #{caption.blank? ? '' : tag.div(caption, class: 'caption')}"), class: "thumbnail #{classes}",
   style: "max-width: #{screenshot_width_for(@game)*size}px" %>
