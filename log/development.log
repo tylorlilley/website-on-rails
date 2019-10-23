@@ -38559,3 +38559,14 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 1925ms (Views: 1923.0ms | ActiveRecord: 0.2ms | Allocations: 1369387)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."name" = ? LIMIT ?[0m  [["name", "10 Seconds in Hell"], ["LIMIT", 1]]
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Update (0.5ms)[0m  [1m[33mUPDATE "games" SET "description" = ?, "updated_at" = ? WHERE "games"."id" = ?[0m  [["description", "Humans are flawed creatures. We each have our trials and temptations, but we have the power to choose between giving in or standing strong. Can you, a noble man, survive a descent into hell and all the deadly sins and evil souls that await you there? Will you be able to rescue the heart of your beloved and make it out with your soul intact? Or will you accidentally press the arrow key one too many times and step into a pool of lava?\n\nInspired chiefly by the old-school Atari game <a href=\"https://en.wikipedia.org/wiki/Adventure_(Atari_2600)\">Adventure</a>, 10 seconds in Hell was originally developed for <a href=\"http://www.ludumdare.com/compo/ludum-dare-27/?action=preview&amp;uid=26293\">Ludum Dare 27</a>, a tri-annual 48 hour game making competition. After the original version scored <strong>18th out of 2213 games</strong> in the Mood category, I continued to work on it and developed it into the full game you can play today. The game has pseudo-random generation elements so it is different each time you play. Have fun! Just be prepared to die a lot."], ["updated_at", "2019-10-23 19:12:41.041417"], ["id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."title" = ? LIMIT ?[0m  [["title", "Mighty Dive Bomber (Classic)"], ["LIMIT", 1]]
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."name" = ? LIMIT ?[0m  [["name", "Mighty Dive Bomber (Classic)"], ["LIMIT", 1]]
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."name" = ? LIMIT ?[0m  [["name", "Mighty Dive Bomber"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."name" = ? LIMIT ?[0m  [["name", "Mighty Dive Bomber"], ["LIMIT", 1]]
