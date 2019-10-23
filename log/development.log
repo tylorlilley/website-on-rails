@@ -37244,3 +37244,1318 @@ Processing by GamesController#show as HTML
 Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.2ms | Allocations: 25658)
 
 
+Started GET "/" for ::1 at 2019-10-23 14:09:01 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.5ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 917)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.1ms | Allocations: 17035)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.4ms | Allocations: 21382)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:24:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.3ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 916)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.5ms | Allocations: 17032)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.3ms | Allocations: 21372)
+
+
+Started GET "/games" for ::1 at 2019-10-23 14:28:07 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 3.3ms | Allocations: 1400)
+  Rendered games/_teaser.html.erb (Duration: 5.3ms | Allocations: 1966)
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 2.7ms | Allocations: 1252)
+  Rendered games/_screenshot.html.erb (Duration: 2.5ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 3.0ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 2.7ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 2.1ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 1047)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1245)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 1049)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1248)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1247)
+  Rendered games/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 16228)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.3ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.4ms | Allocations: 34451)
+
+
+Started GET "/games" for ::1 at 2019-10-23 14:28:22 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 2.5ms | Allocations: 1241)
+  Rendered games/_teaser.html.erb (Duration: 3.1ms | Allocations: 1466)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1047)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1245)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1049)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1248)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1247)
+  Rendered games/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 15375)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.9ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.2ms | Allocations: 33013)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:28:40 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 3.4ms | Allocations: 1236)
+  Rendered games/_screenshot.html.erb (Duration: 2.6ms | Allocations: 1109)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 12.1ms | Allocations: 5173)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.9ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 142)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.3ms | Allocations: 23476)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:29:43 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4625)
+  Rendered layouts/_rails_default.html.erb (Duration: 2144.8ms | Allocations: 1368053)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2154ms (Views: 2153.0ms | ActiveRecord: 0.1ms | Allocations: 1374097)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:30:54 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 0.9ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.6ms | Allocations: 16775)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms | Allocations: 22810)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:33:20 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.3ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms | Allocations: 22753)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:33:27 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.4ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.1ms | Allocations: 22753)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:33:54 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.4ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 1954.5ms | Allocations: 1367998)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 68)
+Completed 200 OK in 1965ms (Views: 1963.7ms | ActiveRecord: 0.1ms | Allocations: 1374045)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:34:04 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.0ms | Allocations: 17251)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.1ms | Allocations: 23289)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:34:06 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.2ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.1ms | Allocations: 22754)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:35:42 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 2.0ms | Allocations: 1390)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1109)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 5472)
+  Rendered layouts/_rails_default.html.erb (Duration: 2268.2ms | Allocations: 1367693)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 319)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 215)
+Completed 200 OK in 2284ms (Views: 2282.8ms | ActiveRecord: 0.2ms | Allocations: 1376513)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:35:59 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1236)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 4632)
+  Rendered layouts/_rails_default.html.erb (Duration: 1969.9ms | Allocations: 1368016)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 1979ms (Views: 1977.4ms | ActiveRecord: 0.1ms | Allocations: 1374074)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:36:18 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 16760)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms | Allocations: 22798)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:36:23 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.9ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.1ms | Allocations: 22753)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:36:24 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.6ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.1ms | Allocations: 22749)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:36:33 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.0ms | Allocations: 17313)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.1ms | Allocations: 23350)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:36:39 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.7ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 17251)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.1ms | Allocations: 23282)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:37:07 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.6ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 2289.6ms | Allocations: 1367235)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2298ms (Views: 2296.6ms | ActiveRecord: 0.1ms | Allocations: 1373275)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:37:18 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.0ms | Allocations: 16760)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.1ms | Allocations: 22802)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:37:20 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.2ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms | Allocations: 22753)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:37:24 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.0ms | Allocations: 17310)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 23347)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:38:01 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.9ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 2.3ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 1966.1ms | Allocations: 1367657)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1978ms (Views: 1977.1ms | ActiveRecord: 0.1ms | Allocations: 1373694)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:38:12 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 2246.5ms | Allocations: 1367668)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 2255ms (Views: 2254.1ms | ActiveRecord: 0.1ms | Allocations: 1373710)
+
+
+Started GET "/games/8" for ::1 at 2019-10-23 14:38:16 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4621)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.5ms | Allocations: 16775)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.1ms | Allocations: 22810)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 14:38:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2491)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.8ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms | Allocations: 20876)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:38:19 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 598)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 917)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.4ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms | Allocations: 19876)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:38:23 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.9ms | Allocations: 17413)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 19406)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:38:52 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 1902.8ms | Allocations: 1367732)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1906ms (Views: 1904.9ms | ActiveRecord: 0.2ms | Allocations: 1369719)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:38:59 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 16937)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms | Allocations: 18928)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:39:10 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.2ms | Allocations: 17413)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.2ms | Allocations: 19397)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:39:26 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 2174.3ms | Allocations: 1367828)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2178ms (Views: 2176.4ms | ActiveRecord: 0.2ms | Allocations: 1369822)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:39:42 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.5ms | Allocations: 17413)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms | Allocations: 19402)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 14:39:59 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2270)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.9ms | Allocations: 16882)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.2ms | Allocations: 20085)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 14:40:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 1891.8ms | Allocations: 1367256)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+Completed 200 OK in 1897ms (Views: 1896.5ms | ActiveRecord: 0.2ms | Allocations: 1370436)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 14:40:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.5ms | Allocations: 16938)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 20119)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 14:40:19 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.5ms | Allocations: 16879)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms | Allocations: 20060)
+
+
+Started GET "/posts" for ::1 at 2019-10-23 14:40:22 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2259)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.3ms | Allocations: 17414)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms | Allocations: 20593)
+
+
+Started GET "/posts/95" for ::1 at 2019-10-23 14:40:36 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 677)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.5ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 19107)
+
+
+Started GET "/posts/95" for ::1 at 2019-10-23 14:40:50 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.6ms | Allocations: 414)
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 548)
+  Rendered layouts/_rails_default.html.erb (Duration: 2053.8ms | Allocations: 1367138)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 2057ms (Views: 2056.1ms | ActiveRecord: 0.1ms | Allocations: 1369087)
+
+
+Started GET "/posts/95" for ::1 at 2019-10-23 14:40:57 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.6ms | Allocations: 414)
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 548)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.3ms | Allocations: 17413)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.1ms | Allocations: 19354)
+
+
+Started GET "/posts/95" for ::1 at 2019-10-23 14:41:33 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.6ms | Allocations: 414)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 548)
+  Rendered layouts/_rails_default.html.erb (Duration: 1925.6ms | Allocations: 1368308)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1929ms (Views: 1928.0ms | ActiveRecord: 0.1ms | Allocations: 1370253)
+
+
+Started GET "/posts/95" for ::1 at 2019-10-23 14:41:41 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.6ms | Allocations: 414)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 548)
+  Rendered layouts/_rails_default.html.erb (Duration: 15.2ms | Allocations: 16922)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.1ms | Allocations: 18859)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:43:52 -0400
+Started GET "/" for ::1 at 2019-10-23 14:43:52 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by StaticPagesController#home as HTML
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendered layouts/_post.html.erb (Duration: 0.7ms | Allocations: 433)
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 691)
+  Rendered layouts/_post.html.erb (Duration: 0.6ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 701)
+  Rendered layouts/_rails_default.html.erb (Duration: 30.5ms | Allocations: 33730)
+  Rendered layouts/_rails_default.html.erb (Duration: 30.1ms | Allocations: 33586)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.2ms | Allocations: 38170)
+
+
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.2ms | Allocations: 36959)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:43:52 -0400
+Started GET "/" for ::1 at 2019-10-23 14:43:52 -0400
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.4ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 495)
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.0ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 71.2ms | Allocations: 33269)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_rails_default.html.erb (Duration: 74.9ms | Allocations: 34630)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 85ms (Views: 78.4ms | ActiveRecord: 0.4ms | Allocations: 37243)
+
+
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 86ms (Views: 80.5ms | ActiveRecord: 0.3ms | Allocations: 37863)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:46:45 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.9ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 14.3ms | Allocations: 16878)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 18870)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPost Destroy (1.6ms)[0m  [1m[31mDELETE FROM "posts"[0m
+  [1m[36mGame Destroy (1.3ms)[0m  [1m[31mDELETE FROM "games"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello everyone! It's been awhile since I last updated, so I have decided to fix that mistake by sprucing the place up a little. I have cleaned up the visual presentation a bit and updated the About and Games sections.\n\nFeel free to poke around and check out what's new! If you've already seen all there is to see in the current Games section, know that while I don't have any personal projects nearing completion right now, I've always got a few things brewing, so check back again in a few months and maybe that will have changed. You never know when inspiration will strike!"], ["date", "2019-06-20"], ["created_at", "2019-10-23 18:48:47.183051"], ["updated_at", "2019-10-23 18:48:47.183051"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello again everyone! I have been teaching myself Ruby lately, and I've updated the games section to include the small text-adventure game I made using the Ruby language. You can compete with friends to see who can get the highest score. Or just compete with yourself, if you have no friends.\n\nIn case anyone missed it, I also took the time to add <a href=\"/games/11\">Super Action Sports</a> to the games section as well. This was the <a href=\"http://web.cse.ohio-state.edu/~boggus.2/5912/GameGroups.html\">capstone project</a> I completed near the end of my time at OSU last fall. It was my first 3D game project, and it was a lot of work! You can check that out in the games section now too.\n\nIn any case, thanks for stopping by! I hope some of you get a kick out of this update, now that there are more games to play. Stay tuned for more updates in the future, as I will continue to work on more projects as time allows!"], ["date", "2016-10-06"], ["created_at", "2019-10-23 18:48:47.190339"], ["updated_at", "2019-10-23 18:48:47.190339"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Small Side Project!"], ["content", "Hello again my loyal subset of friends, family, and that one internet stranger. Today I have a small update that will mean nothing to the most of you. I have spent a lot of time sharpening my Java skills in the past few months, and I took it upon myself to code a sufficient randomizer for <a href=\"https://boardgamegeek.com/boardgame/107529/kingdom-builder\">Kingdom Builder</a>, as none of the other ones I found were up to my standards of randomization. In doing so I learned a lot about Java swing applications and embedding applets in an html page. It was quite fun, really! I mean, aside from all the hours of frustration and head banging that always accompanies working with code when you don't know what you're doing and are trying to teach yourself.\n\nIf you've never heard of Kingdom Builder before, then you can check out its currently ongoing (until March 8th) <a href=\"https://www.kickstarter.com/projects/queengames/kingdom-builder-marshlands\">Kickstarter Page</a> to find out more about the game. I will do my best to keep this thing updated as new releases/expansions come out, and I'm proud to say that it is equipped with quite a few ranomization options to use! If you're interested, you can play around with it over here. Thanks as always for checking in! Maybe the next one will be more relevant to you people... but I make no promises.\n\n<strong>UPDATE:</strong> I have removed the Java applet version of this randomizer from my website. The good news is, a fully up-to-date and fully functioning Android App version has been published to the Google Play store. You can find that <a href=\"https://play.google.com/store/apps/details?id=com.tylorlilley.kbrandomizer2&hl=en\">here</a>."], ["date", "2014-03-05"], ["created_at", "2019-10-23 18:48:47.193136"], ["updated_at", "2019-10-23 18:48:47.193136"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "It's Facebook Official!"], ["content", "I'm only about one thousand years late to the party but due to repeated confusions with impersantors making fake facebook profiles of myself, I thought it was best to just make a real one, in order to stop the impersonators - even if I don't use it much. So if you want updates on The Tylor Zone on facebook, follow me <a href=\"https://www.facebook.com/TheTylorZone\">here</a>! <del>I'll add a facebook button to this site somewhere soon when I have the time, too.</del> I added a button up top; you can't miss it. Happy face-booking. I'm still figuring out how everything works, so if I don't reply to you that's why..."], ["date", "2011-01-09"], ["created_at", "2019-10-23 18:48:47.207565"], ["updated_at", "2019-10-23 18:48:47.207565"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Change That's Coming"], ["content", "I told you guys I was changing the site layout and working on things, and you didn't believe me. You brushed me off, you were like \"Oh, Tylor always says he's going to work on the website, and then he never actually does what he says he's going to.\" Well, not this year baby. New Year's Resolution Ahoy!\n\nIf you haven't noticed, this is only the skeleton; the bare layout for the website to come. None of the links work yet. There's just this one page. But this is what it will look like. I hope you're as pleased with it as I am. Check back soon for a more fully functioning website!\n\nAs for what will become of the old website when I'm finished with this... I don't know. Part of me just wants to delete it all, and another part squirms every time I think about deleting it. I don't really want to put a link back to the old JavaScript-less site anywhere though. Maybe I will leave the files there, and just not link to them directly? In case someone wants to read the old site and knows to go in the backdoor? A lot of links would probably be broken in the process. I don't know. We'll see I guess. Feel free to give me your feedback if you have any, however."], ["date", "2012-01-24"], ["created_at", "2019-10-23 18:48:47.211716"], ["updated_at", "2019-10-23 18:48:47.211716"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Site Maintanence & Games Update"], ["content", "Hello everyone! It's been awhile since I sat down and did some much needed maintenance on the website. If my records are correct, the last time was May 15th of 2012... Yikes! As you might expect, almost every page needed at least a little updating.\n\nThe games page is where it shows the most though, as I moved things around and designed a new overall presentation for the page. Feel free to check it out! I had been lazy lately and hadn't updated it with most of my recent \"releases\", so I went ahead and did that too. There might just be a game or two that slipped under your radar in the past year and a half or so!"], ["date", "2013-11-17"], ["created_at", "2019-10-23 18:48:47.214621"], ["updated_at", "2019-10-23 18:48:47.214621"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Happy New Year!"], ["content", "Hey everybody! I know there hasn't been any new content in a little while due to me having to focus a lot of my free time into my schoolwork during my first semester at college, but things are looking up! All that hard work payed off in that I now know a new programming language - C and C++! (And in the good grades I got too, I guess. But that's less exciting to me.)\n\nI'm still just a novice, but so far learning it and playing around with what I can do with it has been a lot of fun for me. For example, this recent Christmas break, busy as it was with spending time with friends and family, gave me an opportunity to play around with it some more on my own, and I may or may not even have a little text adventure game in the works!\n\nIf I am able to finish it before this next semester again steals my attention then you will see it up here in a little while. If not... hopefully I'll find time to come back to it in the future. Anyway, I just wanted to let everybody know that I have still been working on things, and that I made it through my first semester at college just fine. Here's to a successful second!\n\n"], ["date", "2013-01-05"], ["created_at", "2019-10-23 18:48:47.218400"], ["updated_at", "2019-10-23 18:48:47.218400"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "As you may know, I completed a game for <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare 33</a> a few months ago. Well, now you can download that game from my Games section on the left! <a href=\"/games/7\">Check it out for yourself</a>. I also took this opportunity to do some general maintenance around the website, including changing several of the other pages to make sure they contained only the most up-to-date information about me and what I have created. Feel free to check them out as well if you are interested.\n\nThanks for stopping by!"], ["date", "2015-11-06"], ["created_at", "2019-10-23 18:48:47.221760"], ["updated_at", "2019-10-23 18:48:47.221760"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ludum Dare 33 - A Harrowing Journey"], ["content", "Hey! I did something for once. Score!\n\nI participated in <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare</a>, the competition where you have to make a game and all its assets from scratch in 48 hours, again this past weekend. It was Ludum Dare 33, and the theme was \"You are the Monster\". And I made a game for it! It's called <a href=\"/games/7\">A Harrowing Journey</a>, and you can check it out at the contest page here.\n\nThe things I am the most proud of are the music and text boxes. This was my first time making music for a game from scratch, and I am very happy with how that turned out! You can hear the full songs here and here if you want (I made two, and you can only hear parts of them in the game). It was a blast making them, and I maybe spent longer on them than I should have for the 48 hour competition... hopefully it was worth it.\n\nThe text boxes were something that seemed so simple to do in a game that I had always kind of avoided just because I had never really done it before. But I sucked it up and I did it this time and I'm glad I did because I think it worked out well! The game itself is not the best in terms of the game play, but it does all right for what it is. Thematically it may be a little similar to the game I did last time, 10 Seconds in Hell, which you can find on my games page following the link on the left. But for 48 hours I'm pretty happy with how it turned out. Hopefully you enjoy it too, and if you end up checking it out, definitely let me know what you think of it!\n\nUntil next time!"], ["date", "2015-08-24"], ["created_at", "2019-10-23 18:48:47.225797"], ["updated_at", "2019-10-23 18:48:47.225797"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "New Website!"], ["content", "Welcome to the new version of my website! I hope you like the new look. While the last version had been updated here and there over the past few years, the last major overhaul was performed when I was in my senior year of high school. For those counting, that was seven (!) years ago. As such, a new coat of paint (that was more responsive and looked nicer on devices of all sizes) was desperately needed.\n\nEnter Ruby on Rails! I recently started a new job as a web developer for a company where their main language is Ruby on Rails. I've done a little bit with Ruby before, but never anything with rails. In fact, beyond a few years of vaguely related Salesforce development experience, I've never really developed web apps before at all. My history with programming definately lies much more in desktop applications, specifically games, and each page of my older websites have been pretty much purely handwritten HTML/CSS. Well, that's not the case anymore!\n\nSince I was already learning Ruby on Rails for my new job, I decided it could be good practice to try rebuilding my website as a web app (and it was long overdue anyway). The new site should be easier to update as a result, which <i>could</i> mean more frequent updates in the future. But no promises! If you find any bugs with the new version of the site, please reach out and let me know. I hope you guys like the new style, and I'll see you next update - whenever that may be."], ["date", "2019-10-21"], ["created_at", "2019-10-23 18:48:47.229081"], ["updated_at", "2019-10-23 18:48:47.229081"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+Started GET "/games" for ::1 at 2019-10-23 14:49:26 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 775)
+  Rendered layouts/_rails_default.html.erb (Duration: 51.3ms | Allocations: 16894)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.3ms | Allocations: 18766)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello everyone! It's been awhile since I last updated, so I have decided to fix that mistake by sprucing the place up a little. I have cleaned up the visual presentation a bit and updated the About and Games sections.\n\nFeel free to poke around and check out what's new! If you've already seen all there is to see in the current Games section, know that while I don't have any personal projects nearing completion right now, I've always got a few things brewing, so check back again in a few months and maybe that will have changed. You never know when inspiration will strike!"], ["date", "2019-06-20"], ["created_at", "2019-10-23 18:53:36.137994"], ["updated_at", "2019-10-23 18:53:36.137994"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello again everyone! I have been teaching myself Ruby lately, and I've updated the games section to include the small text-adventure game I made using the Ruby language. You can compete with friends to see who can get the highest score. Or just compete with yourself, if you have no friends.\n\nIn case anyone missed it, I also took the time to add <a href=\"/games/11\">Super Action Sports</a> to the games section as well. This was the <a href=\"http://web.cse.ohio-state.edu/~boggus.2/5912/GameGroups.html\">capstone project</a> I completed near the end of my time at OSU last fall. It was my first 3D game project, and it was a lot of work! You can check that out in the games section now too.\n\nIn any case, thanks for stopping by! I hope some of you get a kick out of this update, now that there are more games to play. Stay tuned for more updates in the future, as I will continue to work on more projects as time allows!"], ["date", "2016-10-06"], ["created_at", "2019-10-23 18:53:36.144400"], ["updated_at", "2019-10-23 18:53:36.144400"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Small Side Project!"], ["content", "Hello again my loyal subset of friends, family, and that one internet stranger. Today I have a small update that will mean nothing to the most of you. I have spent a lot of time sharpening my Java skills in the past few months, and I took it upon myself to code a sufficient randomizer for <a href=\"https://boardgamegeek.com/boardgame/107529/kingdom-builder\">Kingdom Builder</a>, as none of the other ones I found were up to my standards of randomization. In doing so I learned a lot about Java swing applications and embedding applets in an html page. It was quite fun, really! I mean, aside from all the hours of frustration and head banging that always accompanies working with code when you don't know what you're doing and are trying to teach yourself.\n\nIf you've never heard of Kingdom Builder before, then you can check out its currently ongoing (until March 8th) <a href=\"https://www.kickstarter.com/projects/queengames/kingdom-builder-marshlands\">Kickstarter Page</a> to find out more about the game. I will do my best to keep this thing updated as new releases/expansions come out, and I'm proud to say that it is equipped with quite a few ranomization options to use! If you're interested, you can play around with it over here. Thanks as always for checking in! Maybe the next one will be more relevant to you people... but I make no promises.\n\n<strong>UPDATE:</strong> I have removed the Java applet version of this randomizer from my website. The good news is, a fully up-to-date and fully functioning Android App version has been published to the Google Play store. You can find that <a href=\"https://play.google.com/store/apps/details?id=com.tylorlilley.kbrandomizer2&hl=en\">here</a>."], ["date", "2014-03-05"], ["created_at", "2019-10-23 18:53:36.146986"], ["updated_at", "2019-10-23 18:53:36.146986"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "It's Facebook Official!"], ["content", "I'm only about one thousand years late to the party but due to repeated confusions with impersantors making fake facebook profiles of myself, I thought it was best to just make a real one, in order to stop the impersonators - even if I don't use it much. So if you want updates on The Tylor Zone on facebook, follow me <a href=\"https://www.facebook.com/TheTylorZone\">here</a>! <del>I'll add a facebook button to this site somewhere soon when I have the time, too.</del> I added a button up top; you can't miss it. Happy face-booking. I'm still figuring out how everything works, so if I don't reply to you that's why..."], ["date", "2011-01-09"], ["created_at", "2019-10-23 18:53:36.150384"], ["updated_at", "2019-10-23 18:53:36.150384"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Change That's Coming"], ["content", "I told you guys I was changing the site layout and working on things, and you didn't believe me. You brushed me off, you were like \"Oh, Tylor always says he's going to work on the website, and then he never actually does what he says he's going to.\" Well, not this year baby. New Year's Resolution Ahoy!\n\nIf you haven't noticed, this is only the skeleton; the bare layout for the website to come. None of the links work yet. There's just this one page. But this is what it will look like. I hope you're as pleased with it as I am. Check back soon for a more fully functioning website!\n\nAs for what will become of the old website when I'm finished with this... I don't know. Part of me just wants to delete it all, and another part squirms every time I think about deleting it. I don't really want to put a link back to the old JavaScript-less site anywhere though. Maybe I will leave the files there, and just not link to them directly? In case someone wants to read the old site and knows to go in the backdoor? A lot of links would probably be broken in the process. I don't know. We'll see I guess. Feel free to give me your feedback if you have any, however."], ["date", "2012-01-24"], ["created_at", "2019-10-23 18:53:36.164902"], ["updated_at", "2019-10-23 18:53:36.164902"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Site Maintanence & Games Update"], ["content", "Hello everyone! It's been awhile since I sat down and did some much needed maintenance on the website. If my records are correct, the last time was May 15th of 2012... Yikes! As you might expect, almost every page needed at least a little updating.\n\nThe games page is where it shows the most though, as I moved things around and designed a new overall presentation for the page. Feel free to check it out! I had been lazy lately and hadn't updated it with most of my recent \"releases\", so I went ahead and did that too. There might just be a game or two that slipped under your radar in the past year and a half or so!"], ["date", "2013-11-17"], ["created_at", "2019-10-23 18:53:36.168010"], ["updated_at", "2019-10-23 18:53:36.168010"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Happy New Year!"], ["content", "Hey everybody! I know there hasn't been any new content in a little while due to me having to focus a lot of my free time into my schoolwork during my first semester at college, but things are looking up! All that hard work payed off in that I now know a new programming language - C and C++! (And in the good grades I got too, I guess. But that's less exciting to me.)\n\nI'm still just a novice, but so far learning it and playing around with what I can do with it has been a lot of fun for me. For example, this recent Christmas break, busy as it was with spending time with friends and family, gave me an opportunity to play around with it some more on my own, and I may or may not even have a little text adventure game in the works!\n\nIf I am able to finish it before this next semester again steals my attention then you will see it up here in a little while. If not... hopefully I'll find time to come back to it in the future. Anyway, I just wanted to let everybody know that I have still been working on things, and that I made it through my first semester at college just fine. Here's to a successful second!\n\n"], ["date", "2013-01-05"], ["created_at", "2019-10-23 18:53:36.171030"], ["updated_at", "2019-10-23 18:53:36.171030"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "As you may know, I completed a game for <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare 33</a> a few months ago. Well, now you can download that game from my Games section on the left! <a href=\"/games/7\">Check it out for yourself</a>. I also took this opportunity to do some general maintenance around the website, including changing several of the other pages to make sure they contained only the most up-to-date information about me and what I have created. Feel free to check them out as well if you are interested.\n\nThanks for stopping by!"], ["date", "2015-11-06"], ["created_at", "2019-10-23 18:53:36.174044"], ["updated_at", "2019-10-23 18:53:36.174044"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ludum Dare 33 - A Harrowing Journey"], ["content", "Hey! I did something for once. Score!\n\nI participated in <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare</a>, the competition where you have to make a game and all its assets from scratch in 48 hours, again this past weekend. It was Ludum Dare 33, and the theme was \"You are the Monster\". And I made a game for it! It's called <a href=\"/games/7\">A Harrowing Journey</a>, and you can check it out at the contest page here.\n\nThe things I am the most proud of are the music and text boxes. This was my first time making music for a game from scratch, and I am very happy with how that turned out! You can hear the full songs here and here if you want (I made two, and you can only hear parts of them in the game). It was a blast making them, and I maybe spent longer on them than I should have for the 48 hour competition... hopefully it was worth it.\n\nThe text boxes were something that seemed so simple to do in a game that I had always kind of avoided just because I had never really done it before. But I sucked it up and I did it this time and I'm glad I did because I think it worked out well! The game itself is not the best in terms of the game play, but it does all right for what it is. Thematically it may be a little similar to the game I did last time, 10 Seconds in Hell, which you can find on my games page following the link on the left. But for 48 hours I'm pretty happy with how it turned out. Hopefully you enjoy it too, and if you end up checking it out, definitely let me know what you think of it!\n\nUntil next time!"], ["date", "2015-08-24"], ["created_at", "2019-10-23 18:53:36.177304"], ["updated_at", "2019-10-23 18:53:36.177304"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "New Website!"], ["content", "Welcome to the new version of my website! I hope you like the new look. While the last version had been updated here and there over the past few years, the last major overhaul was performed when I was in my senior year of high school. For those counting, that was seven (!) years ago. As such, a new coat of paint (that was more responsive and looked nicer on devices of all sizes) was desperately needed.\n\nEnter Ruby on Rails! I recently started a new job as a web developer for a company where their main language is Ruby on Rails. I've done a little bit with Ruby before, but never anything with rails. In fact, beyond a few years of vaguely related Salesforce development experience, I've never really developed web apps before at all. My history with programming definately lies much more in desktop applications, specifically games, and each page of my older websites have been pretty much purely handwritten HTML/CSS. Well, that's not the case anymore!\n\nSince I was already learning Ruby on Rails for my new job, I decided it could be good practice to try rebuilding my website as a web app (and it was long overdue anyway). The new site should be easier to update as a result, which <i>could</i> mean more frequent updates in the future. But no promises! If you find any bugs with the new version of the site, please reach out and let me know. I hope you guys like the new style, and I'll see you next update - whenever that may be."], ["date", "2019-10-21"], ["created_at", "2019-10-23 18:53:36.180894"], ["updated_at", "2019-10-23 18:53:36.180894"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello everyone! It's been awhile since I last updated, so I have decided to fix that mistake by sprucing the place up a little. I have cleaned up the visual presentation a bit and updated the About and Games sections.\n\nFeel free to poke around and check out what's new! If you've already seen all there is to see in the current Games section, know that while I don't have any personal projects nearing completion right now, I've always got a few things brewing, so check back again in a few months and maybe that will have changed. You never know when inspiration will strike!"], ["date", "2019-06-20"], ["created_at", "2019-10-23 18:55:21.678727"], ["updated_at", "2019-10-23 18:55:21.678727"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello again everyone! I have been teaching myself Ruby lately, and I've updated the games section to include the small text-adventure game I made using the Ruby language. You can compete with friends to see who can get the highest score. Or just compete with yourself, if you have no friends.\n\nIn case anyone missed it, I also took the time to add <a href=\"/games/11\">Super Action Sports</a> to the games section as well. This was the <a href=\"http://web.cse.ohio-state.edu/~boggus.2/5912/GameGroups.html\">capstone project</a> I completed near the end of my time at OSU last fall. It was my first 3D game project, and it was a lot of work! You can check that out in the games section now too.\n\nIn any case, thanks for stopping by! I hope some of you get a kick out of this update, now that there are more games to play. Stay tuned for more updates in the future, as I will continue to work on more projects as time allows!"], ["date", "2016-10-06"], ["created_at", "2019-10-23 18:55:21.684981"], ["updated_at", "2019-10-23 18:55:21.684981"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Small Side Project!"], ["content", "Hello again my loyal subset of friends, family, and that one internet stranger. Today I have a small update that will mean nothing to the most of you. I have spent a lot of time sharpening my Java skills in the past few months, and I took it upon myself to code a sufficient randomizer for <a href=\"https://boardgamegeek.com/boardgame/107529/kingdom-builder\">Kingdom Builder</a>, as none of the other ones I found were up to my standards of randomization. In doing so I learned a lot about Java swing applications and embedding applets in an html page. It was quite fun, really! I mean, aside from all the hours of frustration and head banging that always accompanies working with code when you don't know what you're doing and are trying to teach yourself.\n\nIf you've never heard of Kingdom Builder before, then you can check out its currently ongoing (until March 8th) <a href=\"https://www.kickstarter.com/projects/queengames/kingdom-builder-marshlands\">Kickstarter Page</a> to find out more about the game. I will do my best to keep this thing updated as new releases/expansions come out, and I'm proud to say that it is equipped with quite a few ranomization options to use! If you're interested, you can play around with it over here. Thanks as always for checking in! Maybe the next one will be more relevant to you people... but I make no promises.\n\n<strong>UPDATE:</strong> I have removed the Java applet version of this randomizer from my website. The good news is, a fully up-to-date and fully functioning Android App version has been published to the Google Play store. You can find that <a href=\"https://play.google.com/store/apps/details?id=com.tylorlilley.kbrandomizer2&hl=en\">here</a>."], ["date", "2014-03-05"], ["created_at", "2019-10-23 18:55:21.687921"], ["updated_at", "2019-10-23 18:55:21.687921"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "It's Facebook Official!"], ["content", "I'm only about one thousand years late to the party but due to repeated confusions with impersantors making fake facebook profiles of myself, I thought it was best to just make a real one, in order to stop the impersonators - even if I don't use it much. So if you want updates on The Tylor Zone on facebook, follow me <a href=\"https://www.facebook.com/TheTylorZone\">here</a>! <del>I'll add a facebook button to this site somewhere soon when I have the time, too.</del> I added a button up top; you can't miss it. Happy face-booking. I'm still figuring out how everything works, so if I don't reply to you that's why..."], ["date", "2011-01-09"], ["created_at", "2019-10-23 18:55:21.702294"], ["updated_at", "2019-10-23 18:55:21.702294"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Change That's Coming"], ["content", "I told you guys I was changing the site layout and working on things, and you didn't believe me. You brushed me off, you were like \"Oh, Tylor always says he's going to work on the website, and then he never actually does what he says he's going to.\" Well, not this year baby. New Year's Resolution Ahoy!\n\nIf you haven't noticed, this is only the skeleton; the bare layout for the website to come. None of the links work yet. There's just this one page. But this is what it will look like. I hope you're as pleased with it as I am. Check back soon for a more fully functioning website!\n\nAs for what will become of the old website when I'm finished with this... I don't know. Part of me just wants to delete it all, and another part squirms every time I think about deleting it. I don't really want to put a link back to the old JavaScript-less site anywhere though. Maybe I will leave the files there, and just not link to them directly? In case someone wants to read the old site and knows to go in the backdoor? A lot of links would probably be broken in the process. I don't know. We'll see I guess. Feel free to give me your feedback if you have any, however."], ["date", "2012-01-24"], ["created_at", "2019-10-23 18:55:21.705800"], ["updated_at", "2019-10-23 18:55:21.705800"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Site Maintanence & Games Update"], ["content", "Hello everyone! It's been awhile since I sat down and did some much needed maintenance on the website. If my records are correct, the last time was May 15th of 2012... Yikes! As you might expect, almost every page needed at least a little updating.\n\nThe games page is where it shows the most though, as I moved things around and designed a new overall presentation for the page. Feel free to check it out! I had been lazy lately and hadn't updated it with most of my recent \"releases\", so I went ahead and did that too. There might just be a game or two that slipped under your radar in the past year and a half or so!"], ["date", "2013-11-17"], ["created_at", "2019-10-23 18:55:21.709228"], ["updated_at", "2019-10-23 18:55:21.709228"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Happy New Year!"], ["content", "Hey everybody! I know there hasn't been any new content in a little while due to me having to focus a lot of my free time into my schoolwork during my first semester at college, but things are looking up! All that hard work payed off in that I now know a new programming language - C and C++! (And in the good grades I got too, I guess. But that's less exciting to me.)\n\nI'm still just a novice, but so far learning it and playing around with what I can do with it has been a lot of fun for me. For example, this recent Christmas break, busy as it was with spending time with friends and family, gave me an opportunity to play around with it some more on my own, and I may or may not even have a little text adventure game in the works!\n\nIf I am able to finish it before this next semester again steals my attention then you will see it up here in a little while. If not... hopefully I'll find time to come back to it in the future. Anyway, I just wanted to let everybody know that I have still been working on things, and that I made it through my first semester at college just fine. Here's to a successful second!\n\n"], ["date", "2013-01-05"], ["created_at", "2019-10-23 18:55:21.712777"], ["updated_at", "2019-10-23 18:55:21.712777"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "As you may know, I completed a game for <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare 33</a> a few months ago. Well, now you can download that game from my Games section on the left! <a href=\"/games/7\">Check it out for yourself</a>. I also took this opportunity to do some general maintenance around the website, including changing several of the other pages to make sure they contained only the most up-to-date information about me and what I have created. Feel free to check them out as well if you are interested.\n\nThanks for stopping by!"], ["date", "2015-11-06"], ["created_at", "2019-10-23 18:55:21.716179"], ["updated_at", "2019-10-23 18:55:21.716179"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ludum Dare 33 - A Harrowing Journey"], ["content", "Hey! I did something for once. Score!\n\nI participated in <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare</a>, the competition where you have to make a game and all its assets from scratch in 48 hours, again this past weekend. It was Ludum Dare 33, and the theme was \"You are the Monster\". And I made a game for it! It's called <a href=\"/games/7\">A Harrowing Journey</a>, and you can check it out at the contest page here.\n\nThe things I am the most proud of are the music and text boxes. This was my first time making music for a game from scratch, and I am very happy with how that turned out! You can hear the full songs here and here if you want (I made two, and you can only hear parts of them in the game). It was a blast making them, and I maybe spent longer on them than I should have for the 48 hour competition... hopefully it was worth it.\n\nThe text boxes were something that seemed so simple to do in a game that I had always kind of avoided just because I had never really done it before. But I sucked it up and I did it this time and I'm glad I did because I think it worked out well! The game itself is not the best in terms of the game play, but it does all right for what it is. Thematically it may be a little similar to the game I did last time, 10 Seconds in Hell, which you can find on my games page following the link on the left. But for 48 hours I'm pretty happy with how it turned out. Hopefully you enjoy it too, and if you end up checking it out, definitely let me know what you think of it!\n\nUntil next time!"], ["date", "2015-08-24"], ["created_at", "2019-10-23 18:55:21.719091"], ["updated_at", "2019-10-23 18:55:21.719091"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "New Website!"], ["content", "Welcome to the new version of my website! I hope you like the new look. While the last version had been updated here and there over the past few years, the last major overhaul was performed when I was in my senior year of high school. For those counting, that was seven (!) years ago. As such, a new coat of paint (that was more responsive and looked nicer on devices of all sizes) was desperately needed.\n\nEnter Ruby on Rails! I recently started a new job as a web developer for a company where their main language is Ruby on Rails. I've done a little bit with Ruby before, but never anything with rails. In fact, beyond a few years of vaguely related Salesforce development experience, I've never really developed web apps before at all. My history with programming definately lies much more in desktop applications, specifically games, and each page of my older websites have been pretty much purely handwritten HTML/CSS. Well, that's not the case anymore!\n\nSince I was already learning Ruby on Rails for my new job, I decided it could be good practice to try rebuilding my website as a web app (and it was long overdue anyway). The new site should be easier to update as a result, which <i>could</i> mean more frequent updates in the future. But no promises! If you find any bugs with the new version of the site, please reach out and let me know. I hope you guys like the new style, and I'll see you next update - whenever that may be."], ["date", "2019-10-21"], ["created_at", "2019-10-23 18:55:21.721950"], ["updated_at", "2019-10-23 18:55:21.721950"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Homestar the Runner"], ["description", "<strong>Home! Star! Run! Go!</strong> Homestar Runner really great. Homestar Runner Athe-a-late. Homestar Runner; mom and dad. Look out Homestar! It's Strong Bad!\n\nHomestar the Runner is a little minigame I created in 2008. It is styled after the retro-themed DVD menu for <a href=\"http://www.homestarrunner.com/video.html\">Homestar Runner</a>'s Everything Else Volume 3 DVD. The characters are not mine, but I did all of the graphics myself. It's just a simple little game I created as a longtime fan of their work. It's just Homestar doing what he does best: running. And, I guess, jumping, if you want to get technical. But that doesn't matter. What does matter is getting a high score than your friends! Check it out! <a href=\"http://www.homestarrunner.com/firsttime.html\">No seriously, check it out</a>."], ["date", "2010-07-15"], ["tagline", "Look out Homestar! It's Strong Bad!"], ["filename", "hr"], ["created_at", "2019-10-23 18:55:21.732996"], ["updated_at", "2019-10-23 18:55:21.732996"], ["image_width", 600], ["image_height", 400]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mage Battle"], ["description", "Ah yes, my eternal nemesis, Galrond the Scarlet. At last we meet again on this floating field of battle. We have toiled against each other for many years, each always outdoing the other with ever more grand displays of arcane power and sorcery. But it is time to put this thirty-year feud to an end. It is time... for <strong>Mage Battle</strong>!\n\nMage Battle is a re-imagining of one of my earliest games. In this game you can battle against a variety of different types of computer-controlled AI mages, or kick it up a notch by challenging a friend! So far this one of my only two-player games to date. As a mage, you are trying to fire a shot to destroy your opponent while they are weak. But before you can fire any shots, you must first store up energy charges - leaving yourself open to be obliterated while you do so. You can also deflect on-coming magic blasts with ease by shielding - but shielding will not charge your magic. With these powers at your disposal, it's a race to see whether you can kill your opponent first - or whether they will kill you.\n\nThe graphics and sound effects in this game were not created by me, only edited in some cases. Most are taken from actual video games like Super Smash Brothers Melee and Fire Emblem. This is not the usual case with my games, but it used to be, and this game is a holdover from that young and innocent era of game design. This game means no infringement on any of the borrowed assets owner's rights, and is all in good fun."], ["date", "2012-03-15"], ["tagline", "A fast-paced, two-player duel."], ["filename", "mage_battle"], ["created_at", "2019-10-23 18:55:21.736819"], ["updated_at", "2019-10-23 18:55:21.736819"], ["image_width", 600], ["image_height", 400]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.8ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Grass Cutter"], ["description", "Ah, feel that summer breeze. The smell of fresh grass clippings fill the air as you wipe the sweat from your forehead and pause to look up at the bright blue sky. Or at least it used to be bright blue - it looks like a storm's brewing. Better finish cutting the lawn fast, or you might be too drenched to get a sip of grandma's fresh squeezed lemonade!\n\nGrass Cutter is a simple game about cutting grass. Or it would be simple, if those darn rain clouds would stop causing the grass to keep growing! This is based off of an old Atari game of the same name. I simply re-created it for use on our modern day computer technology... okay, and I added in a few... twists as well. I won't spoil anything for you, so you can find out for yourself. So what are you waiting for? Let's cut some grass!"], ["date", "2012-06-01"], ["tagline", "Let's cut some grass!"], ["filename", "grass"], ["created_at", "2019-10-23 18:55:21.774432"], ["updated_at", "2019-10-23 18:55:21.774432"], ["image_width", 578], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (2.4ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mighty Dive Bomber (Classic)"], ["description", "Oh no! Dr. Mischivio is at it again! Attacking from his castle in the center of evil Mischivio Island, he has kidnapped Princess Amalia and plans to take over the world! Our one hope is a hero who emerges from the ensuing chaos... Mighty Dive Bomber is here! He arrives with a bang, creating crash landings wherever he falls. Only he can outwit Dr. Mischivio's clever traps and solve the puzzles of Mischivio Isle before it is too late!\n\nMighty Dive Bomber is a retro, NES-styled puzzle platformer. It is a loveable parody of one my favorite ages in gaming, complete quirky story, and beepy sound effects from the days of yore. The graphics in this one are mostly done by me, with some parts edited from existing NES sprites. The game itself is loads of fun, and can actually be rather addictive. Like all good puzzle-platformers the concept is simple. All the usual bits are there: ladders, switches, keys, you name it. The innovation in this one is with Mighty Dive Bomber's only super-power: whenever you fall from a considerable height, you blow up the ground you land on! A great little game with over 30 levels and quite a bit of challenge later on. After completing <strong>Mighty Dive Bomber</strong> was the first time I sat back and really felt like I had made a video game. Because of that, it will always hold a special place in my heart."], ["date", "2011-07-30"], ["tagline", "A retro-styled puzzle platformer!"], ["filename", "mdb"], ["created_at", "2019-10-23 18:55:21.787470"], ["updated_at", "2019-10-23 18:55:21.787470"], ["image_width", 512], ["image_height", 480]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.3ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Castle Climber"], ["description", "Tell me, adventurer. Do you like magical potions with varying results? Ancient wands that cast strange and exciting spells? Powerful foes that must be dispatched with yet more powerful weaponry? Then Castle Climber is the game for you. Embark on a quest up every floor of the evil wizard's tower and wonder at the vexing oddities you find there in. And every time you die... a new tower forms, and a new quest is just beginning.\n\nCastle Climber is a game that came about as the result of a single burning question: \"What would happen if I crossed <a href=\"http://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)\">The Legend of Zelda</a> with <a href=\"http://en.wikipedia.org/wiki/WarioWare,_Inc.:_Mega_Microgames!\">Wario Ware</a>?\" The answer was an interesting blend of action adventure and fast placed, short lived gameplay. Each floor of the castle is just a small, screen-sized room with various monsters, traps, and, yes, treasures, that would fit right at home in any NES action-adventure epic. It is a fast-paced, action-packed adventure that's different every time. Still not interested yet? I strongly recommend you give it a try and find out for yourself.\""], ["date", "2013-06-15"], ["tagline", "Randomly generated dungeon delving!"], ["filename", "climber"], ["created_at", "2019-10-23 18:55:21.797173"], ["updated_at", "2019-10-23 18:55:21.797173"], ["image_width", 540], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.9ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "10 Seconds in Hell"], ["description", "Humans are flawed creatures. We each have our trials and temptations, but we have the power to choose between giving in or standing strong. Can you, a noble man, survive a descent into hell and all the deadly sins and evil souls that await you there? Will you be able to rescue the heart of your beloved and make it out with your soul intact? Or will you accidentally press the arrow key one too many times and step into a pool of lava?\n\nInspired chiefly by the old-school Atari game <a href=\"https://en.wikipedia.org/wiki/Adventure_(Atari_2600)\">Adventure</a>, <strong>10 seconds in Hell</strong> was originally developed for <a href=\"http://www.ludumdare.com/compo/ludum-dare-27/?action=preview&amp;uid=26293\">Ludum Dare 27</a>, a tri-annual 48 hour game making competition. After the original version scored 1<strong>8th out of 2213 games in the Mood category</strong>, I continued to work on it and developed it into the full game you can play today. The game has pseudo-random generation elements so it is different each time you play. Have fun! Just be prepared to die a lot."], ["date", "2013-08-26"], ["tagline", "A brutal, old-school adventure... in Hell."], ["filename", "hell"], ["created_at", "2019-10-23 18:55:21.805510"], ["updated_at", "2019-10-23 18:55:21.805510"], ["image_width", 540], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (2.1ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "A Harrowing Journey"], ["description", "A young man awakens in a field. Scattered about him are the remnants of a lost civilization. Although he doesn't want to admit it, the blood and debris seem strangely familiar to him. With an empty stomach and a guilty conscience, he sets off on a journey... a very harrowing journey.\n\nThis game was originally made for <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&amp;uid=26293\">Ludum Dare 33</a>, where the theme was \"You Are the Monster.\" It's a short game, but it marks the first time I've tried my hand and creating music from scratch for one of my games! More than anything else I am proud of how the chiptune music for day and night turned out, especially given that they were only created in 48 hours for the game jam. Give it a shot if you feel like confronting your inner demons! Or just eating people I guess!"], ["date", "2015-08-24"], ["tagline", "It's time to find out who the real monster is."], ["filename", "journey"], ["created_at", "2019-10-23 18:55:21.813580"], ["updated_at", "2019-10-23 18:55:21.813580"], ["image_width", 512], ["image_height", 480]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.9ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mighty Dive Bomber"], ["description", "Way back in 2011, I made what I considered to be my first \"real\" video game. It was a puzzle platformer called <a href=\\\"/games/4\\\">Mighty Dive Bomber</a>.Well, not too long after making it, I decided I could do it better. That version got very close to completion, but never saw the light of day. I picked it up again almost five years later, and finally finished it. This is that game.\n\nThis is by far the game I am most proud of having created. I feel like it represents the baseline for the level of polish in terms of presentation and gameplay experience I am able to create as a one-man team. Still, I feel like I could go even further if I wasn't just completing a project that I started five years ago, and instead was programming a game entirely from scratch. Will we see another Mighty Dive Bomber re-imagining in my lifetime? I would guess the answer is yes.\n\nBut in the mean time, this is a lovely verison of the game for you to enjoy. I hope you find it as engaging to play as I did to design and develop! This version of the game shares about 50% of its levels with the original, but the rest are all new (and contain some brand new game mechanics as well). Even if you already played the original, there should be a lot more here for you than just a shiny new coat of paint!"], ["date", "2018-06-20"], ["tagline", "Puzzle-platforming at its finest."], ["filename", "mdb3"], ["created_at", "2019-10-23 18:55:21.822799"], ["updated_at", "2019-10-23 18:55:21.822799"], ["image_width", 575], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.5ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dragon's Lair"], ["description", "If dragons love one thing, it's shiny, shiny gold. And what's this? The local peasants are so downtrodden they are willing to risk entering your lair just to swipe some of your precious, shiny gold? Not if you can help it! Burninate those peasants, and drive the invaders out of your lair!\n\nDragon's Lair began life as an experiment. I wanted to create a defend-your-castle style game with a twist - in between defending <i>your</i> castle, you would become the one attacking someone else's! Levels would alternate between the defend-your-castle style gameplay and a scrolling shooter style gameplay where you advanced and destroyed an enemy fortification. I chose to theme this idea as a dragon, since they are often seen both defending their lair from invaders and pillaging towns and stealing their precious treasure. Upgrades you earned in one mode would affect how your dragon controlled in <i>both</i> modes, and eventually there would be some kind of final level or something and probably an endless mode too.\n\nUnfortunately only half of the game got created. This is a perfectly viable defend-your-castle game... but that's all it is. There's nothing incredibly innovative or exciting about it, since I never got around to implementing the scrolling shooter portions before moving on to a different project. But as this is still a perfectly playable game that a lot of work went into, I decided to host it here in case anyone wanted to play."], ["date", "2012-09-30"], ["tagline", "Defend your gold by burninate-ing peasants!"], ["filename", "dragon"], ["created_at", "2019-10-23 18:55:21.833579"], ["updated_at", "2019-10-23 18:55:21.833579"], ["image_width", 600], ["image_height", 480]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.4ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Light Bringer"], ["description", "here is a time that no one speaks of. A time when darkness encroached on the world, and all that was good and light shrunk back from its scratching claws until only a few cloistered hovels of civilization were left. These were the dark ages.\n\nDuring these times, the people held on to but one hope: that one day a Lightbringer would be successful in his mission to drive back the darkness, and the world would fill with light and happiness again. Being chosen to be a Lightbringer was the highest honor... but it was also certainly a sign of your impending demise, as no Lightbringer had ever returned alive. But maybe, just maybe, you will be the one that does. All you have left is that one hope.\n\nThis is the demo of the game engine I developed for a metroidvania style exploration game named Lightbringer. This demo shows off the game mechanics under the guise of a single Lightbringer mission to a nearby cave, and stands alone apart from the rest of the game. Unfortunately, I never finished the main Lightbringer game, and this is all that remains of it now. It is still a fun bit of exploration that will maybe take you about an hour to complete, give or take - assuming you are able to find all the hidden items. If you like what you see, don't forget to let me know - I could always resume work on the full game some day!"], ["date", "2012-06-15"], ["tagline", "Will YOU shine bright enough to overcome the darkness?"], ["filename", "lightbringer"], ["created_at", "2019-10-23 18:55:21.845206"], ["updated_at", "2019-10-23 18:55:21.845206"], ["image_width", 600], ["image_height", 500]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.4ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Super Action Sports"], ["description", "This game is a collection of vaguely sports themed local multiplayer games. It was the first major project I worked on that was a 3D game and not a 2D one, and it was quite a challenge to put together. Luckily, I did not have to do so alone, as Super Action Sports was the <a href=\"http://web.cse.ohio-state.edu/~boggus/5912/GameGroups.html\">Capstone Project</a> that I completed at the end of my time at OSU.\n\nTogether my team of five indivuduals, including myself, were able to create this lovely little collection of five local multiplayer games: each one based around a different sport (Golf, Hockey, Baseball, Tennis, and Fencing). While we initailly had larger plans for adding yet more games and features to this collection after finishing it, we ultimately decided to go our separate ways. Thus, <i>Super Action Sports!</i> is considered complete in this form, a testament to all the blood, sweat, and tears that we put into it as a team during development.\n\nGive it a quick spin if you've got a buddy or two and want to kill some time playing silly games! You don't even have to know anything about the sports in question.... we sure didn't when we programmed it, anyway."], ["date", "2015-12-25"], ["tagline", "A sports game for people who know nothing about sports."], ["filename", "sas"], ["created_at", "2019-10-23 18:55:21.853794"], ["updated_at", "2019-10-23 18:55:21.853794"], ["image_width", 974], ["image_height", 550]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPost Destroy (1.2ms)[0m  [1m[31mDELETE FROM "posts"[0m
+  [1m[36mGame Destroy (1.3ms)[0m  [1m[31mDELETE FROM "games"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello everyone! It's been awhile since I last updated, so I have decided to fix that mistake by sprucing the place up a little. I have cleaned up the visual presentation a bit and updated the About and Games sections.\n\nFeel free to poke around and check out what's new! If you've already seen all there is to see in the current Games section, know that while I don't have any personal projects nearing completion right now, I've always got a few things brewing, so check back again in a few months and maybe that will have changed. You never know when inspiration will strike!"], ["date", "2019-06-20"], ["created_at", "2019-10-23 18:56:00.677552"], ["updated_at", "2019-10-23 18:56:00.677552"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "Hello again everyone! I have been teaching myself Ruby lately, and I've updated the games section to include the small text-adventure game I made using the Ruby language. You can compete with friends to see who can get the highest score. Or just compete with yourself, if you have no friends.\n\nIn case anyone missed it, I also took the time to add <a href=\"/games/11\">Super Action Sports</a> to the games section as well. This was the <a href=\"http://web.cse.ohio-state.edu/~boggus.2/5912/GameGroups.html\">capstone project</a> I completed near the end of my time at OSU last fall. It was my first 3D game project, and it was a lot of work! You can check that out in the games section now too.\n\nIn any case, thanks for stopping by! I hope some of you get a kick out of this update, now that there are more games to play. Stay tuned for more updates in the future, as I will continue to work on more projects as time allows!"], ["date", "2016-10-06"], ["created_at", "2019-10-23 18:56:00.683997"], ["updated_at", "2019-10-23 18:56:00.683997"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Small Side Project!"], ["content", "Hello again my loyal subset of friends, family, and that one internet stranger. Today I have a small update that will mean nothing to the most of you. I have spent a lot of time sharpening my Java skills in the past few months, and I took it upon myself to code a sufficient randomizer for <a href=\"https://boardgamegeek.com/boardgame/107529/kingdom-builder\">Kingdom Builder</a>, as none of the other ones I found were up to my standards of randomization. In doing so I learned a lot about Java swing applications and embedding applets in an html page. It was quite fun, really! I mean, aside from all the hours of frustration and head banging that always accompanies working with code when you don't know what you're doing and are trying to teach yourself.\n\nIf you've never heard of Kingdom Builder before, then you can check out its currently ongoing (until March 8th) <a href=\"https://www.kickstarter.com/projects/queengames/kingdom-builder-marshlands\">Kickstarter Page</a> to find out more about the game. I will do my best to keep this thing updated as new releases/expansions come out, and I'm proud to say that it is equipped with quite a few ranomization options to use! If you're interested, you can play around with it over here. Thanks as always for checking in! Maybe the next one will be more relevant to you people... but I make no promises.\n\n<strong>UPDATE:</strong> I have removed the Java applet version of this randomizer from my website. The good news is, a fully up-to-date and fully functioning Android App version has been published to the Google Play store. You can find that <a href=\"https://play.google.com/store/apps/details?id=com.tylorlilley.kbrandomizer2&hl=en\">here</a>."], ["date", "2014-03-05"], ["created_at", "2019-10-23 18:56:00.687321"], ["updated_at", "2019-10-23 18:56:00.687321"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "It's Facebook Official!"], ["content", "I'm only about one thousand years late to the party but due to repeated confusions with impersantors making fake facebook profiles of myself, I thought it was best to just make a real one, in order to stop the impersonators - even if I don't use it much. So if you want updates on The Tylor Zone on facebook, follow me <a href=\"https://www.facebook.com/TheTylorZone\">here</a>! <del>I'll add a facebook button to this site somewhere soon when I have the time, too.</del> I added a button up top; you can't miss it. Happy face-booking. I'm still figuring out how everything works, so if I don't reply to you that's why..."], ["date", "2011-01-09"], ["created_at", "2019-10-23 18:56:00.704133"], ["updated_at", "2019-10-23 18:56:00.704133"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Change That's Coming"], ["content", "I told you guys I was changing the site layout and working on things, and you didn't believe me. You brushed me off, you were like \"Oh, Tylor always says he's going to work on the website, and then he never actually does what he says he's going to.\" Well, not this year baby. New Year's Resolution Ahoy!\n\nIf you haven't noticed, this is only the skeleton; the bare layout for the website to come. None of the links work yet. There's just this one page. But this is what it will look like. I hope you're as pleased with it as I am. Check back soon for a more fully functioning website!\n\nAs for what will become of the old website when I'm finished with this... I don't know. Part of me just wants to delete it all, and another part squirms every time I think about deleting it. I don't really want to put a link back to the old JavaScript-less site anywhere though. Maybe I will leave the files there, and just not link to them directly? In case someone wants to read the old site and knows to go in the backdoor? A lot of links would probably be broken in the process. I don't know. We'll see I guess. Feel free to give me your feedback if you have any, however."], ["date", "2012-01-24"], ["created_at", "2019-10-23 18:56:00.707545"], ["updated_at", "2019-10-23 18:56:00.707545"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Site Maintanence & Games Update"], ["content", "Hello everyone! It's been awhile since I sat down and did some much needed maintenance on the website. If my records are correct, the last time was May 15th of 2012... Yikes! As you might expect, almost every page needed at least a little updating.\n\nThe games page is where it shows the most though, as I moved things around and designed a new overall presentation for the page. Feel free to check it out! I had been lazy lately and hadn't updated it with most of my recent \"releases\", so I went ahead and did that too. There might just be a game or two that slipped under your radar in the past year and a half or so!"], ["date", "2013-11-17"], ["created_at", "2019-10-23 18:56:00.711418"], ["updated_at", "2019-10-23 18:56:00.711418"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Happy New Year!"], ["content", "Hey everybody! I know there hasn't been any new content in a little while due to me having to focus a lot of my free time into my schoolwork during my first semester at college, but things are looking up! All that hard work payed off in that I now know a new programming language - C and C++! (And in the good grades I got too, I guess. But that's less exciting to me.)\n\nI'm still just a novice, but so far learning it and playing around with what I can do with it has been a lot of fun for me. For example, this recent Christmas break, busy as it was with spending time with friends and family, gave me an opportunity to play around with it some more on my own, and I may or may not even have a little text adventure game in the works!\n\nIf I am able to finish it before this next semester again steals my attention then you will see it up here in a little while. If not... hopefully I'll find time to come back to it in the future. Anyway, I just wanted to let everybody know that I have still been working on things, and that I made it through my first semester at college just fine. Here's to a successful second!\n\n"], ["date", "2013-01-05"], ["created_at", "2019-10-23 18:56:00.715104"], ["updated_at", "2019-10-23 18:56:00.715104"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Game Section Updated!"], ["content", "As you may know, I completed a game for <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare 33</a> a few months ago. Well, now you can download that game from my Games section on the left! <a href=\"/games/7\">Check it out for yourself</a>. I also took this opportunity to do some general maintenance around the website, including changing several of the other pages to make sure they contained only the most up-to-date information about me and what I have created. Feel free to check them out as well if you are interested.\n\nThanks for stopping by!"], ["date", "2015-11-06"], ["created_at", "2019-10-23 18:56:00.718429"], ["updated_at", "2019-10-23 18:56:00.718429"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ludum Dare 33 - A Harrowing Journey"], ["content", "Hey! I did something for once. Score!\n\nI participated in <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=26293\">Ludum Dare</a>, the competition where you have to make a game and all its assets from scratch in 48 hours, again this past weekend. It was Ludum Dare 33, and the theme was \"You are the Monster\". And I made a game for it! It's called <a href=\"/games/7\">A Harrowing Journey</a>, and you can check it out at the contest page here.\n\nThe things I am the most proud of are the music and text boxes. This was my first time making music for a game from scratch, and I am very happy with how that turned out! You can hear the full songs here and here if you want (I made two, and you can only hear parts of them in the game). It was a blast making them, and I maybe spent longer on them than I should have for the 48 hour competition... hopefully it was worth it.\n\nThe text boxes were something that seemed so simple to do in a game that I had always kind of avoided just because I had never really done it before. But I sucked it up and I did it this time and I'm glad I did because I think it worked out well! The game itself is not the best in terms of the game play, but it does all right for what it is. Thematically it may be a little similar to the game I did last time, 10 Seconds in Hell, which you can find on my games page following the link on the left. But for 48 hours I'm pretty happy with how it turned out. Hopefully you enjoy it too, and if you end up checking it out, definitely let me know what you think of it!\n\nUntil next time!"], ["date", "2015-08-24"], ["created_at", "2019-10-23 18:56:00.721198"], ["updated_at", "2019-10-23 18:56:00.721198"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "New Website!"], ["content", "Welcome to the new version of my website! I hope you like the new look. While the last version had been updated here and there over the past few years, the last major overhaul was performed when I was in my senior year of high school. For those counting, that was seven (!) years ago. As such, a new coat of paint (that was more responsive and looked nicer on devices of all sizes) was desperately needed.\n\nEnter Ruby on Rails! I recently started a new job as a web developer for a company where their main language is Ruby on Rails. I've done a little bit with Ruby before, but never anything with rails. In fact, beyond a few years of vaguely related Salesforce development experience, I've never really developed web apps before at all. My history with programming definately lies much more in desktop applications, specifically games, and each page of my older websites have been pretty much purely handwritten HTML/CSS. Well, that's not the case anymore!\n\nSince I was already learning Ruby on Rails for my new job, I decided it could be good practice to try rebuilding my website as a web app (and it was long overdue anyway). The new site should be easier to update as a result, which <i>could</i> mean more frequent updates in the future. But no promises! If you find any bugs with the new version of the site, please reach out and let me know. I hope you guys like the new style, and I'll see you next update - whenever that may be."], ["date", "2019-10-21"], ["created_at", "2019-10-23 18:56:00.724047"], ["updated_at", "2019-10-23 18:56:00.724047"]]
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Homestar the Runner"], ["description", "<strong>Home! Star! Run! Go!</strong> Homestar Runner really great. Homestar Runner Athe-a-late. Homestar Runner; mom and dad. Look out Homestar! It's Strong Bad!\r\n\r\nHomestar the Runner is a little minigame I created in 2008. It is styled after the retro-themed DVD menu for <a href=\"http://www.homestarrunner.com/video.html\">Homestar Runner</a>'s Everything Else Volume 3 DVD. The characters are not mine, but I did all of the graphics myself. It's just a simple little game I created as a longtime fan of their work. It's just Homestar doing what he does best: running. And, I guess, jumping, if you want to get technical. But that doesn't matter. What does matter is getting a high score than your friends! Check it out! <a href=\"http://www.homestarrunner.com/firsttime.html\">No seriously, check it out</a>."], ["date", "2010-07-15"], ["tagline", "Look out Homestar! It's Strong Bad!"], ["filename", "hr"], ["created_at", "2019-10-23 18:56:00.736758"], ["updated_at", "2019-10-23 18:56:00.736758"], ["image_width", 600], ["image_height", 400]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (0.3ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mage Battle"], ["description", "Ah yes, my eternal nemesis, Galrond the Scarlet. At last we meet again on this floating field of battle. We have toiled against each other for many years, each always outdoing the other with ever more grand displays of arcane power and sorcery. But it is time to put this thirty-year feud to an end. It is time... for <strong>Mage Battle</strong>!\r\n\r\nMage Battle is a re-imagining of one of my earliest games. In this game you can battle against a variety of different types of computer-controlled AI mages, or kick it up a notch by challenging a friend! So far this one of my only two-player games to date. As a mage, you are trying to fire a shot to destroy your opponent while they are weak. But before you can fire any shots, you must first store up energy charges - leaving yourself open to be obliterated while you do so. You can also deflect on-coming magic blasts with ease by shielding - but shielding will not charge your magic. With these powers at your disposal, it's a race to see whether you can kill your opponent first - or whether they will kill you.\r\n\r\nThe graphics and sound effects in this game were not created by me, only edited in some cases. Most are taken from actual video games like Super Smash Brothers Melee and Fire Emblem. This is not the usual case with my games, but it used to be, and this game is a holdover from that young and innocent era of game design. This game means no infringement on any of the borrowed assets owner's rights, and is all in good fun."], ["date", "2012-03-15"], ["tagline", "A fast-paced, two-player duel."], ["filename", "mage_battle"], ["created_at", "2019-10-23 18:56:00.740348"], ["updated_at", "2019-10-23 18:56:00.740348"], ["image_width", 600], ["image_height", 400]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (0.4ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Grass Cutter"], ["description", "Ah, feel that summer breeze. The smell of fresh grass clippings fill the air as you wipe the sweat from your forehead and pause to look up at the bright blue sky. Or at least it used to be bright blue - it looks like a storm's brewing. Better finish cutting the lawn fast, or you might be too drenched to get a sip of grandma's fresh squeezed lemonade!\r\n\r\nGrass Cutter is a simple game about cutting grass. Or it would be simple, if those darn rain clouds would stop causing the grass to keep growing! This is based off of an old Atari game of the same name. I simply re-created it for use on our modern day computer technology... okay, and I added in a few... twists as well. I won't spoil anything for you, so you can find out for yourself. So what are you waiting for? Let's cut some grass!"], ["date", "2012-06-01"], ["tagline", "Let's cut some grass!"], ["filename", "grass"], ["created_at", "2019-10-23 18:56:00.744373"], ["updated_at", "2019-10-23 18:56:00.744373"], ["image_width", 578], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (0.4ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mighty Dive Bomber (Classic)"], ["description", "Oh no! Dr. Mischivio is at it again! Attacking from his castle in the center of evil Mischivio Island, he has kidnapped Princess Amalia and plans to take over the world! Our one hope is a hero who emerges from the ensuing chaos... Mighty Dive Bomber is here! He arrives with a bang, creating crash landings wherever he falls. Only he can outwit Dr. Mischivio's clever traps and solve the puzzles of Mischivio Isle before it is too late!\r\n\r\nMighty Dive Bomber is a retro, NES-styled puzzle platformer. It is a lovable parody of one my favorite ages in gaming, complete quirky story, and beep-y sound effects from the days of yore. The graphics in this one are mostly done by me, with some parts edited from existing NES sprites. The game itself is loads of fun, and can actually be rather addictive. Like all good puzzle-platformers the concept is simple. All the usual bits are there: ladders, switches, keys, you name it. The innovation in this one is with Mighty Dive Bomber's only super-power: whenever you fall from a considerable height, you blow up the ground you land on! A great little game with over 30 levels and quite a bit of challenge later on. After completing <strong>Mighty Dive Bomber</strong> was the first time I sat back and really felt like I had made a video game. Because of that, it will always hold a special place in my heart."], ["date", "2011-07-30"], ["tagline", "A retro-styled puzzle platformer!"], ["filename", "mdb"], ["created_at", "2019-10-23 18:56:00.748345"], ["updated_at", "2019-10-23 18:56:00.748345"], ["image_width", 512], ["image_height", 480]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.2ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Castle Climber"], ["description", "Tell me, adventurer. Do you like magical potions with varying results? Ancient wands that cast strange and exciting spells? Powerful foes that must be dispatched with yet more powerful weaponry? Then Castle Climber is the game for you. Embark on a quest up every floor of the evil wizard's tower and wonder at the vexing oddities you find therein. And every time you die... a new tower forms, and a new quest is just beginning.\r\n\r\nCastle Climber is a game that came about as the result of a single burning question: \"What would happen if I crossed <a href=\"http://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)\">The Legend of Zelda</a> with <a href=\"http://en.wikipedia.org/wiki/WarioWare,_Inc.:_Mega_Microgames!\">Wario Ware</a>?\" The answer was an interesting blend of action adventure and fast placed, short lived gameplay. Each floor of the castle is just a small, screen-sized room with various monsters, traps, and, yes, treasures, that would fit right at home in any NES action-adventure epic. It is a fast-paced, action-packed adventure that's different every time. Still not interested yet? I strongly recommend you give it a try and find out for yourself.\""], ["date", "2013-06-15"], ["tagline", "Randomly generated dungeon delving!"], ["filename", "climber"], ["created_at", "2019-10-23 18:56:00.753011"], ["updated_at", "2019-10-23 18:56:00.753011"], ["image_width", 540], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.6ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "10 Seconds in Hell"], ["description", "Humans are flawed creatures. We each have our trials and temptations, but we have the power to choose between giving in or standing strong. Can you, a noble man, survive a descent into hell and all the deadly sins and evil souls that await you there? Will you be able to rescue the heart of your beloved and make it out with your soul intact? Or will you accidentally press the arrow key one too many times and step into a pool of lava?\r\n\r\nInspired chiefly by the old-school Atari game <a href=\"https://en.wikipedia.org/wiki/Adventure_(Atari_2600)\">Adventure</a>, <strong>10 seconds in Hell</strong> was originally developed for <a href=\"http://www.ludumdare.com/compo/ludum-dare-27/?action=preview&amp;uid=26293\">Ludum Dare 27</a>, a tri-annual 48 hour game making competition. After the original version scored 1<strong>8th out of 2213 games in the Mood category</strong>, I continued to work on it and developed it into the full game you can play today. The game has pseudo-random generation elements so it is different each time you play. Have fun! Just be prepared to die a lot."], ["date", "2013-08-26"], ["tagline", "A brutal, old-school adventure... in Hell."], ["filename", "hell"], ["created_at", "2019-10-23 18:56:00.764826"], ["updated_at", "2019-10-23 18:56:00.764826"], ["image_width", 540], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.5ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "A Harrowing Journey"], ["description", "A young man awakens in a field. Scattered about him are the remnants of a lost civilization. Although he doesn't want to admit it, the blood and debris seem strangely familiar to him. With an empty stomach and a guilty conscience, he sets off on a journey... a very harrowing journey.\r\n\r\nThis game was originally made for <a href=\"http://ludumdare.com/compo/ludum-dare-33/?action=preview&amp;uid=26293\">Ludum Dare 33</a>, where the theme was \"You Are the Monster.\" It's a short game, but it marks the first time I've tried my hand and creating music from scratch for one of my games! More than anything else I am proud of how the chiptune music for day and night turned out, especially given that they were only created in 48 hours for the game jam. Give it a shot if you feel like confronting your inner demons! Or just eating people I guess!"], ["date", "2015-08-24"], ["tagline", "It's time to find out who the real monster is."], ["filename", "journey"], ["created_at", "2019-10-23 18:56:00.819323"], ["updated_at", "2019-10-23 18:56:00.819323"], ["image_width", 512], ["image_height", 480]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.7ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mighty Dive Bomber"], ["description", "Way back in 2011, I made what I considered to be my first \"real\" video game. It was a puzzle platformer called <a href=\\\"/games/4\\\">Mighty Dive Bomber</a>.Well, not too long after making it, I decided I could do it better. That version got very close to completion, but never saw the light of day. I picked it up again almost five years later, and finally finished it. This is that game.\r\n\r\nThis is by far the game I am most proud of having created. I feel like it represents the baseline for the level of polish in terms of presentation and gameplay experience I am able to create as a one-man team. Still, I feel like I could go even further if I wasn't just completing a project that I started five years ago, and instead was programming a game entirely from scratch. Will we see another Mighty Dive Bomber re-imagining in my lifetime? I would guess the answer is yes.\r\n\r\nBut in the mean time, this is a lovely version of the game for you to enjoy. I hope you find it as engaging to play as I did to design and develop! This version of the game shares about 50% of its levels with the original, but the rest are all new (and contain some brand new game mechanics as well). Even if you already played the original, there should be a lot more here for you than just a shiny new coat of paint!"], ["date", "2018-06-20"], ["tagline", "Puzzle-platforming at its finest."], ["filename", "mdb3"], ["created_at", "2019-10-23 18:56:00.827549"], ["updated_at", "2019-10-23 18:56:00.827549"], ["image_width", 575], ["image_height", 540]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (0.6ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dragon's Lair"], ["description", "If dragons love one thing, it's shiny, shiny gold. And what's this? The local peasants are so downtrodden they are willing to risk entering your lair just to swipe some of your precious, shiny gold? Not if you can help it! Burninate those peasants, and drive the invaders out of your lair!\r\n\r\nDragon's Lair began life as an experiment. I wanted to create a defend-your-castle style game with a twist - in between defending <i>your</i> castle, you would become the one attacking someone else's! Levels would alternate between the defend-your-castle style gameplay and a scrolling shooter style gameplay where you advanced and destroyed an enemy fortification. I chose to theme this idea as a dragon, since they are often seen both defending their lair from invaders and pillaging towns and stealing their precious treasure. Upgrades you earned in one mode would affect how your dragon controlled in <i>both</i> modes, and eventually there would be some kind of final level or something and probably an endless mode too.\r\n\r\nUnfortunately only half of the game got created. This is a perfectly viable defend-your-castle game... but that's all it is. There's nothing incredibly innovative or exciting about it, since I never got around to implementing the scrolling shooter portions before moving on to a different project. But as this is still a perfectly playable game that a lot of work went into, I decided to host it here in case anyone wanted to play."], ["date", "2012-09-30"], ["tagline", "Defend your gold by burninate-ing peasants!"], ["filename", "dragon"], ["created_at", "2019-10-23 18:56:00.835510"], ["updated_at", "2019-10-23 18:56:00.835510"], ["image_width", 600], ["image_height", 480]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.7ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Light Bringer"], ["description", "There is a time of which no one speaks. A time when darkness encroached on the world, and all that was good and light shrunk back from its scratching claws until only a few cloistered hovels of civilization were left. These were the dark ages.\r\n\r\nDuring these times, the people held on to but one hope: that one day a Light Bringer would be successful in his mission to drive back the darkness, and the world would fill with light and happiness again. Being chosen to be a Light Bringer was the highest honor... but it was also certainly a sign of your impending demise, as no Light Bringer had ever returned alive. But maybe, just maybe, you will be the one that does. All you have left is that one hope.\r\n\r\nThis is the demo of the game engine I developed for a metroidvania style exploration game named Light Bringer. This demo shows off the game mechanics under the guise of a single Light Bringer mission to a nearby cave, and stands alone apart from the rest of the game. Unfortunately, I never finished the main Light Bringer game, and this is all that remains of it now. It is still a fun bit of exploration that will maybe take you about an hour to complete, give or take - assuming you are able to find all the hidden items. If you like what you see, don't forget to let me know - I could always resume work on the full game some day!"], ["date", "2012-06-15"], ["tagline", "Will YOU shine bright enough to overcome the darkness?"], ["filename", "lightbringer"], ["created_at", "2019-10-23 18:56:00.842837"], ["updated_at", "2019-10-23 18:56:00.842837"], ["image_width", 600], ["image_height", 500]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[36mGame Create (1.9ms)[0m  [1m[32mINSERT INTO "games" ("name", "description", "date", "tagline", "filename", "created_at", "updated_at", "image_width", "image_height") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Super Action Sports"], ["description", "This game is a collection of vaguely sports themed local multiplayer games. It was the first major project I worked on that was a 3D game and not a 2D one, and it was quite a challenge to put together. Luckily, I did not have to do so alone, as Super Action Sports was the <a href=\"http://web.cse.ohio-state.edu/~boggus/5912/GameGroups.html\">Capstone Project</a> that I completed at the end of my time at OSU.\r\n\r\nTogether with my four teammates, we were able to create this lovely little collection of five local multiplayer games. each one based around a different sport (Golf, Hockey, Baseball, Tennis, and Fencing). While we initially had larger plans for adding yet more games and features to this collection after finishing it, we ultimately decided to go our separate ways. Thus, <i>Super Action Sports!</i> is considered complete in this form, a testament to all the blood, sweat, and tears that we put into it as a team during development.\r\n\r\nGive it a quick spin if you've got a buddy or two and want to kill some time playing silly games! You don't even have to know anything about the sports in question.... we sure didn't when we programmed it, anyway."], ["date", "2015-12-25"], ["tagline", "A sports game for people who know nothing about sports."], ["filename", "sas"], ["created_at", "2019-10-23 18:56:00.851251"], ["updated_at", "2019-10-23 18:56:00.851251"], ["image_width", 974], ["image_height", 550]]
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/seed_databases.rake:15:in `block (3 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-10-23 14:56:25 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.6ms | Allocations: 433)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 503)
+  Rendered layouts/_rails_default.html.erb (Duration: 16.9ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.5ms | Allocations: 18910)
+
+
+Started GET "/games" for ::1 at 2019-10-23 14:56:28 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."date" DESC[0m
+  ↳ app/views/games/index.html.erb:9:in `each_with_index'
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 1247)
+  Rendered games/_teaser.html.erb (Duration: 2.7ms | Allocations: 1689)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.8ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 1049)
+  Rendered games/_teaser.html.erb (Duration: 1.9ms | Allocations: 1248)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.5ms | Allocations: 1247)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.4ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1047)
+  Rendered games/_teaser.html.erb (Duration: 1.7ms | Allocations: 1245)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1251)
+  Rendered games/_screenshot.html.erb (Duration: 1.3ms | Allocations: 1049)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1248)
+  Rendered games/_screenshot.html.erb (Duration: 1.1ms | Allocations: 1048)
+  Rendered games/_teaser.html.erb (Duration: 1.6ms | Allocations: 1247)
+  Rendered games/index.html.erb within layouts/application (Duration: 22.6ms | Allocations: 15766)
+  Rendered layouts/_rails_default.html.erb (Duration: 13.2ms | Allocations: 16719)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.3ms | Allocations: 33418)
+
+
+Started GET "/games/10" for ::1 at 2019-10-23 14:56:34 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:3:in `show'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/_screenshot.html.erb (Duration: 1.8ms | Allocations: 1231)
+  Rendered games/_screenshot.html.erb (Duration: 1.2ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 3.1ms | Allocations: 957)
+  Rendered games/_screenshot.html.erb (Duration: 1.5ms | Allocations: 957)
+  Rendered games/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 4625)
+  Rendered layouts/_rails_default.html.erb (Duration: 31.7ms | Allocations: 16716)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 135)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.2ms | Allocations: 22778)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:56:46 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 1.9ms | Allocations: 433)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 503)
+  Rendered layouts/_rails_default.html.erb (Duration: 30.6ms | Allocations: 16881)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 116)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.3ms | Allocations: 18889)
+
+
+Started GET "/" for ::1 at 2019-10-23 14:57:40 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:3:in `home'
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_post.html.erb (Duration: 0.8ms | Allocations: 424)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 494)
+  Rendered layouts/_rails_default.html.erb (Duration: 1920.5ms | Allocations: 1367397)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 1925ms (Views: 1923.0ms | ActiveRecord: 0.2ms | Allocations: 1369387)
+
+
