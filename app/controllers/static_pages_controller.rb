@@ -15,7 +15,7 @@ class StaticPagesController < ApplicationController
   def follow
   end
 
-  def encrypt
+  def encrypt1
     render text: "tBc2N67HZ66xVhKf4LBabXkwHiCX3XR78YXsM2grPVc.apAwhPX7rZpFf6lZJkT2c4AmgC7lyAWv3GRvqgb3luM"
   end
 
