@@ -1,14 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,300,700);
+
 /* mixins, variables, etc. */
 
 $light-shade:   #EFF0F0;
-$light-accent:  #788796;
+$light-accent:  #8EA1B2;
 $brand:         #4C7799;
 $dark-accent:   #345468;
 $dark-shade:    #191A1F;
-$faded:         #A3B8CC;
+$faded:         #BACAD8;
 
 
 $gray-medium-light: #eaeaea;
@@ -19,6 +23,7 @@ $checker-size: 32px;
 /* universal */
 
 body {
+  font-family: "Droid Sans";
   padding-top: 60px;
 
   /* checkerboard background */
@@ -53,7 +58,6 @@ body {
   background-color: $light-shade;
   font-size: 1.5em;
   line-height: 1.7em;
-  font-weight: bolder;
 
   /* Standard jumbotron parts */
   .title {
@@ -87,10 +91,10 @@ body {
   }
   a {
     color: $brand;
-    border-bottom: 1px dashed $dark-accent;
+    border-bottom: 1px dashed $brand;
     &:hover {
-      color: $dark-accent;
-      border-bottom: 1px dashed $dark-accent;
+      color: lighten($brand, 15%);
+      border-bottom: 1px dashed $brand;
       text-decoration: none;
     }
   }
@@ -145,7 +149,7 @@ h1 {
 }
 
 h2 {
-  color: $light-accent;
+  color: $faded;
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -175,8 +179,8 @@ h4 {
   font-size: 1.5em;
   text-transform: uppercase;
   &:hover {
-    color: $light-accent;
-    text-decoration: none;
+    color: lighten($light-accent, 15%);
+    text-decoration: underline;
   }
 }
 
