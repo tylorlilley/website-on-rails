@@ -17,13 +17,14 @@ class ApplicationHelperTest < ActionView::TestCase
   end
 
   test "formated intro" do
-    assert_equal formated_intro("This is a test intro."), "<p>This is a test intro...</p>"
-    assert_equal formated_intro("This is a test intro.\nIt has multiple lines."), "<p>This is a test intro...</p>"
-    assert_equal formated_intro("This is a test intro!\nIt has multiple lines."), "<p>This is a test intro...</p>"
-    assert_equal formated_intro("1"), "<p>...</p>"
-    assert_equal formated_intro("\n"), ""
-    assert_equal formated_intro(""), ""
-    assert_equal formated_intro(nil), ""
+    assert_equal formated_intro("This is a test intro.", root_path), "<p>This is a test intro...#{link_to "(view more)", root_path}</p>"
+    assert_equal formated_intro("This is a test intro.\nIt has multiple lines.", root_path), "<p>This is a test intro...#{link_to "(view more)", root_path}</p>"
+    assert_equal formated_intro("This is a test intro!\nIt has multiple lines.", root_path), "<p>This is a test intro...#{link_to "(view more)", root_path}</p>"
+    assert_equal formated_intro("1", root_path), "<p>...#{link_to "(view more)", root_path}</p>"
+    assert_equal formated_intro("\n", root_path), ""
+    assert_equal formated_intro("", root_path), ""
+    assert_equal formated_intro(nil, root_path), ""
+    assert_equal formated_intro("This is a test intro.", nil), "<p>This is a test intro...#{link_to "(view more)", "#"}</p>"
   end
 
   test "formated body" do

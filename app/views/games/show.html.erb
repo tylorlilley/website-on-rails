@@ -9,11 +9,12 @@
     <section class="game content">
       <div class="col-xs-12">
         <div class = "container">
-          <%= tag.div render(partial: 'screenshot', locals: { num: 1, size: 1,
-              caption: formated_tagline_for(@game), classes: "" }),
-              class: "col-xs-12 col-md-6 col-centered",
-              style: "margin: 12px" %>
-          <%== formated_description_for(@game) %>
+          <div class="col-xs-12 col-md-6 col-centered" style="margin: 12px">
+            <%= render partial: 'screenshot', locals: { num: 1, size: 1,
+              caption: formated_tagline_for(@game) }%>
+              <div class="col-xs-12 col-md-6 col-centered"><br/></div>
+          </div>
+            <%== formated_description_for(@game) %>
         </div>
       </div>
     </section>
@@ -29,7 +30,7 @@
   </div>
   <div class="row">
     <section class="game rider">
-      <%= tag.h2 link_to "Download Now", download_filename_for(@game), target: "_blank" %>
+      <%= tag.h2 link_to "Download #{@game.name} Now", download_filename_for(@game), target: "_blank" %>
     </section>
   </div>
 </div>

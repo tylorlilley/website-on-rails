@@ -17,9 +17,10 @@ module ApplicationHelper
   end
 
   # Returns the first section of a block of content formated into a paragraph
-  def formated_intro(content)
+  def formated_intro(content, link_destination)
     return "" if content.blank? || content.split("\n").first.blank?
-    tag.p raw "#{content.split("\n").first[0...-1]}..."
+    link_destination ||= "#"
+    tag.p raw "#{content.split("\n").first[0...-1]}...#{link_to "(view more)", link_destination}"
   end
 
   # Returns a block of content formated into a paragraph

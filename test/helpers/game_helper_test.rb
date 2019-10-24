@@ -25,7 +25,7 @@ class GamesHelperTest < ActionView::TestCase
   end
 
   test "formated teaser for" do
-    assert_equal formated_teaser_for(@game), "<p>This is an example game description...</p>"
+    assert_equal formated_teaser_for(@game), "<p>This is an example game description...#{link_to "(view more)", @game}</p>"
     assert_equal formated_teaser_for(nil), ""
     @game.description = nil
     assert_equal formated_teaser_for(@game), ""

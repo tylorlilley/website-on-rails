@@ -6,14 +6,25 @@
 </section>
 <section class="post content">
   <ul>
-    <div class="container">
-      <% @posts.each do |post| %>
+    <% @posts.each do |post| %>
+
+      <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <%= tag.li raw "#{tag.h4(link_to formated_title_for(post), post)} #{tag.div formated_intro_for(post), class: 'post description'}" %>
+              <h3>
+                <%= link_to post.title, post %>
+              </h3>
+              <h2 style="margin-top: -24px">
+                <%= formated_date_for(post) %>
+              </h2>
+                <div class="post description">
+                  <%== formated_intro_for(post) %>
+                </div>
+              <br />
           </div>
         </div>
-      <% end %>
-    </div>
+      </div>
+
+    <% end %>
   </ul>
 </section>

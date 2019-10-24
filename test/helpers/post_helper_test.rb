@@ -26,13 +26,13 @@ class PostsHelperTest < ActionView::TestCase
 
   test "formated intro for" do
     assert_equal formated_intro_for(@post), "<p>This is an example of a" +
-                          " post's first paragraph. It has two sentances...</p>"
+                          " post's first paragraph. It has two sentances...#{link_to "(view more)", @post}</p>"
     assert_equal formated_intro_for(nil), ""
     @post.content = nil
     assert_equal formated_intro_for(@post), ""
     @post = Post.find_by(title: "Embedded Example Title")
     assert_equal formated_intro_for(@post),
-  "<p>This is an example of a post's first paragraph. It has <i>two</i> sentances...</p>"
+  "<p>This is an example of a post's first paragraph. It has <i>two</i> sentances...#{link_to "(view more)", @post}</p>"
   end
 
   test "formated body for" do
