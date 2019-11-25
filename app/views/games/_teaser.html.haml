@@ -1,0 +1,12 @@
+- @game = game
+- pull_left = (index % 2 == 1)
+.container
+  .row
+    .col-xs-12
+      = render(partial: 'screenshot', locals: { num: 1, size: 0.5,                                   |
+        caption: formated_tagline_for(game), classes: "#{pull_left ? "pull-left" : "pull-right"}" }) |
+      %h3
+        = link_to game.name, game
+      %h2{:style => "margin-top: -24px"}
+        = formated_release_date_for(game)
+      = tag.div formated_teaser_for(game), class: "game description"

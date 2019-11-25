@@ -1,14 +1,34 @@
 {
-  "application.js": "/packs/js/application-05bc83490fcade04d051.js",
-  "application.js.map": "/packs/js/application-05bc83490fcade04d051.js.map",
+  "application.js": "/packs/js/application-dff9a3c406d4ac8d1617.js",
+  "application.js.map": "/packs/js/application-dff9a3c406d4ac8d1617.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-05bc83490fcade04d051.js"
+        "/packs/js/application-dff9a3c406d4ac8d1617.js"
       ],
       "js.map": [
-        "/packs/js/application-05bc83490fcade04d051.js.map"
+        "/packs/js/application-dff9a3c406d4ac8d1617.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-0092e1c1bcaf5036f465.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-0092e1c1bcaf5036f465.js.map"
+      ]
+    },
+    "tiny_towns_randomizer": {
+      "js": [
+        "/packs/js/tiny_towns_randomizer-2da2860691de3018340f.js"
+      ],
+      "js.map": [
+        "/packs/js/tiny_towns_randomizer-2da2860691de3018340f.js.map"
       ]
     }
-  }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-0092e1c1bcaf5036f465.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-0092e1c1bcaf5036f465.js.map",
+  "tiny_towns_randomizer.js": "/packs/js/tiny_towns_randomizer-2da2860691de3018340f.js",
+  "tiny_towns_randomizer.js.map": "/packs/js/tiny_towns_randomizer-2da2860691de3018340f.js.map"
 }

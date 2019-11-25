@@ -1,5 +1,12 @@
 module ApplicationHelper
 
+  # Render the given svg image
+  def svg(name)
+    file_path = "#{Rails.root}/app/assets/images/svg/#{name}.svg"
+    return File.read(file_path).html_safe if File.exists?(file_path)
+    '(not found)'
+  end
+  
   # Returns the full title on a per-page basis.
   def full_title(page_title = '')
     base_title = "Tylor Lilley"

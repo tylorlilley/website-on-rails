@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title= full_title(yield(:title))
+    = render 'layouts/rails_default'
+    = render 'layouts/shim'
+  %body
+    = render 'layouts/header'
+    .container
+      .row
+        .col-xs-12
+          .jumbotron.custom
+            = yield
+          = render 'layouts/footer'

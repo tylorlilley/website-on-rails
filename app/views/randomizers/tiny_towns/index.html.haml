@@ -1,0 +1,60 @@
+= javascript_pack_tag 'tiny_towns_randomizer'
+
+.container
+  .row
+    .col
+      .row
+        .col-xs-6
+          .card.text-center
+            .card-header
+              Tiny Towns Randomizer
+              %a{ href: '#'}
+                .icon.icon-right{ alt: "Randomize all Buildings",
+                                  data: { behavior: "randomize-all-buildings" } }
+                  = svg 'loop-circular'
+            %ul.list-group
+              = render partial: "randomizers/tiny_towns/building", locals: {color: :blue}
+              = render partial: "randomizers/tiny_towns/building", locals: {color: :red, randomizable: true}
+              = render partial: "randomizers/tiny_towns/building", locals: {color: :yellow, randomizable: true}
+              = render partial: "randomizers/tiny_towns/building", locals: {color: :orange, randomizable: true}
+              = render partial: "randomizers/tiny_towns/building", locals: {color: :green, randomizable: true}
+              = render partial: "randomizers/tiny_towns/building", locals: {color: :gray, randomizable: true}
+              = render partial: "randomizers/tiny_towns/building", locals: {color: :black, randomizable: true}
+            .card.text-center
+              .card-header
+                Number of Players
+                %a{ href: '#'}
+                  .icon.icon-left{ alt: "Reveal all Players",
+                                    data: { behavior: "reveal-all-players" } }
+                    = svg 'eye'
+                  .icon.icon-right{ alt: "Randomize all Players",
+                                    data: { behavior: "randomize-all-players" } }
+                    = svg 'loop-circular'
+            .row
+              .btn-group.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "player-count", role: "group"}
+                %label.btn.btn-outline-dark
+                  %input{ type: "radio", name: "total-players", id: "total-players-1",
+                          autocomplete: "off", value: 1} 1
+                %label.btn.btn-outline-dark
+                  %input{ type: "radio", name: "total-players", id: "total-players-2",
+                          autocomplete: "off", value: 2} 2
+                %label.btn.btn-outline-dark
+                  %input{ type: "radio", name: "total-players", id: "total-players-3",
+                          autocomplete: "off", value: 3} 3
+                %label.btn.btn-outline-dark
+                  %input{ type: "radio", name: "total-players", id: "total-players-4",
+                          autocomplete: "off", value: 4, checked: ""} 4
+                %label.btn.btn-outline-dark
+                  %input{ type: "radio", name: "total-players", id: "total-players-5",
+                          autocomplete: "off", value: 5} 5
+                %label.btn.btn-outline-dark
+                  %input{ type: "radio", name: "total-players", id: "total-players-6",
+                          autocomplete: "off", value: 6} 6
+        .row
+          .col-xs-6
+            = render partial: "randomizers/tiny_towns/player", locals: {player: 1}
+            = render partial: "randomizers/tiny_towns/player", locals: {player: 2}
+            = render partial: "randomizers/tiny_towns/player", locals: {player: 3}
+            = render partial: "randomizers/tiny_towns/player", locals: {player: 4}
+            = render partial: "randomizers/tiny_towns/player", locals: {player: 5}
+            = render partial: "randomizers/tiny_towns/player", locals: {player: 6}

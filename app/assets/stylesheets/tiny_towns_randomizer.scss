@@ -1,0 +1,111 @@
+// Place all the styles related to the TinyTownsRandomizer controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+$tiny-towns-blue:     #4c9ba2;
+$tiny-towns-orange:   #e18c3d;
+$tiny-towns-red:      #dc4032;
+$tiny-towns-green:    #387e4d;
+$tiny-towns-gray:     #b6b3a3;
+$tiny-towns-yellow:   #f4bc59;
+$tiny-towns-black:    #163040;
+$tiny-towns-purple:   #b44c95;
+
+.card {
+  margin: 12px 0 12px 0;
+  vertical-align: middle;
+  position: relative;
+  .text { font-size: 0.8em; }
+}
+
+.icon {
+  position: absolute;
+  top: 8px;
+}
+
+.icon.icon-right { right: 12px; }
+.icon.icon-left { left: 12px; }
+
+.red {
+  background-color: $tiny-towns-red;
+  color: white;
+  .icon {
+    fill: white;
+  }
+}
+
+.blue {
+  background-color: $tiny-towns-blue;
+  color: white;
+  .icon {
+    fill: white;
+  }
+}
+
+.green {
+  background-color: $tiny-towns-green;
+  color: white;
+  .icon {
+    fill: white;
+  }
+}
+
+.orange {
+  background-color: $tiny-towns-orange;
+  color: white;
+  .icon {
+    fill: white;
+  }
+}
+
+.yellow {
+  background-color: $tiny-towns-yellow;
+  color: white;
+  .icon {
+    fill: white;
+  }
+}
+
+.gray {
+  background-color: $tiny-towns-gray;
+  color: white;
+  .icon {
+    fill: white;
+  }
+}
+
+.black {
+  background-color: $tiny-towns-black;
+  color: white;
+  .icon {
+    fill: white;
+  }
+}
+
+.purple {
+  color: white;
+  background-color: $tiny-towns-purple;
+}
+
+.purple.unrevealed {
+  color: $tiny-towns-purple;
+  &:hover {
+    color: white;
+  }
+}
+
+.btn-group-justified {
+  display: flex;
+  width: 100%;
+  .btn,
+  .btn-group {
+    flex: 1;
+    .btn {
+      width: 100%;
+    }
+    .dropdown-menu {
+      left: auto;
+    }
+  }
+}

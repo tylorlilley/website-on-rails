@@ -1,4 +1,4 @@
-@import "bootstrap-sprockets";
+
 @import "bootstrap";
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
@@ -23,11 +23,11 @@ $checker-size: 32px;
 /* universal */
 
 body {
-  font-family: "Droid Sans";
+  font-family: "Droid Sans" !important;
   padding-top: 60px;
 
   /* checkerboard background */
-  background-color: $gray-bg-checker-back;
+  background-color: $gray-bg-checker-back !important;
   background-image:
      -moz-linear-gradient(45deg, $gray-bg-checker-front 25%, transparent 25%),
      -moz-linear-gradient(-45deg, $gray-bg-checker-front 25%, transparent 25%),
@@ -50,12 +50,12 @@ body {
   padding-bottom: 30px;
 }
 
-.jumbotron {
+.jumbotron.custom {
   /* Jumbotron properties */
   padding: 2% 4% 2% 4%;
   margin-top: 2%;
-  border-radius: 24px;
-  background-color: $light-shade;
+  border-radius: 24px !important;
+  background-color: $light-shade !important;
   font-size: 1.5em;
   line-height: 1.7em;
 
@@ -63,16 +63,16 @@ body {
   .title {
     text-align: center;
     display: block;
-    color: $brand;
+    color: $brand !important;
   }
   .content {
     display: block;
-    color: $light-accent;
+    color: $light-accent !important;
   }
   .rider {
     text-align: center;
     display: block;
-    color: $brand;
+    color: $brand !important;
   }
   .description {
     width: 95%;
@@ -81,20 +81,38 @@ body {
     line-height: 1.6em;
   }
 
-  /* Standard html subparts */
+  /* Standard html elements */
   p {
     text-indent: 2em;
   }
   h1 {
-      color: $dark-accent;
-      font-size: 2.8em;
+    color: $dark-accent !important;
+    font-size: 2.8em;
+    letter-spacing: -2px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  h2 {
+    color: $faded !important;
+    font-size: 1.3em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+  }
+  h3 {
+    color: $brand !important;
+    font-size: 1.5em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
   }
   a {
-    color: $brand;
-    border-bottom: 1px dashed $brand;
+    color: $brand !important;
+    border-bottom: 1px dashed $brand !important;
     &:hover {
       color: lighten($brand, 15%);
-      border-bottom: 1px dashed $brand;
+      border-bottom: 1px dashed $brand !important;
       text-decoration: none;
     }
   }
@@ -102,9 +120,9 @@ body {
 
 .thumbnail {
   margin: 2%;
-  background-color: $brand;
+  background-color: $brand !important;
   .caption {
-    color: $light-shade;
+    color: $light-shade !important;
     font-style: italic;
     font-size: 0.8em;
     text-align: center;
@@ -134,72 +152,38 @@ textarea {
   }
 }
 
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  color: $brand;
-  font-size: 3em;
-  letter-spacing: -2px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-h2 {
-  color: $faded;
-  font-size: 1.3em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-}
-
-h3 {
-  color: $brand;
-  font-size: 1.5em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h4 {
-  color: $brand;
-  font-size: 1.2em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-}
-
 /* header */
 
+.header {
+  border: 0px !important;
+}
+
 .nav.navbar-nav.navbar-right li a {
-  color: $light-shade;
+  color: $light-shade !important;
   font-size: 1.5em;
   text-transform: uppercase;
   &:hover {
-    color: lighten($light-accent, 15%);
+    color: lighten($light-accent, 15%) !important;
     text-decoration: underline;
   }
 }
 
 .navbar {
-  background-color: $brand;
+  background-color: $brand !important;
 }
 
 #logo {
   float: left;
   margin-right: 10px;
-  font-family: Helvetica;
+  font-family: Helvetica !important;
   font-size: 2em;
-  color: $light-shade;
+  color: $light-shade !important;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding: 5px;
   font-weight: bold;
   &:hover {
-    color: $light-shade;
+    color: $light-shade !important;
     text-decoration: none;
   }
 }
@@ -210,8 +194,8 @@ h4 {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $brand;
-  color: $brand;
+  border-top: 1px solid $brand !important;
+  color: $brand !important;
   a {
     color: $brand;
     &:hover {
@@ -246,8 +230,8 @@ footer {
 
 .about-me {
   max-width: 30%;
-  border: 2px solid $light-accent;
+  border: 2px solid $light-accent !important;
   border-radius: 4%;
   margin: 0% 5% 0% 0%;
-  border-color: $light-shade;
+  border-color: $light-shade !important;
 }

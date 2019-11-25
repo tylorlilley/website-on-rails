@@ -1,0 +1,9 @@
+- provide(:title, "All Games")
+%section.game.title
+  = tag.h1 "All Games"
+  %hr/
+%section.game.content
+  %ul
+    - @games.each_with_index do |game, index|
+      = render partial: 'teaser', locals: { game: game, index: index }
+      %br/
