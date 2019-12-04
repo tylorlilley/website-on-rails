@@ -22,9 +22,13 @@ $checker-size: 32px;
 
 /* universal */
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: "Droid Sans" !important;
-  padding-top: 60px;
+  padding-top: 80px;
 
   /* checkerboard background */
   background-color: $gray-bg-checker-back !important;
@@ -46,13 +50,13 @@ body {
    background-position:0 0, $checker-size/2 0, $checker-size/2 0-($checker-size/2), 0px $checker-size/2;
 }
 
-.row {
-  padding-bottom: 30px;
-}
+ .row {
+   padding-bottom: 30px;
+ }
 
 .jumbotron.custom {
   /* Jumbotron properties */
-  padding: 2% 4% 2% 4%;
+  padding: 5%;
   margin-top: 2%;
   border-radius: 24px !important;
   background-color: $light-shade !important;
@@ -75,10 +79,8 @@ body {
     color: $brand !important;
   }
   .description {
-    width: 95%;
     font-style: italic;
-    font-size: 0.8em;
-    line-height: 1.6em;
+    line-height: 1.4em;
   }
 
   /* Standard html elements */
@@ -118,9 +120,15 @@ body {
   }
 }
 
+.img-thumbnail {
+  background-color: $brand !important;
+  border-color: $brand !important;
+}
+
 .thumbnail {
   margin: 2%;
   background-color: $brand !important;
+  border-color: $brand !important;
   .caption {
     color: $light-shade !important;
     font-style: italic;
@@ -144,44 +152,30 @@ textarea {
   }
 }
 
-.col-centered {
-  padding: 6px;
-  .thumbnail {
-    margin: auto;
-    display: block;
-  }
-}
-
 /* header */
-
-.header {
-  border: 0px !important;
-}
-
-.nav.navbar-nav.navbar-right li a {
-  color: $light-shade !important;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  &:hover {
-    color: lighten($light-accent, 15%) !important;
-    text-decoration: underline;
+.navbar{
+  background-color: $brand;
+  a {
+    color: $light-shade !important;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0px 10px 0px 10px;
+    &:hover {
+      color: lighten($light-accent, 15%) !important;
+      text-decoration: underline;
+    }
   }
-}
-
-.navbar {
-  background-color: $brand !important;
 }
 
 #logo {
-  float: left;
-  margin-right: 10px;
   font-family: Helvetica !important;
   font-size: 2em;
   color: $light-shade !important;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding: 5px;
   font-weight: bold;
+  margin: 0px 10px 0px 30px;
+  padding: 5px;
   &:hover {
     color: $light-shade !important;
     text-decoration: none;

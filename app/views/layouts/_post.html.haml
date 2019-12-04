@@ -3,5 +3,6 @@
   = tag.h2 "#{formated_date_for(@post)}", style: "margin-top:-6px"
 %section.post.content
   = sanitize formated_body_for(@post)
+  %br
 %section.post.rider
   = tag.h2 sanitize "View other updates #{link_to "here", posts_path }."

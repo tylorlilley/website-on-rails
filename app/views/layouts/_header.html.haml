@@ -1,9 +1,14 @@
-%header.navbar.navbar-fixed-top.navbar-inverse
-  .container
-    = link_to "Tylor Lilley .com", root_path, id: "logo"
-    %nav
-      %ul.nav.navbar-nav.navbar-right
-        %li.nav-link= link_to "Home",    root_path
-        %li= link_to "Posts",   posts_path
-        %li= link_to "Games",   games_path
-        %li= link_to "Follow",  follow_path
+%nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+  %a.navbar-brand{href: root_path, id: "logo"} Tylor Lilley .com
+  %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse.justify-content-end
+    %ul.navbar-nav.float-right
+      %li.nav-item
+        %a.nav-link{href: root_path} Home
+      %li.nav-item
+        %a.nav-link{href: posts_path} Posts
+      %li.nav-item
+        %a.nav-link{href: games_path} Games
+      %li.nav-item
+        %a.nav-link{href:follow_path} Follow

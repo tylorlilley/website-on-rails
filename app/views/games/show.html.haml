@@ -5,21 +5,19 @@
 
 .container
   .row
-    %section.game.content
-      .col-xs-12
-        .container
-          .col-xs-12.col-md-6.col-centered{:style => "margin: 12px"}
-            = render partial: 'screenshot', locals: { num: 1, size: 1,
-              caption: formated_tagline_for(@game) }
-            %br.visible-xs-block.visible-sm-block/
-          = sanitize formated_description_for(@game)
-  .row
     .col-xs-12
-      .container
-        = tag.div render(partial: 'screenshot', locals: { num: 2, size: 0.5 }), class: "col-md-4 col-centered"
-        = tag.div render(partial: 'screenshot', locals: { num: 3, size: 0.5 }), class: "col-md-4 col-centered"
-        = tag.div render(partial: 'screenshot', locals: { num: 4, size: 0.5 }), class: "col-md-4 col-centered"
-    .row
-      .col-xs-12
-        %section.game.rider
-          = tag.h2 link_to "Download #{@game.name} Now", download_filename_for(@game), target: "_blank"
+      %section.game.content
+        = render partial:'screenshot', locals: { num: 1, size: 1, caption: formated_tagline_for(@game), classes: "float-right" }
+        %br.visible-xs-block.visible-sm-block/
+        = sanitize formated_description_for(@game)
+
+  .row
+    .col-xs-12.mx-auto
+      .row
+        = tag.div render(partial: 'screenshot', locals: { num: 2, size: 0.5 }), class: "col-xs-auto col-md-4 mx-auto"
+        = tag.div render(partial: 'screenshot', locals: { num: 3, size: 0.5 }), class: "col-xs-auto col-md-4 mx-auto"
+        = tag.div render(partial: 'screenshot', locals: { num: 4, size: 0.5 }), class: "col-xs-auto col-md-4 mx-auto"
+  .row
+    .col-xs-12.mx-auto
+      %section.game.rider
+        = tag.h2 link_to "Download #{@game.name} Now", download_filename_for(@game), target: "_blank"

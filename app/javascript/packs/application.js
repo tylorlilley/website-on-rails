@@ -7,7 +7,14 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("jquery")
+
+var jQuery = require("jquery")
+
+// import jQuery from "jquery";
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
+
+require('bootstrap');
 
 //= require rails-ujs
 //= require activestorage
