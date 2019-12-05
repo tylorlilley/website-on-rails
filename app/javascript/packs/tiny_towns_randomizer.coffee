@@ -1,7 +1,6 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-console.log 'Hi world from coffeescript'
 
 shuffle = (a) ->
   i = a.length
@@ -128,6 +127,8 @@ $(document).on "click", "[data-behavior~=randomize-all-buildings]", (event) ->
 
 $(document).on "turbolinks:load", ->
   TinyTownsRandomizer.randomize_all()
-  $('input[type=radio][name=total-players]').change ->
-    number = this.value
-    TinyTownsRandomizer.change_total_players(number)
+
+$(document).on "click", "input[type=radio][name=total-players]", (event) ->
+  number = this.getAttribute('value')
+  console.log(number)
+  TinyTownsRandomizer.change_total_players(number)
