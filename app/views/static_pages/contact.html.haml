@@ -1,12 +1,11 @@
 - provide(:title, "Contact")
-.container
-  .row
-    %section.post.title.mx-auto
-      %h1 Contact Me!
-      %h2
-    %section.post.content
-      %p
-        If you have a question for me, feedback on some of my previous work, or
-        any other reason to contact me, feel free to do so at this address:
-        = succeed "." do
-          %a{:href => "mailto:tylor@tylorlilley.com"} tylor@tylorlilley.com
+.row
+  %section.post.title.mx-auto
+    %h1 Contact Me!
+    %br
+  %section.post.content
+    %p
+      If you have a question for me, feedback on some of my previous work, or
+      any other reason to contact me, feel free to do so at this address:
+      = succeed "." do
+        %a{:href => "mailto:tylor@tylorlilley.com"} tylor@tylorlilley.com

@@ -8,7 +8,8 @@
     = render 'layouts/header'
     .container-fluid
       .row
-        .col-xs-12.offset-xs-0.col-sm-10.offset-sm-1.col-md-8.offset-md-2
+        .col-12.offset-0.col-lg-10.offset-lg-1
           .jumbotron.custom
-            = yield
-          = render 'layouts/footer'
+            .container
+              = yield
+    = render 'layouts/footer'

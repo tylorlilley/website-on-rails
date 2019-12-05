@@ -1,9 +1,21 @@
 - caption ||= ""
 - classes ||= ""
-= tag.div sanitize("#{image_tag screenshot_filename_for(@game, num),
-      class: "img-fluid img-thumbnail",
-      alt: formated_name_for(@game),
-      width: "#{screenshot_width_for(@game)*size}px",
-      height: "#{screenshot_height_for(@game)*size}px",
-      style: "max-width: #{screenshot_width_for(@game)*size}px"} #{caption.blank? ? '' : tag.div(caption, class: 'caption')}"), class: "rounded thumbnail #{classes}",
-    style: "max-width: #{screenshot_width_for(@game)*size}px"
+- inverse ||= false
+
+.d-block.d-xl-none
+  .rounded.thumbnail{class: "mx-auto", width: "#{screenshot_width_for(@game) * (inverse ? 1 : size)}px", height: "#{screenshot_height_for(@game) * (inverse ? 1 : size)}px",
+                             style: "max-width: #{screenshot_width_for(@game) * (inverse ? 1 : size)}px"}
+    %img{ src: "#{image_path screenshot_filename_for(@game, num)}",
+          class: "img-thumbnail",
+          alt: formated_name_for(@game)}
+    - unless caption.blank?
+      .caption= caption
+  %br
+.d-none.d-xl-inline
+  .rounded.thumbnail{class: "float-left #{classes}", width: "#{screenshot_width_for(@game)*size}px", height: "#{screenshot_height_for(@game)*size}px",
+                             style: "max-width: #{screenshot_width_for(@game)*size}px"}
+    %img{ src: "#{image_path screenshot_filename_for(@game, num)}",
+          class: "img-thumbnail",
+          alt: formated_name_for(@game)}
+    - unless caption.blank?
+      .caption= caption

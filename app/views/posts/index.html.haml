@@ -1,16 +1,14 @@
 - provide(:title, "All Updates")
 %section.post.title
-  = tag.h1 "All Updates"
+  %h1 All Updates
   %br
 %section.post.content
   - @posts.each do |post|
-    .container
-      .row
-        .col-xs-12
-          %h3
-            = link_to post.title, post
-          %h2{:style => "margin-top: -24px"}
-            = formated_date_for(post)
-          .post.description
-            = formated_intro_for(post)
-          %br
+    .row
+      .col-12
+        %h3= link_to post.title, post
+        %h2{:style => "margin-top: -24px"}
+          = formated_date_for(post)
+        .post.description
+          = formated_intro_for(post)
+        %br

@@ -1,8 +1,11 @@
-%section.post.title
-  = tag.h1 @post.title
-  = tag.h2 "#{formated_date_for(@post)}", style: "margin-top:-6px"
-%section.post.content
-  = sanitize formated_body_for(@post)
-  %br
-%section.post.rider
-  = tag.h2 sanitize "View other updates #{link_to "here", posts_path }."
+.row
+  .col
+    %section.post.title
+      %h1= @post.title
+      %h2.style{style: "margin-top:-6px"}
+        = "#{formated_date_for(@post)}"
+    %section.post.content
+      = sanitize formated_body_for(@post)
+      %br
+    %section.post.rider
+      %h2= sanitize "View other updates #{link_to "here", posts_path }."
