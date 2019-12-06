@@ -4,11 +4,10 @@
   %br
 %section.post.content
   - @posts.each do |post|
-    .row
-      .col-12
-        %h3= link_to post.title, post
-        %h2{:style => "margin-top: -24px"}
-          = formated_date_for(post)
-        .post.description
-          = formated_intro_for(post)
-        %br
+    .container
+      %h3= link_to post.title, post
+      %h2{:style => "margin-top: -24px"}
+        = formated_date_for(post)
+      .post.description
+        = formated_intro_for(post)
+      %br
