@@ -56,8 +56,8 @@ TinyTownsRandomizer =
 
   set_player_buildings: (number) ->
     elements = document.getElementById("player-#{number}").getElementsByClassName("purple")
-    elements[0].innerHTML = PLAYER_BUILDINGS[number*2-2]
-    elements[1].innerHTML = PLAYER_BUILDINGS[number*2-1]
+    elements[0].getElementsByClassName("text")[0].innerHTML = PLAYER_BUILDINGS[number*2-2]
+    elements[1].getElementsByClassName("text")[0].innerHTML = PLAYER_BUILDINGS[number*2-1]
 
   toggle_all_player_buildings: ->
     HIDE_PLAYERS = !HIDE_PLAYERS

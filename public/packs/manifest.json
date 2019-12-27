@@ -12,13 +12,13 @@
     },
     "tiny_towns_randomizer": {
       "js": [
-        "/packs/js/tiny_towns_randomizer-0ca0d7877731985b17d0.js"
+        "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js"
       ],
       "js.map": [
-        "/packs/js/tiny_towns_randomizer-0ca0d7877731985b17d0.js.map"
+        "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js.map"
       ]
     }
   },
-  "tiny_towns_randomizer.js": "/packs/js/tiny_towns_randomizer-0ca0d7877731985b17d0.js",
-  "tiny_towns_randomizer.js.map": "/packs/js/tiny_towns_randomizer-0ca0d7877731985b17d0.js.map"
+  "tiny_towns_randomizer.js": "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js",
+  "tiny_towns_randomizer.js.map": "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js.map"
 }
