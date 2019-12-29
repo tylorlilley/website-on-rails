@@ -24,7 +24,7 @@ HIDE_PLAYERS = true
 BUILDINGS =
   blue:   [ "Cottage" ]
   red:    [ "Farm", "Greenhouse", "Orchard", "Granary" ]
-  orange: [ "Cloitser", "Abbey", "Temple", "Chapel" ]
+  orange: [ "Cloister", "Abbey", "Temple", "Chapel" ]
   yellow: [ "Tailor", "Theater", "Bakery", "Merchant" ]
   gray:   [ "Millstone", "Shed", "Well", "Fountain" ]
   black:  [ "Factory", "Trading Post", "Bank", "Warehouse" ]
