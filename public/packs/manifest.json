@@ -10,15 +10,25 @@
         "/packs/js/application-3335b743603ba7a6c0d3.js.map"
       ]
     },
-    "tiny_towns_randomizer": {
+    "talisman_randomizer": {
       "js": [
-        "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js"
+        "/packs/js/talisman_randomizer-264d23367fef07d47e2e.js"
       ],
       "js.map": [
-        "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js.map"
+        "/packs/js/talisman_randomizer-264d23367fef07d47e2e.js.map"
+      ]
+    },
+    "tiny_towns_randomizer": {
+      "js": [
+        "/packs/js/tiny_towns_randomizer-0d0f7de0ca92249395d2.js"
+      ],
+      "js.map": [
+        "/packs/js/tiny_towns_randomizer-0d0f7de0ca92249395d2.js.map"
       ]
     }
   },
-  "tiny_towns_randomizer.js": "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js",
-  "tiny_towns_randomizer.js.map": "/packs/js/tiny_towns_randomizer-3bd5d7972c006af469c7.js.map"
+  "talisman_randomizer.js": "/packs/js/talisman_randomizer-264d23367fef07d47e2e.js",
+  "talisman_randomizer.js.map": "/packs/js/talisman_randomizer-264d23367fef07d47e2e.js.map",
+  "tiny_towns_randomizer.js": "/packs/js/tiny_towns_randomizer-0d0f7de0ca92249395d2.js",
+  "tiny_towns_randomizer.js.map": "/packs/js/tiny_towns_randomizer-0d0f7de0ca92249395d2.js.map"
 }

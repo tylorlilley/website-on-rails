@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get '/follow', to: 'static_pages#follow'
   get '/index', to: 'static_pages#home'
   get '/home', to: 'static_pages#home'
-  get '/randomizers/tiny_towns', to: 'tiny_towns_randomizer#index'
+  get '/randomizers/tiny_towns', to: 'randomizers#tiny_towns'
+  get '/randomizers/talisman', to: 'randomizers#talisman'
   resources :posts
   resources :games
 end

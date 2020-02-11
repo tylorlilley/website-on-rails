@@ -1,0 +1,13 @@
+.card.text-center{id: "player-#{player}"}
+  .card-header
+    Player #{player}
+    %a{ href: '#'}
+      .icon.icon-left{ alt: "Reveal Player #{player}",
+                        data: { behavior: "reveal-player", number: player } }
+        = svg 'eye'
+      .icon.icon-right{ alt: "Randomize Player #{player}",
+                        data: { behavior: "randomize-player", number: player } }
+        = svg 'loop-circular'
+  %ul.list-group
+    = render partial: "randomizers/tiny_towns/building", locals: {color: :purple, hidden: true}
+    = render partial: "randomizers/tiny_towns/building", locals: {color: :purple, hidden: true}
