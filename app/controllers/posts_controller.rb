@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def show
-    @post = Post.find(params[:id])
+    @post = Post.sluggable.find(params[:id])
   end
 
   def index
