@@ -13,6 +13,6 @@ class Post < ApplicationRecord
   private
 
   def set_slug_to_default
-    self.slug = self.title&.parameterize
+    self.slug = "#{self.date.to_s&.parameterize}-#{self.title&.parameterize}"
   end
 end
