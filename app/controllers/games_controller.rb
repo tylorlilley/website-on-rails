@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   def show
-    @game = Game.find(params[:id])
+    @game = Game.sluggable.find(params[:id])
   end
 
   def index
