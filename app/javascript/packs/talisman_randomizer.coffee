@@ -21,22 +21,99 @@ swap = (array, a, b) ->
 TOTAL_PLAYERS = 4
 HIDE_PLAYERS = true
 
-BUILDINGS =
-  blue:   [ "Cottage" ]
-  red:    [ "Farm", "Greenhouse", "Orchard", "Granary" ]
-  orange: [ "Cloister", "Abbey", "Temple", "Chapel" ]
-  yellow: [ "Tailor", "Theater", "Bakery", "Merchant" ]
-  gray:   [ "Millstone", "Shed", "Well", "Fountain" ]
-  black:  [ "Factory", "Trading Post", "Bank", "Warehouse" ]
-  green:  [ "Inn", "Almshouse", "Feast Hall", "Tavern" ]
-PLAYER_BUILDINGS =
-  [ "Obelisk of the Crescent", "Cathedral of Caterina", "Opaleye's Watch",
-    "Archive of the Second Age", "The Starloom", "The Sky Baths", "Architect's Guild",
-    "Grand Mausoleum of the Rodina", "Silva Forum", "Shrine of the Elder Tree",
-    "Barrett Castle", "Grove University", "Statue of the Bondmaker", "Fort Ironweed" ]
+CHARACTERS =
+  base:             [ "Assassin", "Druid", "Dwarf", "Elf", "Ghoul", "Minstrel", "Monk", "Priest",
+                      "Prophetess", "Sorceress", "Troll", "Thief", "Wizard", "Warrior" ]
+  reaper:           [ "Dark Cultist", "Knight", "Merchant", "Sage" ]
+  dungeon:          [ "Amazon", "Gladiator", "Gypsy", "Philosopher", "Swashbuckler" ]
+  frostmarch:       [ "Leprechaun", "Necromancer", "Ogre Chieftan", "Warlock" ]
+  highland:         [ "Alchemist", "Highlander", "Rogue", "Sprite", "Valkyrie", "Vampiress" ]
+  sacred_pool:      [ "Chivalric Knight", "Cleric", "Dread Knight", "Magus" ]
+  dragon:           [ "Dragon Hunter", "Dragon Priestess", "Dragon Rider", "Fire Wizard", "Minotaur "]
+  blood_moon:       [ "Doomsayer", "Grave Robber", "Vampire Hunter" ]
+  city:             [ "Bounty Hunter", "Cat Burglar", "Elementalist", "Spy", "Tavern Maid", "Tinkerer"]
+  firelands:        [ "Dervish", "Jin Blooded", "Nomad", "Warlord" ]
+  woodland:         [ "Ancient Oak", "Leywalker", "Scout", "Spider Queen", "Totem Warrior" ]
+  harbinger:        [ "Ascendant Divine", "Celestial", "Possessed" ]
+  cataclysm:        [ "Arcane Scion", "Barbarian", "Black Knight", "Mutant", "Scavenger" ]
+  nether_realm:     [ ]
+  realms_unraveled: [ ]
+  digital_edition:  [ "Pirate", "Ninja", "Exorcist", "Courtesan", "Devil's Minion", "Genie", "Martyr",
+                      "Gambler", "Black Witch", "Apprentice Mage", "Shape Shifter", "Shaman", "Illusionist",
+                      "Jester", "Goblin Shaman", "Woodsman", "Pathfinder", "Samurai", "Martial Artist",
+                      "Witch Doctor", "Sacaren" ]
+ENDINGS = # This is not to be used but is for reference purposes
+  base:             [ "Crown of Command" ]
+  reaper:           [ "Danse Macabre" ]
+  dungeon:          [ ]
+  frostmarch:       [ "Crown and Sceptre", "Ice Queen", "Warlock Quests" ]
+  highland:         [ "Battle Royale", "Eagle King", "Hand of Doom" ]
+  sacred_pool:      [ "Demon Lord", "Judgment Day", "Sacred Pool" ]
+  dragon:           [ "Domain of Dragons", "Dragon King", "Dragon Slayers" ]
+  blood_moon:       [ "Blood Moon Werewolf", "Horrible Black Void", "Lightbearers" ]
+  city:             [ "Thieves' Guild", "Merchants' Guild", "Assassins' Guild" ]
+  firelands:        [ "Crown of Flame", "Spreading Flames", "A Hero Rises"]
+  woodland:         [ "Judged by Fate", "Wanderlust", "War of Seasons" ]
+  harbinger:        [ "Armageddon Crown", "End of Days" ]
+  cataclysm:        [ "Cult of the Damned", "Lands of Wonder", "The Eternal Crown", "The One Talisman" ]
+  nether_realm:     [ "Pandora's Box", "The Gauntlet", "The Hunt" ]
+  realms_unraveled: [ "Nether Portal", "Lord of Darkness", "Realmwalkers" ]
+  digital_edition:  [ ]
+
+REVEALED_ONLY_ENDINGS =
+  base:             [ ]
+  reaper:           [ ]
+  dungeon:          [ ]
+  frostmarch:       [ "Warlock Quests" ]
+  highland:         [ ]
+  sacred_pool:      [ "Sacred Pool" ]
+  dragon:           [ "Domain of Dragons", "Dragon Slayers" ]
+  blood_moon:       [ "Lightbearers" ]
+  city:             [ "Merchants' Guild", "Assassins' Guild" ]
+  firelands:        [ "A Hero Rises"]
+  woodland:         [ "Wanderlust" ]
+  harbinger:        [ "End of Days" ]
+  cataclysm:        [ "Lands of Wonder", "The One Talisman" ]
+  nether_realm:     [ "The Gauntlet", "The Hunt" ]
+  realms_unraveled: [ "Realmwalkers" ]
+  digital_edition:  [ ]
+HIDDEN_ONLY_ENDINGS =
+  base:             [ ]
+  reaper:           [ ]
+  dungeon:          [ ]
+  frostmarch:       [ ]
+  highland:         [ ]
+  sacred_pool:      [ ]
+  dragon:           [ ]
+  blood_moon:       [ "Blood Moon Werewolf", "Horrible Black Void" ]
+  city:             [ ]
+  firelands:        [ "Crown of Flame", "Spreading Flames" ]
+  woodland:         [ "Judged by Fate" ]
+  harbinger:        [ ]
+  cataclysm:        [ "Cult of the Damned" ]
+  nether_realm:     [ ]
+  realms_unraveled: [ "Lord of Darkness" ]
+  digital_edition:  [ ]
+BOTH_ENDINGS =
+  base:             [ "Crown of Command" ]
+  reaper:           [ "Danse Macabre" ]
+  dungeon:          [ ]
+  frostmarch:       [ "Crown and Sceptre", "Ice Queen" ]
+  highland:         [ "Battle Royale", "Eagle King", "Hand of Doom" ]
+  sacred_pool:      [ "Demon Lord", "Judgment Day", ]
+  dragon:           [ "Dragon King" ]
+  blood_moon:       [ ]
+  city:             [ "Thieves' Guild" ]
+  firelands:        [ ]
+  woodland:         [ "War of Seasons" ]
+  harbinger:        [ "Armageddon Crown" ]
+  cataclysm:        [ "The Eternal Crown" ]
+  nether_realm:     [ "Pandora's Box" ]
+  realms_unraveled: [ "Nether Portal" ]
+  digital_edition:  [ ]
 
 
-TinyTownsRandomizer =
+TalismanRandomizer =
   randomize_building: (color) ->
     element = document.getElementsByClassName(color)[0].getElementsByClassName("text")[0]
     element.innerHTML = shuffle(BUILDINGS[color])[0]
@@ -89,11 +166,10 @@ TinyTownsRandomizer =
   randomize_all_buildings: ->
     TinyTownsRandomizer.randomize_building(x) for x,y of BUILDINGS
 
-  change_total_players: (number) ->
-    TOTAL_PLAYERS = number
-    TinyTownsRandomizer.toggle_player(x) for x in [1..6]
+  change_enabled_expansions: (expansion) ->
+    toggle_expansion(expansion)
 
-  toggle_player: (number) ->
+  toggle_expansion: (expansion) ->
     if number > TOTAL_PLAYERS
       $("#player-#{number}").hide()
     else
@@ -129,6 +205,6 @@ $(document).on "click", "[data-behavior~=randomize-all-buildings]", (event) ->
 $(document).ready ->
   TinyTownsRandomizer.randomize_all()
 
-$(document).on "click", "input[type=radio][name=total-players]", (event) ->
-  number = this.getAttribute('value')
-  TinyTownsRandomizer.change_total_players(number)
+$(document).on "click", "input[type=checkbox][name=enabled-expansions]", (event) ->
+  expansion = this.getAttribute('value')
+  TalismanRandomizer.change_enabled_expansions(expansion)

@@ -45,7 +45,63 @@
     .col-12.col-md-6
       .card.text-center
         .card-header
-          Selected Buildings
+          Enabled Expansions
+        .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions", role: "group"}
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-base",
+                    autocomplete: "off", value: "base", checked: ""} Base Game
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-reaper",
+                    autocomplete: "off", value: "reaper"} The Reaper
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-dungeon",
+                    autocomplete: "off", value: "dungeon"} Dungeon
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-frostmarch",
+                    autocomplete: "off", value: "frostmarch"} Frostmarch
+        .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions-2", role: "group"}
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-highland",
+                    autocomplete: "off", value: "highland"} Highland
+          %label.btn.btn-light{
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-sacred-pool",
+                    autocomplete: "off", value: "sacred_pool"} Sacred Pool
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-dragon",
+                    autocomplete: "off", value: "dragon"} Dragon
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-blood-moon",
+                    autocomplete: "off", value: "blood_moon"} Blood Moon
+        .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions-3", role: "group"}
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-city",
+                    autocomplete: "off", value: "city"} City
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-firelands",
+                    autocomplete: "off", value: "firelands"} Firelands
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-woodland",
+                    autocomplete: "off", value: "woodland"} Woodland
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-harbinger",
+                    autocomplete: "off", value: "harbinger"} Harbinger
+        .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions-4", role: "group"}
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-cataclysm",
+                    autocomplete: "off", value: "cataclysm"} Cataclysm
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-nether-realms",
+                    autocomplete: "off", value: "nether_realms"} Nether Realms
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-realms-unraveled",
+                    autocomplete: "off", value: "realms_unraveled"} Realms Unraveled
+          %label.btn.btn-light
+            %input{ type: "checkbox", name: "enabled-expansions", id: "enabled-expansions-digital-edition",
+                    autocomplete: "off", value: "digital_edition"} Digital Edition
+    .col-12.col-md-6
+      .card.text-center
+        .card-header
+          Selected Expansopms
           %a{ href: '#'}
             .icon.icon-right{ alt: "Randomize all Buildings",
                               data: { behavior: "randomize-all-buildings" } }
