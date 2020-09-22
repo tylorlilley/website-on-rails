@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get '/randomizers/tiny_towns', to: 'tiny_towns_randomizer#index'
   get '/randomizers/tiny_towns/randomize_all_buildings', to: 'tiny_towns_randomizer#randomize_all_buildings'
   get '/randomizers/tiny_towns/randomize_building', to: 'tiny_towns_randomizer#randomize_building'
+  get '/randomizers/tiny_towns/randomize_all_players', to: 'tiny_towns_randomizer#randomize_all_players'
+  get '/randomizers/tiny_towns/randomize_player', to: 'tiny_towns_randomizer#randomize_player'
+  get '/randomizers/tiny_towns/randomize_all', to: 'tiny_towns_randomizer#randomize_all'
   resources :posts
   resources :games
 end
