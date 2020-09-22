@@ -12,9 +12,9 @@
       .card.text-center
         .card-header
           Number of Players
-          .icon.icon-left{ alt: "Reveal all Players",
-                            data: { behavior: "reveal-all-players" } }
-            = svg 'eye'
+          = link_to "/randomizers/tiny_towns/toggle_all_players" do
+            .icon.icon-left{ alt: "Reveal all Players" }
+              = svg 'eye'
           = link_to "/randomizers/tiny_towns/randomize_all_players?number_of_players=#{"4"}" do
             .icon.icon-right{ alt: "Randomize all Players" }
               = svg 'loop-circular'

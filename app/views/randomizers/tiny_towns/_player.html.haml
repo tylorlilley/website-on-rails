@@ -3,9 +3,9 @@
     .card-header
       Player #{player}
       %a{ href: '#'}
-        .icon.icon-left{ alt: "Reveal Player #{player}",
-                          data: { behavior: "reveal-player", number: player } }
-          = svg 'eye'
+        = link_to "/randomizers/tiny_towns/toggle_player?player=#{player}" do
+          .icon.icon-left{ alt: "Reveal Player #{player}" }
+            = svg 'eye'
         = link_to "/randomizers/tiny_towns/randomize_player?player=#{player}" do
           .icon.icon-right{ alt: "Randomize Player #{player}" }
             = svg 'loop-circular'

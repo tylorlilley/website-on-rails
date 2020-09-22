@@ -63,6 +63,18 @@ class TinyTownsRandomizerController < ApplicationController
     redirect_to '/randomizers/tiny_towns'
   end
 
+  def toggle_all_players
+    set_all_players_hidden_status
+    write_to_cookie
+    redirect_to '/randomizers/tiny_towns'
+  end
+
+  def toggle_player
+    set_player_hidden_status(params[:player])
+    write_to_cookie
+    redirect_to '/randomizers/tiny_towns'
+  end
+
   def number_of_players
     @number_of_players = randomizer["players"].values.reduce(0) do |total_players, player|
       YAML.load(player["active"]) ? total_players + 1 : total_players
@@ -96,6 +108,14 @@ class TinyTownsRandomizerController < ApplicationController
           "4" => { "active" => "true", "hidden" => "false" },
           "5" => { "active" => "false", "hidden" => "false" },
           "6" => { "active" => "false", "hidden" => "false" },
+        },
+        "settings" => {
+          "hidden_players" => "true",
+          "expansions" => {
+            "base_game" => "true",
+            "fortune" => "false",
+            "villagers" => "false"
+          }
         }
       }
   end
@@ -126,6 +146,13 @@ class TinyTownsRandomizerController < ApplicationController
     end
   end
 
+  def set_all_players_hidden_status
+    randomizer["settings"]["hidden_players"] = JSON.generate !YAML.load(randomizer["settings"]["hidden_players"])
+    randomizer["players"].merge!(randomizer["players"]) do |player_number, player|
+      { "active" => player["active"], "hidden" =>  randomizer["settings"]["hidden_players"] }
+    end
+  end
+
   def set_player_to_random_buildings(player_number)
     total_buildings = randomizer["buildings"]["purple"].count
     current_buildings = randomizer["buildings"]["purple"][(2*(player_number-1)) .. (2*(player_number-1))+1]
@@ -138,5 +165,9 @@ class TinyTownsRandomizerController < ApplicationController
       randomizer["buildings"]["purple"][pos_of_building_to_replace] = new_building
       randomizer["buildings"]["purple"][pos_of_new_building] = building_to_replace
     end
+  end
+
+  def set_player_hidden_status(player_number)
+    randomizer["players"][player_number]["hidden"] = JSON.generate !YAML.load(randomizer["players"][player_number]["hidden"])
   end
 end
