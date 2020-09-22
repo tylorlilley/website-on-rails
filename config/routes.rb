@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/index', to: 'static_pages#home'
   get '/home', to: 'static_pages#home'
   get '/randomizers/tiny_towns', to: 'tiny_towns_randomizer#index'
+  get '/randomizers/tiny_towns/randomize_all_buildings', to: 'tiny_towns_randomizer#randomize_all_buildings'
+  get '/randomizers/tiny_towns/randomize_building', to: 'tiny_towns_randomizer#randomize_building'
   resources :posts
   resources :games
 end

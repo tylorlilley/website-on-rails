@@ -3,9 +3,8 @@
 - number ||= 0
 %li.list-group-item{class: "#{color} #{'unrevealed' if hidden}"}
   .text
-    Regular Building
+    #{@randomizer.nil? ? "ERROR" : @randomizer["buildings"][color].first }
   - if randomizable
-    %a{ href: '#'}
-      .icon.icon-right{ alt: "Randomize #{color} Building",
-                        data: { behavior: "randomize-building", color: color } }
+    = link_to "/randomizers/tiny_towns/randomize_building?color=#{color}", color: color do
+      .icon.icon-right{ alt: "Randomize #{color} Building" }
         = svg 'loop-circular'

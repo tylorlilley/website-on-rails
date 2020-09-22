@@ -1,5 +1,3 @@
-= javascript_pack_tag 'tiny_towns_randomizer'
-
 .container
   .row
     .col-12
@@ -46,15 +44,14 @@
       .card.text-center
         .card-header
           Selected Buildings
-          %a{ href: '#'}
-            .icon.icon-right{ alt: "Randomize all Buildings",
-                              data: { behavior: "randomize-all-buildings" } }
+          = link_to "/randomizers/tiny_towns/randomize_all_buildings" do
+            .icon.icon-right{ alt: "Randomize all Buildings" }
               = svg 'loop-circular'
         %ul.list-group
-          = render partial: "randomizers/tiny_towns/building", locals: {color: :blue}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: :red, randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: :yellow, randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: :orange, randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: :green, randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: :gray, randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: :black, randomizable: true}
+          = render partial: "randomizers/tiny_towns/building", locals: {color: "blue", randomizer: @randomizer }
+          = render partial: "randomizers/tiny_towns/building", locals: {color: "red", randomizable: true}
+          = render partial: "randomizers/tiny_towns/building", locals: {color: "yellow", randomizable: true}
+          = render partial: "randomizers/tiny_towns/building", locals: {color: "orange", randomizable: true}
+          = render partial: "randomizers/tiny_towns/building", locals: {color: "green", randomizable: true}
+          = render partial: "randomizers/tiny_towns/building", locals: {color: "gray", randomizable: true}
+          = render partial: "randomizers/tiny_towns/building", locals: {color: "black", randomizable: true}
