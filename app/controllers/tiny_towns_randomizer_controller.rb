@@ -12,18 +12,19 @@ class TinyTownsRandomizerController < ApplicationController
       "purple" => [ "Obelisk of the Crescent", "Cathedral of Caterina", "Opaleye's Watch",
         "Archive of the Second Age", "The Starloom", "The Sky Baths", "Architect's Guild",
         "Grand Mausoleum of the Rodina", "Silva Forum", "Shrine of the Elder Tree",
-        "Barrett Castle", "Grove University", "Statue of the Bondmaker", "Fort Ironweed" ]
+        "Barrett Castle", "Grove University", "Statue of the Bondmaker", "Fort Ironweed",
+        "Mandras Palace" ]
     },
     "fortune" => {
       "blue" =>   [ "Cottage" ],
       "red" =>    [ "Root Cellar", "Tithe Barn" ],
       "orange" => [ "Cathedral", "Parsonage" ],
       "yellow" => [ "Jewler", "Teahouse" ],
-      "gray" =>   [ "Statue" ],
+      "gray" =>   [ "Statue", "Mine" ],
       "black" =>  [ "Museum", "Oddity Shop" ],
       "green" =>  [ "Gambler's Den", "Schoolhouse" ],
       "purple" => [ "Caterina's Grotto", "Eraflage Vineyard", "Estival Festival", "Hollow Hill",
-        "Mason's Guild", "The Petal Promenade", "The Prism Forge", "Southern Semaphore" ]
+        "Mason's Guild", "The Petal Promenade", "The Prism Forge", "Southern Semaphore", "The Treasury of Okaver", "Shrine of the Windseed" ]
     },
     "villagers" => {
       "blue" =>   [ "Cottage" ],
