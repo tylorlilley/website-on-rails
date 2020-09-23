@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get '/randomizers/tiny_towns/randomize_all', to: 'tiny_towns_randomizer#randomize_all'
   get '/randomizers/tiny_towns/toggle_all_players', to: 'tiny_towns_randomizer#toggle_all_players'
   get '/randomizers/tiny_towns/toggle_player', to: 'tiny_towns_randomizer#toggle_player'
+  get '/randomizers/tiny_towns/set_player_count', to: 'tiny_towns_randomizer#set_player_count'
+  get '/randomizers/tiny_towns/toggle_expansion', to: 'tiny_towns_randomizer#toggle_expansion'
   resources :posts
   resources :games
 end

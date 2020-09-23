@@ -1,29 +1,40 @@
 class TinyTownsRandomizerController < ApplicationController
 
-  BASE_GAME_BUILDINGS = {
-    "blue" =>   [ "Cottage" ],
-    "red" =>    [ "Farm", "Greenhouse", "Orchard", "Granary" ],
-    "orange" => [ "Cloister", "Abbey", "Temple", "Chapel" ],
-    "yellow" => [ "Tailor", "Theater", "Bakery", "Merchant" ],
-    "gray" =>   [ "Millstone", "Shed", "Well", "Fountain" ],
-    "black" =>  [ "Factory", "Trading Post", "Bank", "Warehouse" ],
-    "green" =>  [ "Inn", "Almshouse", "Feast Hall", "Tavern" ],
-    "purple" => [ "Obelisk of the Crescent", "Cathedral of Caterina", "Opaleye's Watch",
-      "Archive of the Second Age", "The Starloom", "The Sky Baths", "Architect's Guild",
-      "Grand Mausoleum of the Rodina", "Silva Forum", "Shrine of the Elder Tree",
-      "Barrett Castle", "Grove University", "Statue of the Bondmaker", "Fort Ironweed" ]
-  }
-
-  FORTUNE_BUILDINGS = {
-    blue:   [ ],
-    red:    [ "Root Cellar", "Tithe Barn" ],
-    orange: [ "Cathedral", "Parsonage" ],
-    yellow: [ "Jewler", "Teahouse" ],
-    gray:   [ "Statue" ],
-    black:  [ "Museum", "Oddity Shop" ],
-    green:  [ "Gambler's Den", "Schoolhouse" ],
-    purple: [ "Caterina's Grotto", "Eraflage Vineyard", "Estival Festival", "Hollow Hill",
-      "Mason's Guild", "The Petal Promenade", "The Prism Forge", "Southern Semaphore" ]
+  BUILDINGS = {
+    "base_game" => {
+      "blue" =>   [ "Cottage" ],
+      "red" =>    [ "Farm", "Greenhouse", "Orchard", "Granary" ],
+      "orange" => [ "Cloister", "Abbey", "Temple", "Chapel" ],
+      "yellow" => [ "Tailor", "Theater", "Bakery", "Merchant" ],
+      "gray" =>   [ "Millstone", "Shed", "Well", "Fountain" ],
+      "black" =>  [ "Factory", "Trading Post", "Bank", "Warehouse" ],
+      "green" =>  [ "Inn", "Almshouse", "Feast Hall", "Tavern" ],
+      "purple" => [ "Obelisk of the Crescent", "Cathedral of Caterina", "Opaleye's Watch",
+        "Archive of the Second Age", "The Starloom", "The Sky Baths", "Architect's Guild",
+        "Grand Mausoleum of the Rodina", "Silva Forum", "Shrine of the Elder Tree",
+        "Barrett Castle", "Grove University", "Statue of the Bondmaker", "Fort Ironweed" ]
+    },
+    "fortune" => {
+      "blue" =>   [ "Cottage" ],
+      "red" =>    [ "Root Cellar", "Tithe Barn" ],
+      "orange" => [ "Cathedral", "Parsonage" ],
+      "yellow" => [ "Jewler", "Teahouse" ],
+      "gray" =>   [ "Statue" ],
+      "black" =>  [ "Museum", "Oddity Shop" ],
+      "green" =>  [ "Gambler's Den", "Schoolhouse" ],
+      "purple" => [ "Caterina's Grotto", "Eraflage Vineyard", "Estival Festival", "Hollow Hill",
+        "Mason's Guild", "The Petal Promenade", "The Prism Forge", "Southern Semaphore" ]
+    },
+    "villagers" => {
+      "blue" =>   [ "Cottage" ],
+      "red" =>    [ ],
+      "orange" => [ ],
+      "yellow" => [ ],
+      "gray" =>   [ ],
+      "black" =>  [ ],
+      "green" =>  [ ],
+      "purple" => [ ]
+    },
   }
 
   def index
@@ -51,7 +62,6 @@ class TinyTownsRandomizerController < ApplicationController
   end
 
   def randomize_all_players
-    set_all_players_active_status(params[:number_of_players].to_i)
     set_all_players_to_random_buildings
     write_to_cookie
     redirect_to '/randomizers/tiny_towns'
@@ -75,10 +85,22 @@ class TinyTownsRandomizerController < ApplicationController
     redirect_to '/randomizers/tiny_towns'
   end
 
+  def set_player_count
+    set_all_players_active_status(params[:number_of_players].to_i)
+    write_to_cookie
+    redirect_to '/randomizers/tiny_towns'
+  end
+
   def number_of_players
     @number_of_players = randomizer["players"].values.reduce(0) do |total_players, player|
       YAML.load(player["active"]) ? total_players + 1 : total_players
     end
+  end
+
+  def toggle_expansion
+    set_expansion_active_status(params[:expansion])
+    write_to_cookie
+    redirect_to '/randomizers/tiny_towns'
   end
 
   private
@@ -100,24 +122,24 @@ class TinyTownsRandomizerController < ApplicationController
 
   def default_randomizer_setup
     {
-        "buildings" => BASE_GAME_BUILDINGS,
-        "players" =>  {
-          "1" => { "active" => "true", "hidden" => "false" },
-          "2" => { "active" => "true", "hidden" => "false" },
-          "3" => { "active" => "true", "hidden" => "false" },
-          "4" => { "active" => "true", "hidden" => "false" },
-          "5" => { "active" => "false", "hidden" => "false" },
-          "6" => { "active" => "false", "hidden" => "false" },
-        },
-        "settings" => {
-          "hidden_players" => "true",
-          "expansions" => {
-            "base_game" => "true",
-            "fortune" => "false",
-            "villagers" => "false"
-          }
+      "buildings" => BUILDINGS["base_game"],
+      "players" =>  {
+        "1" => { "active" => "true", "hidden" => "true" },
+        "2" => { "active" => "true", "hidden" => "true" },
+        "3" => { "active" => "true", "hidden" => "true" },
+        "4" => { "active" => "true", "hidden" => "true" },
+        "5" => { "active" => "false", "hidden" => "true" },
+        "6" => { "active" => "false", "hidden" => "true" },
+      },
+      "settings" => {
+        "hidden_players" => "true",
+        "expansions" => {
+          "base_game" => "true",
+          "fortune" => "false",
+          "villagers" => "false"
         }
       }
+    }
   end
 
   def read_from_cookie
@@ -169,5 +191,33 @@ class TinyTownsRandomizerController < ApplicationController
 
   def set_player_hidden_status(player_number)
     randomizer["players"][player_number]["hidden"] = JSON.generate !YAML.load(randomizer["players"][player_number]["hidden"])
+  end
+
+  def set_expansion_active_status(expansion)
+    randomizer["settings"]["expansions"][expansion] = JSON.generate !YAML.load(randomizer["settings"]["expansions"][expansion])
+    update_buildings
+  end
+
+  def update_buildings
+    updated_buildings = {
+      "blue" =>   [ ],
+      "red" =>    [ ],
+      "orange" => [ ],
+      "yellow" => [ ],
+      "gray" =>   [ ],
+      "black" =>  [ ],
+      "green" =>  [ ],
+      "purple" => [ ]
+    }
+    BUILDINGS.each do |expansion, contents|
+      if YAML.load(randomizer["settings"]["expansions"][expansion])
+        contents.each do |color, buildings|
+          updated_buildings[color] = updated_buildings[color] | buildings
+        end
+      end
+    end
+    randomizer["buildings"] = updated_buildings
+    set_all_buildings_to_random
+    set_all_players_to_random_buildings
   end
 end
