@@ -15,13 +15,18 @@ module PostsHelper
   # Returns the first section of a post's content
   def formated_intro_for(post)
     return "" if post.nil?
-    formated_intro(post.content, post)
+    formated_intro(content_for(post), post)
   end
 
   # Returns the body of the post formatted with HTML tags
   def formated_body_for(post)
     return "" if post.nil?
-    formated_body(post.content)
+    formated_body(content_for(post))
+  end
+
+  # Returns the contents of the post's associated content file
+  def content_for(post)
+    File.read("/Users/tlilley/environment/website-on-rails/app/views/posts/content/_#{post.slug}.html.haml")
   end
 
 end

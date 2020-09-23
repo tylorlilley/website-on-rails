@@ -34,9 +34,10 @@ module ApplicationHelper
 
   # Returns the first section of a block of content formated into a paragraph
   def formated_intro(content, link_destination)
-    return "" if content.blank? || content.split("\n").first.blank?
+    return "" if content.blank? || content.split("%p").second.blank?
     link_destination ||= "#"
-    tag.p raw "#{content.split("\n").first[0...-1]}...#{link_to "(view more)", link_destination}"
+    intro = content.split("%p").second[0...-2]+"... #{link_to "(view more)", link_destination}"
+    Haml::Engine.new( "%p"+intro ).render(self)
   end
 
   # Returns a block of content formated into a paragraph

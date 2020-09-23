@@ -28,7 +28,6 @@ class PostsHelperTest < ActionView::TestCase
     assert_equal formated_intro_for(@post), "<p>This is an example of a" +
                           " post's first paragraph. It has two sentances...#{link_to "(view more)", @post}</p>"
     assert_equal formated_intro_for(nil), ""
-    @post.content = nil
     assert_equal formated_intro_for(@post), ""
     @post = Post.find_by(title: "Embedded Example Title")
     assert_equal formated_intro_for(@post),
@@ -41,7 +40,6 @@ class PostsHelperTest < ActionView::TestCase
 "<p>This is an example of a post's second paragraph. It is a bit longer. It has three sentences.</p>" +
 "<p>This is a concluding paragraph of a post, and it's only one sentance long.</p>"
     assert_equal formated_body_for(nil), ""
-    @post.content = nil
     assert_equal formated_intro_for(@post), ""
     @post = Post.find_by(title: "Embedded Example Title")
     assert_equal formated_body_for(@post),

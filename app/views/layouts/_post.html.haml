@@ -5,7 +5,7 @@
       %h2.style{style: "margin-top:-6px"}
         = "#{formated_date_for(@post)}"
     %section.post.content
-      = sanitize formated_body_for(@post)
+      = render partial: "posts/content/#{@post.slug}"
       %br
     %section.post.rider
       %h2= sanitize "View other updates #{link_to "here", posts_path }."
