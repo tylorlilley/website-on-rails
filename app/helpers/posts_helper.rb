@@ -26,7 +26,7 @@ module PostsHelper
 
   # Returns the contents of the post's associated content file
   def content_for(post)
-    File.read("/Users/tlilley/environment/website-on-rails/app/views/posts/content/_#{post.slug}.html.haml")
+    File.read("app/views/posts/content/_#{post.slug}.html.haml")
   end
 
 end

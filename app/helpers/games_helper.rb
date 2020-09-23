@@ -56,7 +56,7 @@ module GamesHelper
 
   # Returns the contents of the games's associated description file
   def description_for(game)
-    File.read("/Users/tlilley/environment/website-on-rails/app/views/games/description/_#{game.slug}.html.haml")
+    File.read("app/views/games/description/_#{game.slug}.html.haml")
   end
 
 end
