@@ -6,7 +6,7 @@
   .col-12.mx-auto
     %section.game.content
       = render partial:'screenshot', locals: { num: 1, size: 1, caption: formated_tagline_for(@game) }
-      = sanitize formated_description_for(@game)
+      = render partial: "games/description/#{@game.slug}"
   .col-12.mx-auto
     .container
       .row.justify-content-center

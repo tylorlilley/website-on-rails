@@ -45,13 +45,18 @@ module GamesHelper
   # Returns the first section of a game's description
   def formated_teaser_for(game)
     return "" if game.nil?
-    formated_intro(game.description, game)
+    formated_intro(description_for(game), game)
   end
 
   # Returns the game description formatted with HTML tags
   def formated_description_for(game)
     return "" if game.nil?
-    formated_body(game.description)
+    formated_body(description_for(game))
+  end
+
+  # Returns the contents of the games's associated description file
+  def description_for(game)
+    File.read("/Users/tlilley/environment/website-on-rails/app/views/games/description/_#{game.slug}.html.haml")
   end
 
 end
