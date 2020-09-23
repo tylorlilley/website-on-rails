@@ -1,0 +1,4 @@
+%label.btn.btn-light
+  = link_to "/randomizers/tiny_towns/set_player_count?number_of_players=#{player}", style: 'color: black !important; border-bottom: 0px !important;' do
+    %input{ type: "button", style:"display: none", name: "total-players", id: "total-players-#{player}", alt: "Set Player Count to #{player}",
+            autocomplete: "off", value: player, checked: @number_of_players == player ? true : nil} #{player}

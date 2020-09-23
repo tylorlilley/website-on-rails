@@ -14,32 +14,17 @@
         .list-group.list-group-flush
           .list-group-item{ style: "padding: 0px" }
             .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions", role: "group"}
-              %label.btn.btn-light
-                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=base_game", style: 'color: black !important; border-bottom: 0px !important;' do
-                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-base-game", alt: "Toggle Base Game",
-                          autocomplete: "off", value: "base_game", checked: YAML.load(@randomizer["settings"]["expansions"]["base_game"]) ? true : nil} Base Game
-              %label.btn.btn-light
-                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=fortune", style: 'color: black !important; border-bottom: 0px !important;' do
-                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-fortune", alt: "Toggle Fortune Expansion",
-                          autocomplete: "off", value: "fortune", checked: YAML.load(@randomizer["settings"]["expansions"]["fortune"]) ? true : nil} Fortune
-              -# %label.btn.btn-light
-                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=villagers", style: 'color: black !important; border-bottom: 0px !important;' do
-                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-villagers", alt: "Toggle Villagers Expansion",
-                          autocomplete: "off", value: "villagers", checked: YAML.load(@randomizer["settings"]["expansions"]["villagers"]) ? true : nil} Villagers
-                                    Expansions
+              = render partial: "randomizers/tiny_towns/expansion_toggle", locals: { expansion_label: "Base Game" }
+              = render partial: "randomizers/tiny_towns/expansion_toggle", locals: { expansion_label: "Fortune" }
+              -# = render partial: "randomizers/tiny_towns/expansion_toggle", locals: { expansion_label: "Villagers" }
         .card-header
           Included Promos
         .list-group.list-group-flush
           .list-group-item{ style: "padding: 0px" }
             .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions", role: "group"}
-              %label.btn.btn-light
-                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=flgs_and_larkstone", style: 'color: black !important; border-bottom: 0px !important;' do
-                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-flgs-and-larkstone", alt: "Toggle FLGS and Larkstone Promos",
-                          autocomplete: "off", value: "flgs_and_larkstone", checked: YAML.load(@randomizer["settings"]["expansions"]["flgs_and_larkstone"]) ? true : nil} FLGS and Larkstone
-              %label.btn.btn-light
-                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=dead_reckoning", style: 'color: black !important; border-bottom: 0px !important;' do
-                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-dead-reckoning", alt: "Toggle Dead Reckoning Promos",
-                          autocomplete: "off", value: "dead_reckoning", checked: YAML.load(@randomizer["settings"]["expansions"]["dead_reckoning"]) ? true : nil} Dead Reckoning
+              = render partial: "randomizers/tiny_towns/expansion_toggle", locals: { expansion_label: "FLGS and Larkstone" }
+              = render partial: "randomizers/tiny_towns/expansion_toggle", locals: { expansion_label: "Dead Reckoning" }
+
     .col-12.col-md-6
       .card.text-center
         .card-header
@@ -51,36 +36,19 @@
             .icon.icon-right{ alt: "Randomize all Players" }
               = svg 'loop-circular'
         .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "player-count", role: "group"}
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/set_player_count?number_of_players=1", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "total-players", id: "total-players-1", alt: "Set Player Count to 1",
-                      autocomplete: "off", value: 1, checked: @number_of_players == 1 ? true : nil} 1
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/set_player_count?number_of_players=2", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "total-players", id: "total-players-2", alt: "Set Player Count to 2",
-                      autocomplete: "off", value: 2, checked: @number_of_players == 2 ? true : nil} 2
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/set_player_count?number_of_players=3", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "total-players", id: "total-players-3", alt: "Set Player Count to 3",
-                      autocomplete: "off", value: 3, checked: @number_of_players == 3 ? true : nil} 3
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/set_player_count?number_of_players=4", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "total-players", id: "total-players-4", alt: "Set Player Count to 4",
-                      autocomplete: "off", value: 4, checked: @number_of_players == 4 ? true : nil} 4
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/set_player_count?number_of_players=5", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "total-players", id: "total-players-5", alt: "Set Player Count to 5",
-                      autocomplete: "off", value: 5, checked: @number_of_players == 5 ? true : nil} 5
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/set_player_count?number_of_players=6", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "total-players", id: "total-players-6", alt: "Set Player Count to 6",
-                      autocomplete: "off", value: 6, checked: @number_of_players == 6 ? true : nil} 6
-      = render partial: "randomizers/tiny_towns/player", locals: {player: 1}
-      = render partial: "randomizers/tiny_towns/player", locals: {player: 2}
-      = render partial: "randomizers/tiny_towns/player", locals: {player: 3}
-      = render partial: "randomizers/tiny_towns/player", locals: {player: 4}
-      = render partial: "randomizers/tiny_towns/player", locals: {player: 5}
-      = render partial: "randomizers/tiny_towns/player", locals: {player: 6}
+          = render partial: "randomizers/tiny_towns/player_toggle", locals: { player: 1 }
+          = render partial: "randomizers/tiny_towns/player_toggle", locals: { player: 2 }
+          = render partial: "randomizers/tiny_towns/player_toggle", locals: { player: 3 }
+          = render partial: "randomizers/tiny_towns/player_toggle", locals: { player: 4 }
+          = render partial: "randomizers/tiny_towns/player_toggle", locals: { player: 5 }
+          = render partial: "randomizers/tiny_towns/player_toggle", locals: { player: 6 }
+
+      = render partial: "randomizers/tiny_towns/player", locals: {player: 1 }
+      = render partial: "randomizers/tiny_towns/player", locals: {player: 2 }
+      = render partial: "randomizers/tiny_towns/player", locals: {player: 3 }
+      = render partial: "randomizers/tiny_towns/player", locals: {player: 4 }
+      = render partial: "randomizers/tiny_towns/player", locals: {player: 5 }
+      = render partial: "randomizers/tiny_towns/player", locals: {player: 6 }
     .col-12.col-md-6
       .card.text-center
         .card-header
@@ -89,10 +57,10 @@
             .icon.icon-right{ alt: "Randomize all Buildings" }
               = svg 'loop-circular'
         %ul.list-group
-          = render partial: "randomizers/tiny_towns/building", locals: {color: "blue", randomizer: @randomizer }
-          = render partial: "randomizers/tiny_towns/building", locals: {color: "red", randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: "yellow", randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: "orange", randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: "green", randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: "gray", randomizable: true}
-          = render partial: "randomizers/tiny_towns/building", locals: {color: "black", randomizable: true}
+          = render partial: "randomizers/tiny_towns/building", locals: { color: "blue" }
+          = render partial: "randomizers/tiny_towns/building", locals: { color: "red", randomizable: true }
+          = render partial: "randomizers/tiny_towns/building", locals: { color: "yellow", randomizable: true }
+          = render partial: "randomizers/tiny_towns/building", locals: { color: "orange", randomizable: true }
+          = render partial: "randomizers/tiny_towns/building", locals: { color: "green", randomizable: true }
+          = render partial: "randomizers/tiny_towns/building", locals: { color: "gray", randomizable: true }
+          = render partial: "randomizers/tiny_towns/building", locals: { color: "black", randomizable: true }
