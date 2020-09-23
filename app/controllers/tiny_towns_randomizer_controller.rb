@@ -36,6 +36,26 @@ class TinyTownsRandomizerController < ApplicationController
       "green" =>  [ ],
       "purple" => [ ]
     },
+    "dead_reckoning" => {
+      "blue" =>   [ ],
+      "red" =>    [ ],
+      "orange" => [ ],
+      "yellow" => [ ],
+      "gray" =>   [ ],
+      "black" =>  [ ],
+      "green" =>  [ "Pirates' Den" ],
+      "purple" => [ ]
+    },
+    "flgs_and_larkstone" => {
+      "blue" =>   [ ],
+      "red" =>    [ ],
+      "orange" => [ ],
+      "yellow" => [ "Friendly Local Game Store" ],
+      "gray" =>   [ ],
+      "black" =>  [ ],
+      "green" =>  [ ],
+      "purple" => [ "Larkstone" ]
+    },
   }
 
   def index
@@ -137,7 +157,9 @@ class TinyTownsRandomizerController < ApplicationController
         "expansions" => {
           "base_game" => "true",
           "fortune" => "false",
-          "villagers" => "false"
+          "villagers" => "false",
+          "flgs_and_larkstone" => "false",
+          "dead_reckoning" => "false",
         }
       }
     }

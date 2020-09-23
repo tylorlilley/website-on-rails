@@ -1,31 +1,45 @@
 .container
   .row
     .col-12
-      %h1 Tiny Towns Randomizer
-      %br
-  .row
-    .col-12
       .card.text-center
         .card-header
           = link_to "/randomizers/tiny_towns/randomize_all", style: 'border-bottom: 0px !important;' do
             .btn.btn-block.btn-light.btn-main Randomize Everything!
             .icon.icon-left
-              = svg 'loop-circular', width: 48, height: 48
+              = svg 'loop-circular', width: 60, height: 60
             .icon.icon-right
-              = svg 'loop-circular', width: 48, height: 48
-        .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions", role: "group"}
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=base_game", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-base-game", alt: "Toggle Base Game",
-                      autocomplete: "off", value: "base_game", checked: YAML.load(@randomizer["settings"]["expansions"]["base_game"]) ? true : nil} Base Game
-          %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=fortune", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-fortune", alt: "Toggle Fortune Expansion",
-                      autocomplete: "off", value: "fortune", checked: YAML.load(@randomizer["settings"]["expansions"]["fortune"]) ? true : nil} Fortune
-          -# %label.btn.btn-light
-            = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=villagers", style: 'color: black !important; border-bottom: 0px !important;' do
-              %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-villagers", alt: "Toggle Villagers Expansion",
-                      autocomplete: "off", value: "villagers", checked: YAML.load(@randomizer["settings"]["expansions"]["villagers"]) ? true : nil} Villagers
+              = svg 'loop-circular', width: 60, height: 60
+        .card-header
+          Included Expansions
+        .list-group.list-group-flush
+          .list-group-item{ style: "padding: 0px" }
+            .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions", role: "group"}
+              %label.btn.btn-light
+                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=base_game", style: 'color: black !important; border-bottom: 0px !important;' do
+                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-base-game", alt: "Toggle Base Game",
+                          autocomplete: "off", value: "base_game", checked: YAML.load(@randomizer["settings"]["expansions"]["base_game"]) ? true : nil} Base Game
+              %label.btn.btn-light
+                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=fortune", style: 'color: black !important; border-bottom: 0px !important;' do
+                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-fortune", alt: "Toggle Fortune Expansion",
+                          autocomplete: "off", value: "fortune", checked: YAML.load(@randomizer["settings"]["expansions"]["fortune"]) ? true : nil} Fortune
+              -# %label.btn.btn-light
+                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=villagers", style: 'color: black !important; border-bottom: 0px !important;' do
+                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-villagers", alt: "Toggle Villagers Expansion",
+                          autocomplete: "off", value: "villagers", checked: YAML.load(@randomizer["settings"]["expansions"]["villagers"]) ? true : nil} Villagers
+                                    Expansions
+        .card-header
+          Included Promos
+        .list-group.list-group-flush
+          .list-group-item{ style: "padding: 0px" }
+            .btn-group.btn-group-toggle.d-flex.btn-group-justified{ "data-toggle": "buttons", id: "expansions", role: "group"}
+              %label.btn.btn-light
+                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=flgs_and_larkstone", style: 'color: black !important; border-bottom: 0px !important;' do
+                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-flgs-and-larkstone", alt: "Toggle FLGS and Larkstone Promos",
+                          autocomplete: "off", value: "flgs_and_larkstone", checked: YAML.load(@randomizer["settings"]["expansions"]["flgs_and_larkstone"]) ? true : nil} FLGS and Larkstone
+              %label.btn.btn-light
+                = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=dead_reckoning", style: 'color: black !important; border-bottom: 0px !important;' do
+                  %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-dead-reckoning", alt: "Toggle Dead Reckoning Promos",
+                          autocomplete: "off", value: "dead_reckoning", checked: YAML.load(@randomizer["settings"]["expansions"]["dead_reckoning"]) ? true : nil} Dead Reckoning
     .col-12.col-md-6
       .card.text-center
         .card-header

@@ -3,7 +3,7 @@
 - number ||= 0
 %li.list-group-item{class: "#{color} #{'unrevealed' if hidden}"}
   .text
-    #{@randomizer.nil? ? "ERROR" : @randomizer["buildings"][color][number] }
+    #{@randomizer.nil? || @randomizer["buildings"][color][number].nil? ? "None" : @randomizer["buildings"][color][number] }
   - if randomizable
     = link_to "/randomizers/tiny_towns/randomize_building?color=#{color}" do
       .icon.icon-right{ alt: "Randomize #{color} Building" }
