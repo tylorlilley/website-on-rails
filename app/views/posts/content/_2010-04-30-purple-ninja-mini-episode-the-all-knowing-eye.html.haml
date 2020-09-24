@@ -4,9 +4,9 @@
   .post-image.container{ style: "text-align: center; padding: 2%" }
     .row
       .col-6
-        = image_tag("posts/2010-04-30-purple-ninja-mini-episode-the-all-knowing-eye-1.png", alt: "A screenshot of the Puprle Ninja game.")
+        = image_tag(image_for(@post, 1), alt: "A screenshot of the Purple Ninja game.")
       .col-6
-        = image_tag("posts/2010-04-30-purple-ninja-mini-episode-the-all-knowing-eye-2.png", alt: "Another screenshot of the Purple Ninja game.")
+        = image_tag(image_for(@post, 2), alt: "Another screenshot of the Purple Ninja game.")
 %p
   If you'd like to leave me your comments about this game, feel free to drop by the official thread for it on my forums
   = link_to("here", "") + '.'

@@ -29,4 +29,9 @@ module PostsHelper
     File.read("app/views/posts/content/_#{post.slug}.html.haml")
   end
 
+  # Returns the path of the associated image file
+  def image_for(post, number=1)
+    asset_path("posts/#{post.slug}-#{number.to_s}.png")
+  end
+
 end

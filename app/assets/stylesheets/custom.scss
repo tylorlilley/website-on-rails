@@ -82,6 +82,16 @@ body {
     text-align: center;
     padding: 2%;
   }
+  .table {
+    color: $light-accent !important;
+    text-align: center;
+  }
+  .text-small {
+    font-size: 66% !important;
+  }
+  .text-large {
+    font-size: 200% !important;
+  }
 
   /* Standard html elements */
   p {
@@ -117,6 +127,9 @@ body {
       border-bottom: 1px dashed $brand !important;
       text-decoration: none;
     }
+  }
+  li {
+    padding: 12px !important;
   }
 }
 

@@ -6,9 +6,9 @@
   .container.post-image
     .row
       .col-6
-        = image_tag("posts/2010-06-08-spelunky-zombie-edition-1.png", alt: "A screenshot of the Puprle Ninja game.")
+        = image_tag( image_for(@post, 1), alt: "A screenshot of the Spelunky Zombie Edition mod.", title: "Mmm... tasty human flesh...")
       .col-6
-        = image_tag("posts/2010-06-08-spelunky-zombie-edition-2.png", alt: "Another screenshot of the Purple Ninja game.")
+        = image_tag( image_for(@post, 2), alt: "Another screenshot of the Spelunky Zombie Edition mod.", title: "Ahh! Zombies!")
 %p
   %ul
     %li
