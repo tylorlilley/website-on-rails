@@ -3,7 +3,7 @@ module GamesHelper
   # Returns screenshot filename associated with a game
   def screenshot_filename_for(game, num)
     return "" if game.nil? || game.filename.nil? || num.nil?
-    "#{game.filename}_#{num}.png"
+    "games/#{game.filename}_#{num}.png"
   end
 
   # Returns download filename associated with a game
