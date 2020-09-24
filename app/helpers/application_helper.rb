@@ -36,8 +36,13 @@ module ApplicationHelper
   def formated_intro(content, link_destination)
     return "" if content.blank? || content.split("%p").second.blank?
     link_destination ||= "#"
-    intro = content.split("%p").second[0...-2]+"... #{link_to "(view more)", link_destination}"
-    Haml::Engine.new( "%p"+intro ).render(self)
+    appended_link = "... #{link_to "(view more)", link_destination}"
+    intro = content.split("%p\n").second[0...-2] + appended_link
+    begin
+      Haml::Engine.new( "%p\n"+intro ).render(self)
+    rescue Haml::SyntaxError
+      Haml::Engine.new("%p\nNo introductory text found"+ appended_link).render(self)
+    end
   end
 
   # Returns a block of content formated into a paragraph
