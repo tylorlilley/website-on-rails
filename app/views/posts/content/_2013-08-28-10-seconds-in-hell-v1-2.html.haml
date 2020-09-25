@@ -1,0 +1,52 @@
+%p
+  The last update was on January 5th, and it was about New Year's Eve. Holy cow! And to think I came so close to making it an
+  %i entire year
+  without updating. So I must have something pretty important to say if I'm willing to ruin such a good no-updates streak, right?
+%p
+  Well I do! Just yesterday I finished participating in my first
+  = link_to("Ludum Dare", "https://ldjam.com/") + '.'
+  And it was great! I mean... I only got five hours of sleep in that 48 hours... but it was great!
+%p
+  The game I made is called
+  = link_to("10 Seconds in Hell", "/games/10-seconds-in-hell") + ','
+  and it's a super-fun (read: super-hard), old-school,
+  = link_to("Adventure", "https://www.youtube.com/watch?v=-oUP0ceqjC8&feature=share&list=PLCAD36009C79ABEA3") + '-style'
+  exploration game. It has some psuedo-randomly generated content so that each time you play the world configuration is different! When the contest is over I will put it up here on my site for download, but for now, check out that link above to go play it over at the contest page! You won't regret it!
+%p
+  UPDATE: Hey guys! Now that the competition is over and I have as much time to work on it as I want, I have spent a bunch of time updating and tweaking the game to make it better. So please! Do yourself a favor and
+  = link_to("download Version 1.2", "/games/10-seconds-in-hell") + '!'
+  ! It's still not on the downloads page yet, because although it's literally a different game, I want to resepct the contest and wait untill its over to put it up for download here. But Seriously! This new version is great! Check out the change log below, or just download it and dive right in!
+%p
+  %ul
+    %li
+      You can no longer store multiple keys at once. They don't work like torches; the C key doesn't do anything now. Instead they work just like the rest of the items do, and nothing has changed about how they work when you take them out now. You start with one in your hand, and if you find them in chests they go directly into your hand. Yes, this makes things much more difficult, but it also makes you have to juggle/manage your items better, which I think is ultimately more fun and adds some more strategy to the game. "Do I carry this key with me? Or this sword?" Choose wrong and you'll lose. I like that.
+    %li
+      Due to much complaining of tired fingers, there is now a "run" button. Holding down shift while you move will let you keep moving in that direction as long as you hold both shift and the button down, so you don't have to keep tap-tap-tapping away all the time if you don't want to. Be warned though... I originally designed it like that because runing around everywhere is likely to cause you to run headfirst into death, like a bonepile who just stood up as you neared it or lava that was near the edge of the screen you entered, etc. You've been warned.
+    %li
+      Grass tiles will now hide objects (other than the player) that are in them. This includes mana that spawns on them, pushblocks pushed into them, and yes, even enemies. So be careful, as they can pop out and surprise you, or you can be walking through the grass and just die if you aren't watching carefully. In addition, this means running through grass patches when you are low on mana and can't find any is a good strategy, because they can sometimes be hidden in there (along with other items that sometimes spawn randomly, like keys).
+    %li
+      Lanterns are no longer items. They are fixed to the spot they start in and can still be lit, but cannot be picked up or carried around. In addition, they no longer spawn randomly, but are set fixtures at certain parts of the environment. I think it looks nicer this way, and the only time you ever carried a lantern around (at least after I made the key change) was when there were literally no other items you'd found yet and you'd used your first key. So... they were basically static fixtures anyway.
+    %li
+      Envy can now push blocks; he is the only enemy that can do this. I thought this fit with his "jealously copying the player" ability rather well, and you can accidently cause him to push stuff around that leaves you in a tight spot. Anyway, Envy was about tied with Sloth for the weakest sin, and while thats okay, I don't want them all to be as good as lust, I also don't want them to all be as bad as Sloth (I love Sloth okay). And this one, I just felt like this one was too weak. And I came up with this change, and, well, in it goes.
+    %li
+      Pride still can't be killed by the red sword, but he now dies to the white sword. Leah suggested this change after she discovered that pride's trait was that he couldn't be killed by swords, while trying to use the red sword to kill him, and she was like: "Ah! But it's Pride! So I bet he's so proud and overconfident in himself that he wouldn't even bother defending himself against a humble little white sword, right?" Well, she was wrong. But I liked that. It had good flavor. So in it goes.
+    %li
+      Greed and Gluttony now behave like they were originally intended to. Which probably makes them a little easier, but that's okay. Basically I re-did all of the enemy AI code and so what these two were supposed to be doing before (and did, kinda, sometimes, when they felt like it...) they actually do now. SO nothing new in their behavior; they should just be more consistent.
+    %li
+      Souped up the Space button to pause feature. You probably don't care, it works the same, but I put a lot of work into it and I like it. So there.
+    %li
+      Fixed a typo that was stopping the randomization of locked doors from taking place.
+    %li
+      Mana appears somewhat less often. Just a little. It was too easy before; you never died from time. Sometimes you do now.
+    %li
+      Pushblocks can now be pushed onto lava to form a bridge, and onto (most) enemies to kill them. Exceptions include Lust and Greed, who can move through walls, Wrath, who destroys walls he touches, and Envy, as if you try to push a block onto him he just pushes it back and so nothing happens.
+    %li
+      Pushblocks no longer randomly appear in some walls. However, there is a new type of wall (which is only different from a normal wall graphically) that will sometimes spawn as a pushblock instead. This concentrates the random pushblocks to mostly just areas where they are helpful and actually do something if they spawn in.
+    %li
+      Basically I redid almost all of the player code and all of the enemy AI code and all of the random generation code. So basically all the code. Havig a 48 hour time limit, it was a bit sloppier than I like my code to be, and in cleaning things up I was able to catch and fix a few of the bugs above no one had even noticed yet, so that was cool. But it was a lot of work. And it doesn't even affect the gameplay, so you don't care.
+    %li
+      Added a bit to the end of the intro to better introduce the seven sins. I think its pretty cool! Also I did the obvious things like change the page explaining the controls to not include C and to include Shift, and added Version 1.2 to the title screen.
+    %li
+      There might be another update soon that changes the secret ending. Or at least how you access it anyway. I'm toying around with a few things to see if I find anything I like. But for now nothing has changed with that.
+%p
+  And that's that! If that doesn't sound awesome to you, there's something wrong with your brain. Oh, and don't forget that if you want to see the new changes to the intro not to just skip past it like I'm sure you veterans are used to doing by now. Okay. That's everything. Get to playing!
