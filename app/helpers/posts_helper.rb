@@ -31,7 +31,7 @@ module PostsHelper
 
   # Returns the path of the associated image file
   def image_for(post, number=1)
-    asset_path("posts/#{post.slug}-#{number.to_s}.png")
+    asset_path("posts/#{post.slug}-#{number.to_s}")
   end
 
 end
