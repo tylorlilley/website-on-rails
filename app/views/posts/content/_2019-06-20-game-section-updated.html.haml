@@ -1,4 +1,6 @@
-%p
-  Hello everyone! It's been awhile since I last updated, so I have decided to fix that mistake by sprucing the place up a little. I have cleaned up the visual presentation a bit and updated the About and Games sections.
-%p
-  Feel free to poke around and check out what's new! If you've already seen all there is to see in the current Games section, know that while I don't have any personal projects nearing completion right now, I've always got a few things brewing, so check back again in a few months and maybe that will have changed. You never know when inspiration will strike!
+- intro = false if intro.nil?
+
+%p Hello everyone! It's been awhile since I last updated, so I have decided to fix that mistake by sprucing the place up a little. I have cleaned up the visual presentation a bit and updated the About and Games sections.
+
+- unless intro
+  %p Feel free to poke around and check out what's new! If you've already seen all there is to see in the current Games section, know that while I don't have any personal projects nearing completion right now, I've always got a few things brewing, so check back again in a few months and maybe that will have changed. You never know when inspiration will strike!

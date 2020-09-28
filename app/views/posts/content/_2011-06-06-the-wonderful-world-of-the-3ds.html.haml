@@ -1,139 +1,114 @@
-.container.post-image
-  .row
-    .col-12
-      = image_tag(image_for(@post, 1), alt: "A picture of a living room taken with a Nintendo 3DS", title: "My spacious living quarters... best viewed in 3D!")
+- intro = false if intro.nil?
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post, 1), alt: "A picture of a living room taken with a Nintendo 3DS", title: "My spacious living quarters... best viewed in 3D!")
+
 %p
   In honor of the release of the firmware update for the Nintendo 3DS today (the one everybody with a 3DS has been waiting for since
   %i March;
   the one Nintendo reffered to as a "late-May update"), I decided to post some of the fun stuff I've done with the 3DS's camera mode and it's Augmented Reality Cards. Despite the somewhat lack of content, this stuff is pretty cool if I don't say so myself. If you're a proud 3DS owner, you can
   = link_to("download these pictures", "http://tylorlilley.s3.amazonaws.com/files/3DSpictures.zip")
   to put on your 3DS and view them in 3D yourself, unlike the rest of these shmucks who will have to settle for the 2D images. Poor them
-%p
+
+- unless intro
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 2), alt: "A picture of Tylor Lilley at age 17, taken with a Nintendo 3DS", title: "Look at that pale skin.")
-%p
-  What a beautiful image to start with - me! I'm pretty sure the first thing every 3DS owner did in camera mode was take a picture of themselves like this, or at least all of the egotistical and concited ones like me did. In any case, this was the first 3D picture I ever took. Tah-dah!
-%p
+  %p What a beautiful image to start with - me! I'm pretty sure the first thing every 3DS owner did in camera mode was take a picture of themselves like this, or at least all of the egotistical and concited ones like me did. In any case, this was the first 3D picture I ever took. Tah-dah!
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 3), alt: "A picture of Carter Lilley at age 12 with his fist extended toward the camera, taken with a Nintendo 3DS", title: "Ka-POW! Eat fist, viewer!")
-%p
-  Like always however, my little brother Carter manages to be cooler than me. This one is awesome. Compared to this one, you can't even tell the previous picture is in 3D.
-%p
-  Before I show you the next one, let me just say for those of you who don't have a 3DS and thus wouldn't know, there's a feature in it's camera mode where you lign up your face with one camera and another person with the otehr cameras, and then it takes a picture of your face on their body. It's kinda cool, and has produced some pictures that have been... well, disturbing at best.
-%p
+  %p Like always however, my little brother Carter manages to be cooler than me. This one is awesome. Compared to this one, you can't even tell the previous picture is in 3D.
+  %p Before I show you the next one, let me just say for those of you who don't have a 3DS and thus wouldn't know, there's a feature in it's camera mode where you lign up your face with one camera and another person with the otehr cameras, and then it takes a picture of your face on their body. It's kinda cool, and has produced some pictures that have been... well, disturbing at best.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 4), alt: "A picture of the face of Tylor Lilley at age 17 composited onto the body of Carter Lilley at age 12, taken with a Nintendo 3DS", title: "Disturbing at best? More like mind-meltingly freaky at best.")
-%p
-  See what I mean?
-%p
+  %p See what I mean?
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 5), alt: "A picture of a miniature Nintendo Mii version of Tylor Lilley leaning against a giant finger, taken with a Nintendo 3DS and AR card", title: "T.Mii phone home...")
-%p
-  Other than taking weird 3D pictures and freaky smash-ups of people, the 3DS lets you use the Augmented Reality Cards that came with the system to take 3D pictures of your environment with things like your Miis added in. They aren't really there, of course... but it sure looks cool! And it's fun to pose them around. Here is just one example of my little Mii making first contact with my big Mii. Um, after typing that out that sounds a lot stranger then I intended, but there's no way I'm changing it now.
-%p
+  %p Other than taking weird 3D pictures and freaky smash-ups of people, the 3DS lets you use the Augmented Reality Cards that came with the system to take 3D pictures of your environment with things like your Miis added in. They aren't really there, of course... but it sure looks cool! And it's fun to pose them around. Here is just one example of my little Mii making first contact with my big Mii. Um, after typing that out that sounds a lot stranger then I intended, but there's no way I'm changing it now.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 6), alt: "A picture of a miniature Nintendo Mii version of Tylor Lilley and Ethan Miller celebrating in front of several empty cans of Diet Coke, taken with a Nintendo 3DS and AR card", title: "Best friend's don't let friends DK and drive.")
-%p
-  Pictured here is me and my best bud/co-administrator JustIrie. This is how happy we would be in real life if we found a can of that size compared to us. We sure love the DK... and yes, DK stands for diet coke. Because DC just sounds like Washington. And who wants to drink any of that sewage water?
-%p
+  %p Pictured here is me and my best bud/co-administrator JustIrie. This is how happy we would be in real life if we found a can of that size compared to us. We sure love the DK... and yes, DK stands for diet coke. Because DC just sounds like Washington. And who wants to drink any of that sewage water?
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 7), alt: "A picture of a miniature Nintendo Mii version of Leah Cramer browsing on a laptop with Facebook open on it, taken with a Nintendo 3DS and AR card", title: "Wait, that can't be her! She's not that computer literate!")
-%p
-  Hey... who's that on my laptop? That's certainly not me! Nor is it mii! Although, as long as she's here and nobody else is around...
-%p
+  %p Hey... who's that on my laptop? That's certainly not me! Nor is it mii! Although, as long as she's here and nobody else is around...
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 8), alt: "A picture of a miniature Nintendo Mii version of Tylor Lilley and Ethan Miller struggling to move a six sided die, taken with a Nintendo 3DS and AR card", title: "Dude, you're not even helping at all. Get off!")
-%p
-  When you're only this big, it can be a struggle even to roll a dice. This would make me and JustIrie's life significantly more difficult.
-%p
+  %p When you're only this big, it can be a struggle even to roll a dice. This would make me and JustIrie's life significantly more difficult.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 9), alt: "A picture of a giant Nintendo Mii version of Tylor Lilley surrounded by many smaller Nintendo Miis, taken with a Nintendo 3DS and AR card", title: "Oooh! Ooh! The big one is TheTylor, right?")
-%p
-  Of course, when your
-  %i this
-  it would appear that all your friends and aquaintences think your some kind of giant Godzilla style monster, and begin fighting you accordingly. Hey - can you guess which forum members each of those tiny mii's are?
-%p
-  Here's where I got a little silly. The 3DS's Augmented Reality Cards are the perfect excuse to bust out some of those old toys you never play with anymore!
-%p
+  %p
+    Of course, when your
+    %i this
+    it would appear that all your friends and aquaintences think your some kind of giant Godzilla style monster, and begin fighting you accordingly. Hey - can you guess which forum members each of those tiny mii's are?
+  %p Here's where I got a little silly. The 3DS's Augmented Reality Cards are the perfect excuse to bust out some of those old toys you never play with anymore!
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 10), alt: "A picture of a Nintendo Mii version of Tylor Lilley posing in a diorama with a Strong Bad figure, taken with a Nintendo 3DS and AR card", title: "Strong Bad and I are some cool, cool dudes.")
-%p
-  My trip to
-  = link_to("Free Country, USA", "http://homestarrunner.com/")
-  started off great! I got a high five from Strong Bad and everything... I think I made him feel short though, which he didn't like very much, and I soon had to move on and find new company.
-%p
+  %p
+    My trip to
+    = link_to("Free Country, USA", "http://homestarrunner.com/")
+    started off great! I got a high five from Strong Bad and everything... I think I made him feel short though, which he didn't like very much, and I soon had to move on and find new company.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 11), alt: "A picture of a Nintendo Mii version of Tylor Lilley crying in a diorama with a Coach Z figure, taken with a Nintendo 3DS and AR card", title: "And then my butt started getting these little itchy green ru-PLEASE FOR THE LOVE OF GOD STOP IT!")
-%p
-  Like Coach Z. It didn't take long for him to gross me out to the point of tears though, and I soon moved on.
-%p
+  %p Like Coach Z. It didn't take long for him to gross me out to the point of tears though, and I soon moved on.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 12), alt: "A picture of a Nintendo Mii version of Tylor Lilley kneeling in defeat in a diorama with a Strong Sad figure, taken with a Nintendo 3DS and AR card", title: "Strong Sad and I are some depressed, sdepressed dudes.")
-%p
-  Strong Sad. He... made me sad. With all his boring talk of the end of the world and darkness and death and sadness, I couldn't take it anymore. I just curled up a little and started to cry. He didn't seem to care though; he just kept on talking in that monotonous voice of his.
-%p
+  %p Strong Sad. He... made me sad. With all his boring talk of the end of the world and darkness and death and sadness, I couldn't take it anymore. I just curled up a little and started to cry. He didn't seem to care though; he just kept on talking in that monotonous voice of his.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 13), alt: "A picture of a Nintendo Mii version of Tylor Lilley floating with an upside down Homsar figure next to a Strong Sad figure, taken with a Nintendo 3DS and AR card", title: "ALL ABOARD THE GRAVY TRAIN! AaAaAaAaAa...")
-%p
-  Soon his friend Homsar showed up though and then things just got
-  %i weird.
-%p
+  %p
+    Soon his friend Homsar showed up though and then things just got
+    %i weird.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 14), alt: "A picture of a Nintendo Mii version of Tylor Lilley running next to a running Homestar figure, taken with a Nintendo 3DS and AR card", title: "Strong Bad and I are some cool, cool dudes.")
-%p
-  I even got a chance to race Homestar Runner while I was there. Don't worry, even though it looks like I was about to lose in this picture, I won in the end. How you ask? Well, you see Strong Bad and The Cheat behind that bush?
-%p
+  %p I even got a chance to race Homestar Runner while I was there. Don't worry, even though it looks like I was about to lose in this picture, I won in the end. How you ask? Well, you see Strong Bad and The Cheat behind that bush?
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 15), alt: "A picture of a Nintendo Mii version of Tylor Lilley celebrating in a diorama with a Strong Bad, Strong Mad, and The Cheat figure, taken with a Nintendo 3DS and AR card", title: "Back-ally (or yard) dealings.")
-%p
-  I kinda worked something out with them before hand.
-  %i Man
-  do these guys jump at
-  %i any
-  chance to humiliate and/or cause physical harm to Homestar there. I didn't even have to give them anything in return!
-%p
-  All in all my stay in Free Country, USA was pretty awesome. I leave you know with one last picture, a personal favorite of mine. See you next time!
-%p
+  %p
+    I kinda worked something out with them before hand.
+    %i Man
+    do these guys jump at
+    %i any
+    chance to humiliate and/or cause physical harm to Homestar there. I didn't even have to give them anything in return!
+  %p All in all my stay in Free Country, USA was pretty awesome. I leave you know with one last picture, a personal favorite of mine. See you next time!
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 16), alt: "A picture of a Nintendo Mii version of Tylor Lilley celebrating in a diorama with a figures of all 12 of the main characters of Homestar Runner, taken with a Nintendo 3DS and AR card", title: "Everybody, Everybody... and Tylor.")
-%p
-  And if you own a 3DS and want your very own TheTylor mii, you can use the QR code below to get one! Don't say I never did anything for you.
-%p
+  %p And if you own a 3DS and want your very own TheTylor mii, you can use the QR code below to get one! Don't say I never did anything for you.
   .container.post-image
     .row
       .col-6
         = image_tag(image_for(@post, 17), alt: "A picture of a Nintendo Mii QR code for use with a Nintendo 3DS", title: "Why on earth is it called a QR code? What does the Q stand for? ...Hey, what is Nintendo trying to say about me!?")
       .col-6
         = image_tag(image_for(@post, 18), alt: "A picture of a Nintendo Mii of Tylor Lilley", title: "Looks like his hair's grown out a bit since a lot of these pictures were taken.")
-%p
-  If you guys have any cool 3DS pictures, or if you make any with my mii after this post, send them in! Post them in the forums or just email them to me and I'll post them for you. I'd love to see them! I'll see you guys next Wednesday... when I've got quite a surprise in the works.
+  %p If you guys have any cool 3DS pictures, or if you make any with my mii after this post, send them in! Post them in the forums or just email them to me and I'll post them for you. I'd love to see them! I'll see you guys next Wednesday... when I've got quite a surprise in the works.

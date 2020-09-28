@@ -1,7 +1,11 @@
-.container.post-image
-  .row
-    .col-12
-      = image_tag(image_for(@post), alt: "A screenshot of the Homestar the Runner game.", title: "Homestar the Runner Version 2.0")
+- intro = false if intro.nil?
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post), alt: "A screenshot of the Homestar the Runner game.", title: "Homestar the Runner Version 2.0")
+
 %p
   Oh, another new game!
   %span.text-small Er... wait a minute... Purple Ninja was a remake of sorts... the Spelunky mods were edits from someone else's game... I think I see a pattern here.

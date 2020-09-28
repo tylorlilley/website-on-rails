@@ -1,4 +1,6 @@
-%p
-  Hello everyone! It's been awhile since I sat down and did some much needed maintenance on the website. If my records are correct, the last time was May 15th of 2012... Yikes! As you might expect, almost every page needed at least a little updating.
-%p
-  The games page is where it shows the most though, as I moved things around and designed a new overall presentation for the page. Feel free to check it out! I had been lazy lately and hadn't updated it with most of my recent "releases", so I went ahead and did that too. There might just be a game or two that slipped under your radar in the past year and a half or so!
+- intro = false if intro.nil?
+
+%p Hello everyone! It's been awhile since I sat down and did some much needed maintenance on the website. If my records are correct, the last time was May 15th of 2012... Yikes! As you might expect, almost every page needed at least a little updating.
+
+- unless intro
+  %p The games page is where it shows the most though, as I moved things around and designed a new overall presentation for the page. Feel free to check it out! I had been lazy lately and hadn't updated it with most of my recent "releases", so I went ahead and did that too. There might just be a game or two that slipped under your radar in the past year and a half or so!

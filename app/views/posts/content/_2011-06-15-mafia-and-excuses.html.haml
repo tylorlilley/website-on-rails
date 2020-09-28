@@ -1,7 +1,11 @@
-.container.post-image
-  .row
-    .col-12
-      = image_tag(image_for(@post), alt: "A black and white drawing of a 1950's gangster with the caption 'Mafia: A game of secrecy, anarchy, and life-saving prostitution'", title: "Youse readin' mah mouseover text? Whachoo t'ink you are, some kinda wise guy? Eh?")
+- intro = false if intro.nil?
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post), alt: "A black and white drawing of a 1950's gangster with the caption 'Mafia: A game of secrecy, anarchy, and life-saving prostitution'", title: "Youse readin' mah mouseover text? Whachoo t'ink you are, some kinda wise guy? Eh?")
+
 %p
   Mafia is starting today! Hooray! I've been trying to get this game going since early May, as is shown by how old the
   = link_to("thread itself", "http://tylorlilley.freeforums.org/mafia-rules-t156.html")
@@ -10,17 +14,17 @@
   if you aren't involved yourself. And if you aren't - shame on you! You obviously follow along with my stuff enough to be reading this update today, so you might as well have signed up! You're missing out on what I think is going to be a very, very fun game. And hopefully if everyone likes it enough there will be a sequel, and you will have a second chance at being involved in the game firsthand. If you aren't, you'll have to settle for the short snippets of detail found in
   = link_to("the thread", "http://tylorlilley.freeforums.org/post2187.html#p2187") + ','
   along with any stories from the other players, and those won't be nearly as fun as the actual thing.
-%p
-  I want this first day of Mafia to run as smoothly as possible, which is why I'm using it as an excuse to pay more attention to that and not update with much real content for today. I feel like if today goes well it will set the standard for the days to follow, and they will go well too. I do want to talk a little bit about my
-  = link_to("newest game", "/posts/2011-06-10-a-new-game-is-here")
-  though, which I've been taking a break from, but will get back to working on soon.
-%p
-  My first priority will be to streamline the code a little bit. I've learned a lot about game design and GML in particular since I first started working on this game back in - surprise, surprise - December, and there are some places where the code works but could be done better or simpler, and I want to try and tidy that up before I get to anything else. After that though, I plan on adding two more iventory items I've been wanting to implement for awhile. I'll leave you guys guessing as to what they will be though.
-%p
-  Then I'm going to make the game a little easier. I plan to do this not but changing the gameplay itself so much (though that will probably be tweaked a little bit too), but by making the starting area around you a little easier and more inclusive for the start of the game and for begining players. I want to expand the world around you further in each direction as well, and the farther out areas will probably be harder. That just makes sense. The starting area I think is just a touch too difficult for what I want to do with the game so far though, so yes, I do plan on changing that.
-%p
-  You guys probably won't get to play a newer version of this for a few weeks, but please,
-  %i please
-  keep playing the old one and letting me know what you think! I've had very few people actually play it so far and even less talk to me about their experiences with it beyond "I froze to death alot" or "How do I restart after I die?" So
-  %i please
-  keep playing. Even if you're one of my mafia players, that's no excuse - you can play both at once!
+
+- unless intro
+  %p
+    I want this first day of Mafia to run as smoothly as possible, which is why I'm using it as an excuse to pay more attention to that and not update with much real content for today. I feel like if today goes well it will set the standard for the days to follow, and they will go well too. I do want to talk a little bit about my
+    = link_to("newest game", "/posts/2011-06-10-a-new-game-is-here")
+    though, which I've been taking a break from, but will get back to working on soon.
+  %p My first priority will be to streamline the code a little bit. I've learned a lot about game design and GML in particular since I first started working on this game back in - surprise, surprise - December, and there are some places where the code works but could be done better or simpler, and I want to try and tidy that up before I get to anything else. After that though, I plan on adding two more iventory items I've been wanting to implement for awhile. I'll leave you guys guessing as to what they will be though.
+  %p Then I'm going to make the game a little easier. I plan to do this not but changing the gameplay itself so much (though that will probably be tweaked a little bit too), but by making the starting area around you a little easier and more inclusive for the start of the game and for begining players. I want to expand the world around you further in each direction as well, and the farther out areas will probably be harder. That just makes sense. The starting area I think is just a touch too difficult for what I want to do with the game so far though, so yes, I do plan on changing that.
+  %p
+    You guys probably won't get to play a newer version of this for a few weeks, but please,
+    %i please
+    keep playing the old one and letting me know what you think! I've had very few people actually play it so far and even less talk to me about their experiences with it beyond "I froze to death alot" or "How do I restart after I die?" So
+    %i please
+    keep playing. Even if you're one of my mafia players, that's no excuse - you can play both at once!

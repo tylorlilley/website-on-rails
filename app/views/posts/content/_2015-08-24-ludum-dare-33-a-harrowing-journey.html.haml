@@ -1,14 +1,17 @@
-%p
-  Hey! I did something for once. Score!
-%p
-  I participated in
-  = link_to("Ludum Dare", "http://ludumdare.com/compo/ludum-dare-33/?action=preview&amp;uid=26293") + ','
-  the competition where you have to make a game and all its assets from scratch in 48 hours, again this past weekend. It was Ludum Dare 33, and the theme was "You are the Monster". And I made a game for it! It's called
-  = link_to("A Harrowing Journey", "games/a-harrowing-journey") + ','
-  and you can check it out at the contest page by clicking that link.
-%p
-  The things I am the most proud of are the music and text boxes. This was my first time making music for a game from scratch, and I am very happy with how that turned out! You can hear the full songs here and here if you want (I made two, and you can only hear parts of them in the game). It was a blast making them, and I maybe spent longer on them than I should have for the 48 hour competition... hopefully it was worth it.
-%p
-  The text boxes were something that seemed so simple to do in a game that I had always kind of avoided just because I had never really done it before. But I sucked it up and I did it this time and I'm glad I did because I think it worked out well! The game itself is not the best in terms of the game play, but it does all right for what it is. Thematically it may be a little similar to the game I did last time, 10 Seconds in Hell, which you can find on my games page following the link on the left. But for 48 hours I'm pretty happy with how it turned out. Hopefully you enjoy it too, and if you end up checking it out, definitely let me know what you think of it!
-%p
-  Until next time!
+- intro = false if intro.nil?
+
+%p Hey! I did something for once. Score!
+
+- unless intro
+  %p
+    I participated in
+    = link_to("Ludum Dare", "http://ludumdare.com/compo/ludum-dare-33/?action=preview&amp;uid=26293") + ','
+    the competition where you have to make a game and all its assets from scratch in 48 hours, again this past weekend. It was Ludum Dare 33, and the theme was "You are the Monster". And I made a game for it! It's called
+    = link_to("A Harrowing Journey", "games/a-harrowing-journey") + ','
+    and you can check it out at the contest page by clicking that link.
+  %p
+    The things I am the most proud of are the music and text boxes. This was my first time making music for a game from scratch, and I am very happy with how that turned out! You can hear the full songs here and here if you want (I made two, and you can only hear parts of them in the game). It was a blast making them, and I maybe spent longer on them than I should have for the 48 hour competition... hopefully it was worth it.
+  %p
+    The text boxes were something that seemed so simple to do in a game that I had always kind of avoided just because I had never really done it before. But I sucked it up and I did it this time and I'm glad I did because I think it worked out well! The game itself is not the best in terms of the game play, but it does all right for what it is. Thematically it may be a little similar to the game I did last time, 10 Seconds in Hell, which you can find on my games page following the link on the left. But for 48 hours I'm pretty happy with how it turned out. Hopefully you enjoy it too, and if you end up checking it out, definitely let me know what you think of it!
+  %p
+    Until next time!

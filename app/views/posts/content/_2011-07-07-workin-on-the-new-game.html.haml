@@ -1,6 +1,8 @@
-.container.post-image
-  .row
-    .col-12
-      = image_tag(image_for(@post), alt: "A work-in-progress screenshot of a level in the classic version of Mighty Dive Bomber", title: "Yes, the filename (mdb) is relevant to the game.")
-%p
-  Gotta get back to working on the new game. Next time I update, which probably won't be tomorrow, it will be with this polished little guy. It's a retro NES styled puzzle platformer, and it's going really well in my opinion. I can't wait to unvail it! But for now, back to work. See you guys when it's finished!
+- intro = false if intro.nil?
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post), alt: "A work-in-progress screenshot of a level in the classic version of Mighty Dive Bomber", title: "Yes, the filename (mdb) is relevant to the game.")
+%p Gotta get back to working on the new game. Next time I update, which probably won't be tomorrow, it will be with this polished little guy. It's a retro NES styled puzzle platformer, and it's going really well in my opinion. I can't wait to unvail it! But for now, back to work. See you guys when it's finished!

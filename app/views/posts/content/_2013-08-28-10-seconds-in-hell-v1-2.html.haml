@@ -1,22 +1,24 @@
+- intro = false if intro.nil?
 %p
   The last update was on January 5th, and it was about New Year's Eve. Holy cow! And to think I came so close to making it an
   %i entire year
   without updating. So I must have something pretty important to say if I'm willing to ruin such a good no-updates streak, right?
-%p
-  Well I do! Just yesterday I finished participating in my first
-  = link_to("Ludum Dare", "https://ldjam.com/") + '.'
-  And it was great! I mean... I only got five hours of sleep in that 48 hours... but it was great!
-%p
-  The game I made is called
-  = link_to("10 Seconds in Hell", "/games/10-seconds-in-hell") + ','
-  and it's a super-fun (read: super-hard), old-school,
-  = link_to("Adventure", "https://www.youtube.com/watch?v=-oUP0ceqjC8&feature=share&list=PLCAD36009C79ABEA3") + '-style'
-  exploration game. It has some psuedo-randomly generated content so that each time you play the world configuration is different! When the contest is over I will put it up here on my site for download, but for now, check out that link above to go play it over at the contest page! You won't regret it!
-%p
-  UPDATE: Hey guys! Now that the competition is over and I have as much time to work on it as I want, I have spent a bunch of time updating and tweaking the game to make it better. So please! Do yourself a favor and
-  = link_to("download Version 1.2", "/games/10-seconds-in-hell") + '!'
-  ! It's still not on the downloads page yet, because although it's literally a different game, I want to resepct the contest and wait untill its over to put it up for download here. But Seriously! This new version is great! Check out the change log below, or just download it and dive right in!
-%p
+
+- unless intro
+  %p
+    Well I do! Just yesterday I finished participating in my first
+    = link_to("Ludum Dare", "https://ldjam.com/") + '.'
+    And it was great! I mean... I only got five hours of sleep in that 48 hours... but it was great!
+  %p
+    The game I made is called
+    = link_to("10 Seconds in Hell", "/games/10-seconds-in-hell") + ','
+    and it's a super-fun (read: super-hard), old-school,
+    = link_to("Adventure", "https://www.youtube.com/watch?v=-oUP0ceqjC8&feature=share&list=PLCAD36009C79ABEA3") + '-style'
+    exploration game. It has some psuedo-randomly generated content so that each time you play the world configuration is different! When the contest is over I will put it up here on my site for download, but for now, check out that link above to go play it over at the contest page! You won't regret it!
+  %p
+    UPDATE: Hey guys! Now that the competition is over and I have as much time to work on it as I want, I have spent a bunch of time updating and tweaking the game to make it better. So please! Do yourself a favor and
+    = link_to("download Version 1.2", "/games/10-seconds-in-hell") + '!'
+    ! It's still not on the downloads page yet, because although it's literally a different game, I want to resepct the contest and wait untill its over to put it up for download here. But Seriously! This new version is great! Check out the change log below, or just download it and dive right in!
   %ul
     %li
       You can no longer store multiple keys at once. They don't work like torches; the C key doesn't do anything now. Instead they work just like the rest of the items do, and nothing has changed about how they work when you take them out now. You start with one in your hand, and if you find them in chests they go directly into your hand. Yes, this makes things much more difficult, but it also makes you have to juggle/manage your items better, which I think is ultimately more fun and adds some more strategy to the game. "Do I carry this key with me? Or this sword?" Choose wrong and you'll lose. I like that.
@@ -48,5 +50,5 @@
       Added a bit to the end of the intro to better introduce the seven sins. I think its pretty cool! Also I did the obvious things like change the page explaining the controls to not include C and to include Shift, and added Version 1.2 to the title screen.
     %li
       There might be another update soon that changes the secret ending. Or at least how you access it anyway. I'm toying around with a few things to see if I find anything I like. But for now nothing has changed with that.
-%p
-  And that's that! If that doesn't sound awesome to you, there's something wrong with your brain. Oh, and don't forget that if you want to see the new changes to the intro not to just skip past it like I'm sure you veterans are used to doing by now. Okay. That's everything. Get to playing!
+  %p
+    And that's that! If that doesn't sound awesome to you, there's something wrong with your brain. Oh, and don't forget that if you want to see the new changes to the intro not to just skip past it like I'm sure you veterans are used to doing by now. Okay. That's everything. Get to playing!

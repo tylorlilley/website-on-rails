@@ -1,6 +1,7 @@
-%p
-  I told you guys I was changing the site layout and working on things, and you didn't believe me. You brushed me off, you were like "Oh, Tylor always says he's going to work on the website, and then he never actually does what he says he's going to." Well, not this year baby. New Year's Resolution Ahoy!
-%p
-  If you haven't noticed, this is only the skeleton; the bare layout for the website to come. None of the links work yet. There's just this one page. But this is what it will look like. I hope you're as pleased with it as I am. Check back soon for a more fully functioning website!
-%p
-  As for what will become of the old website when I'm finished with this... I don't know. Part of me just wants to delete it all, and another part squirms every time I think about deleting it. I don't really want to put a link back to the old JavaScript-less site anywhere though. Maybe I will leave the files there, and just not link to them directly? In case someone wants to read the old site and knows to go in the backdoor? A lot of links would probably be broken in the process. I don't know. We'll see I guess. Feel free to give me your feedback if you have any, however.
+- intro = false if intro.nil?
+
+%p I told you guys I was changing the site layout and working on things, and you didn't believe me. You brushed me off, you were like "Oh, Tylor always says he's going to work on the website, and then he never actually does what he says he's going to." Well, not this year baby. New Year's Resolution Ahoy!
+
+- unless intro
+  %p If you haven't noticed, this is only the skeleton; the bare layout for the website to come. None of the links work yet. There's just this one page. But this is what it will look like. I hope you're as pleased with it as I am. Check back soon for a more fully functioning website!
+  %p As for what will become of the old website when I'm finished with this... I don't know. Part of me just wants to delete it all, and another part squirms every time I think about deleting it. I don't really want to put a link back to the old JavaScript-less site anywhere though. Maybe I will leave the files there, and just not link to them directly? In case someone wants to read the old site and knows to go in the backdoor? A lot of links would probably be broken in the process. I don't know. We'll see I guess. Feel free to give me your feedback if you have any, however.

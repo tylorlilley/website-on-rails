@@ -1,11 +1,15 @@
+- intro = false if intro.nil?
+
 %p
   Hey everybody! I've been spending a lot of time playing a neat little board game called
   = link_to("Tiny Towns", "https://boardgamegeek.com/boardgame/265736/tiny-towns") + '.'
   If it looks up your alley, I would definitely recommend it. Something I like to do from time to time is write little apps to randomize the setup for the board games I am a fan of. I started doing that back in college as a great way to learn new programming skills, while still working to solve a small problem in an area that is of interest to me.
-%p
-  Well, I guess not much has changed, because here I am at it again! I created this randomizer to continue practicing with Rails. Most of the functionality was done in coffeescript, which I was brand new to. I may come back and add more features (and some of the features that are there might already be a bit unnecessary), but it was in a complete enough state that I wanted to roll it out for now. If you want to check it out, you can find it
-  = link_to("here", "/randomizers/tiny_towns") + '.'
-%p
-  Aside from that, I have continued to work on making the new website better and better. Many will not care about this, but I actually upgraded it to Bootsrap 4 which required a little re-writing of some things. I also moved from using erb for the views to using haml, which was an entire learning experience in and of itself. Hopefully you all continue to like the new look - and as always, if anything looks out of place, please
-  = link_to("reach out to me", "/contact")
-  and let me know! Happy Holidays everyone.
+
+- unless intro
+  %p
+    Well, I guess not much has changed, because here I am at it again! I created this randomizer to continue practicing with Rails. Most of the functionality was done in coffeescript, which I was brand new to. I may come back and add more features (and some of the features that are there might already be a bit unnecessary), but it was in a complete enough state that I wanted to roll it out for now. If you want to check it out, you can find it
+    = link_to("here", "/randomizers/tiny_towns") + '.'
+  %p
+    Aside from that, I have continued to work on making the new website better and better. Many will not care about this, but I actually upgraded it to Bootsrap 4 which required a little re-writing of some things. I also moved from using erb for the views to using haml, which was an entire learning experience in and of itself. Hopefully you all continue to like the new look - and as always, if anything looks out of place, please
+    = link_to("reach out to me", "/contact")
+    and let me know! Happy Holidays everyone.

@@ -1,8 +1,12 @@
+- intro = false if intro.nil?
+
 %p
   School, that is. I would make a post wrapping-up the summer and how the "I will post three times a week with regularly scheduled updates" thing went, but I
   = link_to("kinda already did that", "/posts/2011-06-20-just-a-quick-update")
   and you guys know how that went - seeing as it's been more than a month since my last post. And now, with my senior year upon us, This website will most likely lie dormant until I've some new thing to share with the world. Feel free to check back once in awhile in case I sneak-update with something, but I'm not going to kid myself into thinking I'll still be updating with content regularly with the full-plate I have in terms of school and extracurricular activities this year. I'm actualy considering removing the forums/chat altogether, as they seem to serve no purpose now. But we'll see I suppose.
-%p
-  In any case, good luck with your new school year, and try to still have some fun! (If you happen to be looking for some, you can now find my latest and greatest games at the place they are supposed to be - the
-  = link_to("Games", "/games")
-  page above, as I finally got around to updating it to include them.) Have a great September!
+  
+- unless intro
+  %p
+    In any case, good luck with your new school year, and try to still have some fun! (If you happen to be looking for some, you can now find my latest and greatest games at the place they are supposed to be - the
+    = link_to("Games", "/games")
+    page above, as I finally got around to updating it to include them.) Have a great September!

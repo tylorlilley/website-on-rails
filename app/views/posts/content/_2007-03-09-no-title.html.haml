@@ -1,12 +1,16 @@
-%strong LAST UPDATED: 03/ 09/ 07
-%br
-%br
-.intro
-  %p
-    This week's comic is up .
-%br
-.content
-  .text-large
-    BIRTHDAY COUNTDOWN: 11 DAYS!
+- intro = false if intro.nil?
+
+- unless intro
+  %strong LAST UPDATED: 03/ 09/ 07
+  %br
+  %br
+
+%p
+  This week's comic is up .
+
+- unless intro
+  %br
+  %br
+  .text-large BIRTHDAY COUNTDOWN: 11 DAYS!
   %br
   \ - The Tylor

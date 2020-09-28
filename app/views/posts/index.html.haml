@@ -9,5 +9,5 @@
       %h2{:style => "margin-top: -24px"}
         = formated_date_for(post)
       .post.description
-        = formated_intro_for(post)
+        = render partial: "layouts/post_intro", locals: {post: post, intro: true}
       %br

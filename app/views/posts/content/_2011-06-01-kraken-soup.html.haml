@@ -1,4 +1,7 @@
-.container.text-center
-  %iframe{ src: "http://www.youtube.com/embed/Rof7xvb0owo", height: "349", width: "425", allowfullscreen: "", frameborder: "0" }
-%p
-  Yum yum yum! I hope you enjoy this little meal; it honestly tastes pretty good. You can ask Carter if you don't believe me. We thoroughly enjoyed ourselves.
+- intro = false if intro.nil?
+
+- unless intro
+  .container.text-center
+    %iframe{ src: "http://www.youtube.com/embed/Rof7xvb0owo", height: "349", width: "425", allowfullscreen: "", frameborder: "0" }
+    
+%p Yum yum yum! I hope you enjoy this little meal; it honestly tastes pretty good. You can ask Carter if you don't believe me. We thoroughly enjoyed ourselves.

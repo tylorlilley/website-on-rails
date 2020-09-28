@@ -1,55 +1,61 @@
-.container.post-image
-  .row
-    .col-12
-      = image_tag(image_for(@post, 1), alt: "The Legend of Zelda: Ocarina of Time 3D promotional art depicting Link riding Epona through Hyrule field", title: "Link, Epona, and Hyrule, in all their respective majesty.")
-%p
-  This is what I have been doing lately. I haven't finished the game yet, but I'm very close. I mean, I have played through the N64 version two or three times before, but this new version is just something else. I'm going to take a little bit of time here to try and capture and explain just what that something else is.
-%p
-  = image_tag(image_for(@post, 2), alt: "A screenshot of Shiek in the Ice Caves from the 3DS version of Ocarina of Time", title: "Such a beautiful... er... man.", class: "float-left", style: "padding: 2%")      
+- intro = false if intro.nil?
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post, 1), alt: "The Legend of Zelda: Ocarina of Time 3D promotional art depicting Link riding Epona through Hyrule field", title: "Link, Epona, and Hyrule, in all their respective majesty.")
+%p This is what I have been doing lately. I haven't finished the game yet, but I'm very close. I mean, I have played through the N64 version two or three times before, but this new version is just something else. I'm going to take a little bit of time here to try and capture and explain just what that something else is.
+
+- unless intro
+  = image_tag(image_for(@post, 2), alt: "A screenshot of Shiek in the Ice Caves from the 3DS version of Ocarina of Time", title: "Such a beautiful... er... man.", class: "float-left", style: "padding: 2%")
+  %br
   %strong Story: 4 / 5
-  %p
-    Ocarina of Time's story can be too predictable for some, but I never felt that way. Yes, it's kind of the classic hero fighting against the forces of darkness to save a princess type of thing, and yes it is set in a quasi-fantasy realm, and that is enough for some people to discredit it for being too 'unoriginal.' You even fight with swords and bows and a little bit of magic at times. I'll admit that at first, this sounds very overdone. But for me, it never felt like I was playing a stereotypic adventure game. I felt like I was playing a one of a kind experience. Why? If the story is that simple, how could it be worth anything at all, let alone the four out of five that I gave it?
+  %br
+  %br
+  %p Ocarina of Time's story can be too predictable for some, but I never felt that way. Yes, it's kind of the classic hero fighting against the forces of darkness to save a princess type of thing, and yes it is set in a quasi-fantasy realm, and that is enough for some people to discredit it for being too 'unoriginal.' You even fight with swords and bows and a little bit of magic at times. I'll admit that at first, this sounds very overdone. But for me, it never felt like I was playing a stereotypic adventure game. I felt like I was playing a one of a kind experience. Why? If the story is that simple, how could it be worth anything at all, let alone the four out of five that I gave it?
   %p
     Because it
     %i isn't
     that simple; not really. That little summary of Ocarina of Time's basic plotline barely scratches the surface of the game itself. So much creativity and effort was put into designing Hyrule and it's various inhabitants. The races, the backstory, everything about it is unique. Not to mention how chock full of expolration the game is, with every nook and cranny containing something else to do. For every generic item, like the sword or bow, you have something like the Hookshot or the Bombchu that is the exact opposite of generic. It's a vast and varied world, and yet it is an extremely unique one, and I think that is why it's always felt so breath taking to me, even if the basic plotline is a tad overdone.
-%p
+
+  %br
   %strong Graphics: 5 / 5
-  %p
-    It should be no surprise by this point that I find the graphics to be just plain beautiful. The worlld of hyrule has gotten quite a facelift since its debut on the N64, and a lot of the pointy, pokey polygons have been smoothed out, making the entire game world and it's inhabitants look that much better. But you don't really care about the new graphics, do you? What you really want to hear about is the 3D?that is the exact opposite of generic. It's a vast and varied world, and yet it is an extremely unique one, and I think that is why it's always felt so breath taking to me, even if the basic plotline is a tad overdone.
-%p
+  %br
+  %br
+  %p It should be no surprise by this point that I find the graphics to be just plain beautiful. The worlld of hyrule has gotten quite a facelift since its debut on the N64, and a lot of the pointy, pokey polygons have been smoothed out, making the entire game world and it's inhabitants look that much better. But you don't really care about the new graphics, do you? What you really want to hear about is the 3D?that is the exact opposite of generic. It's a vast and varied world, and yet it is an extremely unique one, and I think that is why it's always felt so breath taking to me, even if the basic plotline is a tad overdone.
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 3), alt: "A screenshot comparing the inside of the Hyrule Market Town Shop from the N64 version and the 3DS version of Ocarina of Time", title: "It's like two completely different games! Er, wait...")
-%p
-  Well, you're stupid and you're wrong. The original game wouldn't have looked terrbile in 3D, but if they had just ported the N64 version it wouldn't look nearly as good as it does now. Just look at the above picture for a second. Look how much better everything looks in the right one. It's not just a simple tune-up they added to the existing graphics, the picture above clearly illustrates all the little details they added in to make the game look
-  %i even better still.
-  They didn't just revamp the old graphcis; they used the new available memory of the 3DS cart to add in a lot more little details in as well - and it's these details in addition to the smoother, updated grpahics that really give Hyrule that "wow" factor, and make this version of the game strikingly beautiful. The 3D graphics are just icing on the cake.
-%p
-  And don't get me wrong, it's some darn good icing. The 3D make some of the more spacial-minded puzzles or segments of the game a lot easier to grasp and to make sense of, not to mention what it adds to the feeling of being there and putting yourself into the game. The 3D works wonderfully, as all the games for the 3DS I've played so far, and it doesn't hurt my eyes or my head or anything. It just simply adds even more depth to the already very atmospheric game that is Ocarina of Time.
-%p
-  Just in case the above shot wasn't enough for you, here's one last comparison that really shows you how they've updated and smoothed out what everything that was already there:
-%p
+  %p
+    Well, you're stupid and you're wrong. The original game wouldn't have looked terrbile in 3D, but if they had just ported the N64 version it wouldn't look nearly as good as it does now. Just look at the above picture for a second. Look how much better everything looks in the right one. It's not just a simple tune-up they added to the existing graphics, the picture above clearly illustrates all the little details they added in to make the game look
+    %i even better still.
+    They didn't just revamp the old graphcis; they used the new available memory of the 3DS cart to add in a lot more little details in as well - and it's these details in addition to the smoother, updated grpahics that really give Hyrule that "wow" factor, and make this version of the game strikingly beautiful. The 3D graphics are just icing on the cake.
+  %p And don't get me wrong, it's some darn good icing. The 3D make some of the more spacial-minded puzzles or segments of the game a lot easier to grasp and to make sense of, not to mention what it adds to the feeling of being there and putting yourself into the game. The 3D works wonderfully, as all the games for the 3DS I've played so far, and it doesn't hurt my eyes or my head or anything. It just simply adds even more depth to the already very atmospheric game that is Ocarina of Time.
+  %p Just in case the above shot wasn't enough for you, here's one last comparison that really shows you how they've updated and smoothed out what everything that was already there:
   .container.post-image
     .row
       .col-12
         = image_tag(image_for(@post, 4), alt: "A screenshot comparing link swimming in the Water Temple from the N64 version and the 3DS version of Ocarina of Time", title: "Yes, that is the dreaded Water  Temple. More on that in a second.")
-%p
+  %br
   %strong Controls: 5 / 5
+  %br
+  %br
   %p
     One of the other new changes in this version were those made to the controls, and boy were
     %i they
     welcome changes. The inventory is all on the touch screen, and it makes it very quick and easy to swap things on and off - like the iron boots. This makes the Water Temple go by an approximate 63.48% quicker, as you no longer have to sit through opening up and the gear menu and scrolling to the boots and taking them on or off and then closing the menu anymore. Instead, it's a simple press of a button and then bam, you're done. Easy as that.
   = image_tag(image_for(@post, 5), alt: "A screenshot of the first person view of firing the sling-shot in the 3DS version of Ocarina of Time", title: "I've never felt as much like a little fairy boy before I got to actually move the 3DS around and see my camera angle move in the game.", class: "float-right", style: "padding: 2%")
-  %p
-    While we're on the subject, I will mention that the Water Temple itself was made just a bit easier as well, with helpful signs and pipe-like features that let you know exactly where it is you need to go in order to raise or lower the water level to your liking.
+  %p While we're on the subject, I will mention that the Water Temple itself was made just a bit easier as well, with helpful signs and pipe-like features that let you know exactly where it is you need to go in order to raise or lower the water level to your liking.
   %p
     That is, however, a digression, because what I
     %i really
     want to talk about is the motion controls. When you're in first person view mode, either just to look around or to fire a bow and arrow, you can move the 3DS, making link - and thus your view in game - move with you. I can't tell you how helpful this is. This makes precise aiming, and just simpy the using of things like the Hookshot and the Boomerang infinetly easier - and more fun to boot. This was not a feature I thought I would love this much until after I started playing the game, but now that I've had it I don't think I'd be able to go back to using the circle pad or the analog stick on the original - that's how good it is. I never thought that some of the sidequests involving archery skills were very fun in the original - in fact, the ghost hunting one was probably my least favorite in the game. But now, with the beautiful 3D graphics and the motion controlled bow and arrow, I happily spent an afternoon riding around the big, open Hyrule Field ghost busting my way to victory. These controls are certainly a huge highlight for this version of the game, much more so than I thought it would be when I first got it.
-%p
+  %br
   %strong Replayability: 5 / 5
+  %br
+  %br
   %p
     I think it goes without saying that I love this game. I've already replayed it before when it was just an N64 game, and there was already so much to do that you couldn't possibly take it all in the first time anyway. I repeat, the game had no problem with replayability the first time around, and this time they've added even
     %i more
@@ -71,13 +77,12 @@
     All enemies do double the amount of damage and
     %i the entire game world
     is flipped horizontally. So even if you had beaten Master Quest before, it will still be harder and disorienting enough with the more powerful enemies and flipped overworld that it will still feel like a new experience.
-  %p
-    Now that's what I call replayability.
-%p
+  %p Now that's what I call replayability.
+  %br
   %strong Overall: 6 / 5
-  %p
-    Okay, so I know it may be a little hokey to give the game a point higher than it possibly can get on this scale, but if any game deserves it, it's Ocarina of Time. This was the only game to get perfect 100% reviews back when it was first released for the N64, and if this is an improvment, there's nowhere to go but up, right? I highly recomend this game to anyone. Period. Long time Zelda fans will surely enjoy it, if not just for the new features and graphics, and for new players this is a wonderful way to be introduced to the series. This is what I would consider to be one of the best games ever, let alone in the Zelda series itself, and to be able to have that in a portable handheld you can take with you anywhere you want to go is marvelous. The new graphics and content are just a bonus - they give you even more reason to buy it, and to buy it now. So what are you waiting for? Go out and get it already!
-%p
+  %br
+  %br
+  %p Okay, so I know it may be a little hokey to give the game a point higher than it possibly can get on this scale, but if any game deserves it, it's Ocarina of Time. This was the only game to get perfect 100% reviews back when it was first released for the N64, and if this is an improvment, there's nowhere to go but up, right? I highly recomend this game to anyone. Period. Long time Zelda fans will surely enjoy it, if not just for the new features and graphics, and for new players this is a wonderful way to be introduced to the series. This is what I would consider to be one of the best games ever, let alone in the Zelda series itself, and to be able to have that in a portable handheld you can take with you anywhere you want to go is marvelous. The new graphics and content are just a bonus - they give you even more reason to buy it, and to buy it now. So what are you waiting for? Go out and get it already!
   .container.post-image
     .row
       .col-12

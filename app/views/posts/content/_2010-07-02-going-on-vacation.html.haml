@@ -1,9 +1,10 @@
-.container.text-center.text-large
-  %p
-    FOLLOW MY CRAZY VACATION ANTICS
-    = link_to("HERE", "http://tylorlilley.freeforums.org/tylor-on-vacation-screw-all-y-all-t103.html")
-    \.
-%p
+- intro = false if intro.nil?
+
+.container{class: ("text-center text-large" unless intro)}
+  FOLLOW MY CRAZY VACATION ANTICS
+  = link_to("HERE", "http://tylorlilley.freeforums.org/tylor-on-vacation-screw-all-y-all-t103.html") + '.'
+
+- unless intro
   .container.post-image
     .row
       .col-12

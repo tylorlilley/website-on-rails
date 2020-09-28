@@ -10,6 +10,14 @@ class Post < ApplicationRecord
     all.extending(Sluggable::Finder)
   end
 
+  def previous
+    Post.where('date < ?', date).order(date: :desc).limit(1).first
+  end
+
+  def next
+    Post.where('date > ?', date).order(date: :asc).limit(1).first
+  end
+
   private
 
   def set_slug_to_default

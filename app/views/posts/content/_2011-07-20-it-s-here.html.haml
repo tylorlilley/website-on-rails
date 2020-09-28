@@ -1,7 +1,11 @@
-.container.post-image
-  .row
-    .col-12
-      = image_tag(image_for(@post), alt: "A screenshot of the title screen of the classic version of Mighty Dive Bomber", title: "I'm so happy I'm crying. My little game is all grown up. Is this what parenthood feels like?")
+- intro = false if intro.nil?
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post), alt: "A screenshot of the title screen of the classic version of Mighty Dive Bomber", title: "I'm so happy I'm crying. My little game is all grown up. Is this what parenthood feels like?")
+
 %p
   Well, it's finally done. Mighty Dive Bomber, the faithful NES styled puzzle platformer is finally finished and available for download
   = link_to("here", "/games/mighty-dive-bomber-classic") + '.'

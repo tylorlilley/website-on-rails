@@ -1,10 +1,15 @@
-.container.post-image
-  .row
-    .col-12
-      = image_tag(image_for(@post), alt: "A drawing of Tylor wondering through the snow.", title: "Newest Attraction", style: "width: 70%")
-%p
-  Oh goodness guys! It's a new Tylor game! Some of you played a much earlier version of this a long time ago (it's been in development for a long time), but I assure you this has been much improved since you played it last. It even has a way to save your progress! Shock of shocks! Unfortunately, I'm still putting the finishing touches on it, so all you get for now is this teaser art I made. But rest assured that you will get a chance to play it on this Friday's update! It will still be a beta version, something that I will be improving and changing based on "consumer" feedback, but it will be available to the general public on Friday. I hope you enjoy it!
-%p
-  One thing I'm still not sure about is what to name the game. I've got a couple different ideas and I'm torn between some of them. I'd like your guys' input on what to name it, but I'd understand if you wanted to play the game before you placed a
-  = link_to("vote", "http://tylorlilley.freeforums.org/tylor-s-new-snow-game-t169.html")
-  Until then, I gotta get back to my pile of new 3DS game! Er I mean, my working on this game for you guys! Heh heh... the fact that the 3DS eshop came out on Monday and has been eating up all my time with new/old-but-still-new games has nothing to do with this skimpy-er update. Honest!
+- intro = false if intro.nil?
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post), alt: "A drawing of Tylor wondering through the snow.", title: "Newest Attraction", style: "width: 70%")
+
+%p Oh goodness guys! It's a new Tylor game! Some of you played a much earlier version of this a long time ago (it's been in development for a long time), but I assure you this has been much improved since you played it last. It even has a way to save your progress! Shock of shocks! Unfortunately, I'm still putting the finishing touches on it, so all you get for now is this teaser art I made. But rest assured that you will get a chance to play it on this Friday's update! It will still be a beta version, something that I will be improving and changing based on "consumer" feedback, but it will be available to the general public on Friday. I hope you enjoy it!
+
+- unless intro
+  %p
+    One thing I'm still not sure about is what to name the game. I've got a couple different ideas and I'm torn between some of them. I'd like your guys' input on what to name it, but I'd understand if you wanted to play the game before you placed a
+    = link_to("vote", "http://tylorlilley.freeforums.org/tylor-s-new-snow-game-t169.html")
+    Until then, I gotta get back to my pile of new 3DS game! Er I mean, my working on this game for you guys! Heh heh... the fact that the 3DS eshop came out on Monday and has been eating up all my time with new/old-but-still-new games has nothing to do with this skimpy-er update. Honest!

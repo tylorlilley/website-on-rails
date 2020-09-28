@@ -8,4 +8,18 @@
       = render partial: "posts/content/#{@post.slug}"
       %br
     %section.post.rider
-      %h2= sanitize "View other updates #{link_to "here", posts_path }."
+      %br
+      .container
+        .row
+          - if archived
+            .col.text-left
+              - if @post.previous
+                = link_to("<-- Previous Post", @post.previous)
+          .col
+            %h2
+              View other updates
+              = link_to("here", posts_path) + "."
+          - if archived
+            .col.text-right
+              - if @post.next
+                = link_to("Next Post -->", @post.next)

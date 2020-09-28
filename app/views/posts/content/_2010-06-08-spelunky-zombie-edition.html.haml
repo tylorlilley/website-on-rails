@@ -1,15 +1,17 @@
+- intro = false if intro.nil?
+
 %p
   If you haven't played Spelunky yet, it's an insanely awesome FREE computer game you can find in my links section. It's a Rogue-like, which means it's different every time you play it, providing a fresh experience on each start up. However, unlike most Rogue-likes,
   = link_to("Spelunky", "https://www.spelunkyworld.com/")
   is a platformer. which makes it SUPER AWESOME.The best part is - it's made by one guy, in Game Maker, the same program I've been using to make all the games featured here on my website since way back to about 6th grade. I'm nowhere near as good as this Derek Yu guy, but the fact that he uses the same program as me, and now the same coding language as me, gives me hope that maybe one day I'll reach a level of programming knowledge to be slightly closer at making a game as awesome as this is. Anyway, like the nice gentleman that he is, Derek Yu recently released the Source Code for Spelunky, allowing GML noobs like me to study it and learn from it. And since I'm know able to write in and understand GML code quite a bit, I made a little project of modifying this game. Screenshots can be found below, as well as a more in depth description of the mod and a download link in the downloads section above. I hope you enjoy Spelunky: Zombie Edition, but if you haven't yet you really should play the original because it's far more fun and memorable.
-%p
+
+- unless intro
   .container.post-image
     .row
       .col-6
         = image_tag( image_for(@post, 1), alt: "A screenshot of the Spelunky Zombie Edition mod.", title: "Mmm... tasty human flesh...")
       .col-6
         = image_tag( image_for(@post, 2), alt: "Another screenshot of the Spelunky Zombie Edition mod.", title: "Ahh! Zombies!")
-%p
   %ul
     %li
       The "Spelunker" starts with only one heart, two ropes, and no bombs. The undead are fragile, afterall.
@@ -21,6 +23,5 @@
       As a Zombie, you love to feast on the flesh of your victims. While holding any corpse, you can press up and the action button to eat it, restoring one heart point.
     %li
       And more to come!
-%p
   Download it now and let me know what you think. If you find any comments, bugs, etc.; let me know via email or in a post at the official thread for Spelunky: Zombie Addition on my forums,
   = link_to("here", "http://tylorlilley.freeforums.org/spelunky-zombie-edition-official-thread-t86.html") + '.'
