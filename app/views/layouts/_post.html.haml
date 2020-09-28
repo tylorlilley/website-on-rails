@@ -5,7 +5,7 @@
       %h2.style{style: "margin-top:-6px"}
         = "#{formated_date_for(@post)}"
     %section.post.content
-      = render partial: "posts/content/#{@post.slug}"
+      = render partial: "posts/content/#{@post.slug}", locals: {intro: false}
       %br
     %section.post.rider
       %br
