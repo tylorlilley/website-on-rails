@@ -32,7 +32,16 @@ module PostsHelper
   # Returns the path of the associated image file
   def image_for(post, num=1)
     return "" if post.nil? || post.slug.nil? || num.nil?
-    image_path("posts/#{post.slug}-#{num.to_s}")
+    path = "posts/#{post.slug}-#{num.to_s}"
+    begin
+      image_path(path + ".png")
+    rescue Sprockets::Rails::Helper::AssetNotFound
+      begin
+        image_path(path + ".jpg")
+      rescue Sprockets::Rails::Helper::AssetNotFound
+        ""
+      end
+    end
   end
 
 end
