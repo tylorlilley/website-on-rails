@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '3.0.0'
 
-gem 'rails',                      '6.0.0'
+gem 'rails',                      '6.1.0'
 gem 'haml',                       '5.1.2'
 gem 'aws-sdk-s3',                 '1.46.0', require: false
 gem 'image_processing',           '1.9.3'
@@ -20,16 +20,16 @@ gem 'coffee-rails',               '5.0.0'
 gem 'webpacker',                  '5.2.2'
 gem 'turbolinks',                 '5.2.0'
 gem 'jbuilder',                   '2.9.1'
-gem 'bootsnap',                   '1.4.4', require: false
+gem 'bootsnap',                   '1.9.3', require: false
 
 group :development, :test do
-  gem 'sqlite3', '1.4.1'
+  gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   gem 'web-console',           '4.0.1'
-  gem 'listen',                '3.1.5'
+  gem 'listen',                '3.7.0'
   gem 'spring',                '2.1.0'
   gem 'spring-watcher-listen', '2.0.1'
 end
