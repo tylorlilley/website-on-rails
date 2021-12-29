@@ -1,5 +1,6 @@
 # website-on-rails
 Ruby on rails app for my personal website: http://tylorlilley.com
+Updated whenever it feels right!
 
 ## Adding a new post
 To add a new post, simply insert a new post record into the database, providing its title and date. Its slug will be generated automatically.
@@ -16,3 +17,5 @@ Add a new view in the app/views/posts directory whose filename matches the gener
 - app/assets/YYYY-MM-DD-your-post-title-1.png
 - app/assets/YYYY-MM-DD-your-post-title-2.jpg
 ```
+
+That's all, folks!
