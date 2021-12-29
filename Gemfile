@@ -17,7 +17,7 @@ gem 'bootstrap',                  '>= 4.3.1'
 gem 'puma',                       '4.3.9'
 gem 'sass-rails',                 '5.1.0'
 gem 'coffee-rails',               '5.0.0'
-gem 'webpacker',                  '4.0.7'
+gem 'webpacker',                  '5.2.2'
 gem 'turbolinks',                 '5.2.0'
 gem 'jbuilder',                   '2.9.1'
 gem 'bootsnap',                   '1.4.4', require: false
