@@ -81,6 +81,12 @@ body {
   .post-image {
     text-align: center;
     padding: 2%;
+    max-width: 98%;
+    max-height: 98%;
+    img {
+      max-width: 98%;
+      max-height: 98%;
+    }
   }
   .table {
     color: $light-accent !important;
