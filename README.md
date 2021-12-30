@@ -5,6 +5,8 @@ Updated whenever it feels right!
 ## Adding a new post
 To add a new post, simply insert a new post record into the database, providing its title and date. Its slug will be generated automatically.
 
+Make sure the post has most of it under an `- unless intro` section. The only part left out should be whatever you wish to display as the post's intro in the posts index.
+
 ```
 - heroku run rails c
 - Post.create(title: "Your Post Title", date: "YYY-MM-DD") #Create the post on the server

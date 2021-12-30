@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
-gem 'rails',                      '7.0.0'
+gem 'rails',                      '6.1.4'
 gem 'haml',                       '5.1.2'
 gem 'aws-sdk-s3',                 '1.46.0', require: false
 gem 'image_processing',           '1.9.3'
@@ -20,7 +20,6 @@ gem 'coffee-rails',               '5.0.0'
 gem 'webpacker',                  '5.2.2'
 gem 'turbolinks',                 '5.2.0'
 gem 'jbuilder',                   '2.9.1'
-gem 'bootsnap',                   '1.9.3', require: false
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
@@ -30,7 +29,7 @@ end
 group :development do
   gem 'web-console',           '4.0.1'
   gem 'listen',                '3.7.0'
-  gem 'spring',                '2.1.0'
+  gem 'spring',                '2.1.1'
   gem 'spring-watcher-listen', '2.0.1'
 end
 
