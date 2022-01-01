@@ -9,7 +9,7 @@ module GamesHelper
   # Returns download filename associated with a game
   def download_filename_for(game)
     return "" if game.nil? || game.filename.nil?
-    "http://tylorlilley.s3.amazonaws.com/games/tylorlilley_#{game.filename}.zip"
+    "https://tylorlilley.s3.amazonaws.com/games/tylorlilley_#{game.filename}.zip"
   end
 
   # Returns the width of a screenshot associated with a game
