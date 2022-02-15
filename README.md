@@ -21,3 +21,5 @@ Add a new view in the app/views/posts directory whose filename matches the gener
 ```
 
 That's all, folks!
+
+Test update
