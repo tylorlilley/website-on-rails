@@ -20,4 +20,5 @@ Add a new view in the app/views/posts directory whose filename matches the gener
 - app/assets/YYYY-MM-DD-your-post-title-2.jpg
 ```
 
+## Conclusion
 That's all, folks!
