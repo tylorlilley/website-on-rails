@@ -9,8 +9,8 @@ Make sure the post has most of it under an `- unless intro` section. The only pa
 
 ```
 - heroku run rails c
-- Post.create(title: "Your Post Title", date: "YYY-MM-DD") #Create the post on the server
-=> #<Post id: 1, title: "Your Post Title", date: "YYY-MM-DD", created_at: "YYYY-MM-DD" HH:MM:SS", updated_at: "YYYY-MM-DD" HH:MM:SS", slug: "YYYY-MM-DD-your-post-title">
+- Post.create(title: "Your Post Title", date: "YYYY-MM-DD") #Create the post on the server
+=> #<Post id: 1, title: "Your Post Title", date: "YYYY-MM-DD", created_at: "YYYY-MM-DD" HH:MM:SS", updated_at: "YYYY-MM-DD" HH:MM:SS", slug: "YYYY-MM-DD-your-post-title">
 ```
 
 Add a new view in the app/views/posts directory whose filename matches the generated slug. Add any new images or other assets used in the post to their respective app/assets folder. The file name should match the slug, optionally prepended with -1, -2, -3, etc. if there are multiple assets of that type to be used in the post.
