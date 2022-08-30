@@ -2,10 +2,12 @@
   .container.post-image
     .row
       .col-12
-        = image_tag(image_for(@post), alt: "A screenshot of the Dokmus randomizer android application running on a 7-inch tablet", size: '1280x960')
+        = image_tag(image_for(@post), alt: "A screenshot of the Dokmus randomizer android application running on a 7-inch tablet", size: '640x480')
 
 %p
-  Hello everyone! I've created another setup randomizer for a board game. This time the board game is Dokmus, and this time I have returned to the wild world of Android App development in order to release it! It functions much like my other randomizer apps for Android do, in that it randomizes the setup for the board game and has a few additional settings - like optional support for the Return of Erefel expansion - to go along with it.
+  Hello everyone! I've created another setup randomizer for a board game. This time the board game is 
+  =link_to("Dokmus", "https://boardgamegeek.com/boardgame/199793/dokmus") + ','
+  and this time I have returned to the wild world of Android App development in order to release it! It functions much like my other randomizer apps for Android do, in that it randomizes the setup for the board game and has a few additional settings - like optional support for the Return of Erefel expansion - to go along with it.
 
 - unless intro
   %p
