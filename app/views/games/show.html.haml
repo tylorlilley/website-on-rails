@@ -20,3 +20,8 @@
     %br
     %section.game.rider
       = tag.h2 link_to "Download #{@game.name} Now", download_filename_for(@game), target: "_blank"
+  - if @game.mac_version
+    .col-12.mx-auto
+      %br
+      %section.game.rider
+        = tag.h2 link_to "Download #{@game.name} (Mac) Now", download_mac_filename_for(@game), target: "_blank"

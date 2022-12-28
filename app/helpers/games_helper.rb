@@ -12,6 +12,12 @@ module GamesHelper
     "https://tylorlilley.s3.amazonaws.com/games/tylorlilley_#{game.filename}.zip"
   end
 
+    # Returns download filename associated with a game's mac version
+    def download_mac_filename_for(game)
+      return "" if game.nil? || game.filename.nil?
+      "https://tylorlilley.s3.amazonaws.com/games/tylorlilley_#{game.filename}_mac.zip"
+    end
+
   # Returns the width of a screenshot associated with a game
   def screenshot_width_for(game)
     return 0 if game.nil? || game.image_width.nil?

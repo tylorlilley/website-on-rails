@@ -1,0 +1,248 @@
+%p
+  Hello folks! I have a new game available for you to play called
+  = link_to("EIH", "/games/eih") + '.'
+  For the first time there is both a mac option AND a windows option as well. Finally, those of you
+  who only have a macbook can still be included! If you'd just like to check out the new game you
+  can do so here, but if you want to read about the long road that brought me to this point of being
+  able to release this game - that story continues below.
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post), alt: "A screenshot of a game of EIH in progress.", size: '512x512')
+  %p
+    It was June of 2020, several months into quarantine for the COVID-19 pandemic. I was
+    desperately looking for other ways to keep myself from going crazy while spending all of my
+    time in the one bedroom apartment I shared with my wife, and I decided it would be good to try
+    to be productive by having a project under my belt to work on. That way I'd at least have
+    something to show for all of this time I'd spent inside. This seemed like a logical thing to do at
+    the time - I am always saying I wish I could spend more time on personal projects and game
+    development again, and here I was being "gifted" an endless amount of time by the
+    circumstances of the pandemic. Alas, things are rarely as simple as they seem on paper.
+  %p
+    A half a year earlier, before the pandemic started in earnest, I had finished playing through the
+    2019 remake of
+    = link_to("Link's Awakening", "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(2019_video_game)")
+    for the Nintendo Switch. Link's Awakening is one of my favorite games of all time, and the
+    switch remake did not disappoint. One of the new features they added was a new Dungeon
+    Maker mode. Throughout the game, you unlocked dungeon rooms for use with this mode that
+    had different configurations of exits and challenges inside. You were then tasked with creating a
+    dungeon that properly hooked up each of the room's exits into a playable dungeon that also met
+    some other criteria - for example, fitting the whole thing into the shape of a heart.
+  %p
+    That new mode was fun, but while I was playing through it it occurred to me that this was a task
+    that should be possible for a simple computer algorithm to perform. Doing so would result in a
+    near infinite amount of randomly generated dungeons. The idea was interesting to me - take
+    these predefined rooms that were intelligently designed individual pieces of a dungeon, and find
+    a way to fit them all together such that the dungeon was playable and possible to traverse.
+    When I had this idea in early 2020, I was too busy to do anything with it. But it had stuck in my
+    mind, and it was this idea that I decided I was interested in exploring when I was going stir-crazy
+    six months later in June.
+  %p
+    The biggest thing this idea had going for it, to me, was the fact that while the dungeon as a
+    whole would be randomly assembled, the individual parts themselves could be intelligently
+    designed. They could contain the structure and challenges that a human is good at making but
+    that become a lot more challenging for a computer to randomly design. One of my earlier game
+    projects, 
+    = link_to("Castle Climber", "/games/castle-climber")  + ","
+    suffered from a similar problem
+    while I was working on it. It became hard to add any new features when every new feature
+    needed to be something that the game knew how to intelligently employ in its randomization of a
+    given room. That game found other ways around that problem, but I was excited by the idea of
+    this "Dungeon Maker" randomization method, because it seemed like it could have all the pros
+    of a human touch plus all the pros of algorithmically generated variety.
+  %p
+    I got to work on a prototype with that concept, and I was just focused on the random generation
+    of possible maps and not even bothering with what the gameplay could look like. I started
+    working in 
+    = link_to("Game Maker: Studio 1.4", "https://gamemaker.io/en/blog/gamemaker-studio-1-dot-4-9999-released") + "."
+    which was well past its end of life support at that point, simply because it's what I owned from purchasing a license
+    waaay back in the day. This was a mistake, but I did not realize it at first. Instead, I continued
+    working on the project and got far enough into the map generation to have a playable prototype
+    where a simple player character could walk around randomly generated maps made out of
+    simple, pre-existing rooms. The simple graphics of the prototype made me realize that this
+    game could potentially be a realization of 
+    %i another
+    older project of mine - 
+    = link_to("10 Seconds in Hell", "/games/10-seconds-in-hell")
+  %p
+    When I made 10 Seconds in Hell, it was a project I was quite proud of. It was another project
+    that tried to have randomized elements, but it also approached that randomization in yet another
+    unique way. For that game, I was inspired by the Atari classic 
+    = link_to("Adventure", "https://en.wikipedia.org/wiki/Adventure_(1980_video_game)") + ','
+    taking the idea from that game
+    to randomize the game objects but not the game map itself. Instead, for 10 Seconds in Hell the
+    entire large map was handmade to give it that human touch. Instead, the starting positions of
+    various items, objects, enemies, and even the player character were randomized between a set
+    number of possible spots at the start of any given run through the game. It was another attempt
+    to balance the randomization elements with a human touch, and although it succeeded in its
+    own way, it was not a very scalable approach - or even a very replayable one, since beating the
+    game once usually meant seeing the entire map which never changes.
+  %p
+    I thought about the similarities in the design goals of that project and my new prototype right
+    around when I started reaching a point where I needed to consider what kind of gameplay to
+    actually add to my random map generator. Thus the idea of it being a kind of pseudo-sequel to
+    10 Seconds in Hell was born. The simplicity of 10 Seconds in Hell's controls and game systems
+    lent themselves well to a classic permadeath roguelike experience too, which is what I was now
+    creating with this new prototype. They also worked well for the idea of designing one off rooms
+    and challenges. It was a natural fit, and once I adopted the idea of this new game being a
+    sequel to 10 Seconds in Hell, EIH was born.
+  %p
+    Unfortunately, things were not smooth sailing from there. I began running into more and more
+    issues while just trying to do simple things within the Game Maker Studio 1.4 engine. Ultimately
+    I began to get fed up and bogged down by it. I felt I was spending much more time fixing bugs
+    with the engine than I was making any progress with the game itself. Looking for answers or
+    help online often lead back to the idea that what I wanted to do could be done
+    %i much
+    easier in their current offering - 
+    = link_to("Game Maker Studio 2", "https://gamemaker.io/en/blog/introducing-gamemaker-studio-2") + ' -'
+    which I did not own and was
+    frustrated that I would need to spend money on just to get the engine to work for what I wanted
+    it to do. After a few months of increasingly frustrating work on the game, I decided to chalk the
+    experience up as a lesson learned and move on without finishing it. It felt like soon even the
+    original reason for starting this project would no longer be relevant, since surely the pandemic
+    would be subsiding soon. It had already been almost 8 months after all!
+  %p
+    It did not. Months later, in December of 2020, with no end to the pandemic in sight and a holiday
+    sale springing up for Game Maker Studio 2, I decided to bite the bullet and buy a license for
+    GMS2 and return to the project. It was going to be a lot of work to port the game from 1.4 to 2.0,
+    but I had had a lot of fun when I was working on the game BEFORE running into all these
+    engine bugs, and I certainly needed the distraction of something to work on now more than ever
+    to prevent myself from going stir-crazy. It was going to be a lot of work to translate the project,
+    but surely once I did the new and current Game Maker engine would be easier to work with and
+    better able to support my ambitious game ideas, right?
+  %p
+    It did! Well, at least for a little bit, anyway. After weeks of grueling work porting the game from
+    the old version of Game Maker to the new engine and fixing countless small bugs along the
+    way, I finally began testing and implementing new gameplay features. It finally felt like I was
+    back on track, and back to doing the
+    %i creative
+    part of game development. Then, suddenly,
+    a new issue reared its ugly head during one of my platesting sessions. Sometimes, halfway
+    through a play session, the game would randomly crash and all progress would be lost. This
+    was a debilitating bug for any game, but for a fully randomized permadeath rogue-like it was
+    absolutely inexcusable. I could never release the game in this state until I got to the bottom of
+    this bug.
+  %p
+    What ensued was nearly a month of trying to track down the source of this persistent issue.
+    Nothing in the code seemed like it could be causing it, but I knew something must be. There
+    were small breakthroughs along the way - I noticed it never seemed to happen on the first run of
+    the game, but only on subsequent playthroughs. I noticed it never happened at all if one were to
+    close out of the game in between runs instead of restarting it after defeat. That led me to
+    monitoring the memory usage while doing a test play, which is how I discovered that worst of all
+    fates - I had a memory leak somewhere. Not while playing the game, but while re-randomizing
+    the dungeon. Essentially, the memory ticked up each time the restart key was pressed, until
+    eventually the program ran out of memory mid-game and crashed.
+  %p
+    This was very disheartening, because I already knew about the dangers of introducing a
+    potential memory leak into the game and had been consciously working to avoid that scenario
+    from the very beginning. What's more, going over my code again and again, I could not seem to
+    find anything that even remotely looked like it could be a source of the leak. I had followed all of
+    the official GMS2 suggestions on how to avoid such a thing, and yet, it was definitely happening.
+    That's when I began to have a hunch that it was not me, or my game - but perhaps some bug in
+    the GMS2 engine itself that was causing this memory leak. Which would be the worst possible
+    answer, since that's not something I could fix myself. It would essentially doom my project, and
+    all of the hours I put into it.
+  %p
+    And yet, it was true. It took me a while to figure out exactly what was causing it - I started
+    creating new, empty projects in the game engine and doing things like creating only a single
+    object that reset the game repeatedly to see if the memory usage would grow. At first it did not,
+    but using that methodical approach I was able to eventually single out the exact issue. There
+    was a bug in the persistence feature that I was making heavy use of in my game. That feature is
+    what allowed instances (and in my case more specifically, rooms) to persist their state between
+    visits to that room instead of being reset every time. Unfortunately, the bug made it so that
+    rooms that were generated on the fly and marked as persistent were
+    %i not
+    cleaned up
+    when the game was reset. This was the source of the memory leak. Once I discovered this, I did
+    everything I could to try and get some help from the creators of Game Maker Studio, YoYo
+    Games, themselves. I
+    = link_to("posted on their official forums", "https://forum.gamemaker.io/index.php?threads/memory-leak-on-game-restart-caused-by-persistent-rooms-and-objects.89260/") + ','
+    and I even I submitted a helpdesk ticket with them about this
+    bug. Ultimately, my bug report was acknowledged and it was added to the backlog - but as far
+    as I know, it has never been addressed, even to this very day.
+  %p
+    After all the work I'd put in to get to that point, running into this issue completely deflated me. I
+    had no desire to continue working on a project that I already overhauled from the ground up
+    once to port it from the Game Maker 1.4 engine to the Game Maker Studio 2 engine. I didn't
+    have it in me to overhaul the entire game again to get away from using the built in persistence
+    feature - and couldn't even think of a way to, even if I had. I was stuck, and I once again gave
+    up and chalked this up as an admittedly even more painful learning opportunity with a plan to
+    move on.
+  %p
+    Almost two years later in September of 2022 I found myself thinking about EIH again.
+    Half-wistfully, half-regretfully. It had never really sat right with me that I was unable to get the
+    game released in any state at all. I had spent a lot of that time waiting to hear back that the
+    engine bug I had found and reported was fixed so that I could return to working on it again, but I
+    had grown tired of waiting. Then, all of a sudden I had an idea. The main thing I was using the
+    engine's persistence feature for was to keep track of position and state of all of the objects in
+    each room when moving between them. What if - instead of using persistent rooms, I only used
+    ONE room, and I
+    %i simulated
+    moving the player from one room to the next myself? If I did
+    that, I'd have to keep track of the position and state of every game object myself in order to be
+    able to manage that memory properly and keep it out of Game Maker's hands. But in doing so,
+    when the game is reset, I could ensure that nothing lingered in the game's memory and
+    therefore that no memory leak would occur.
+  %p
+    That sounded like a lot of work. And like a crazy enough idea that I didn't even know if it was
+    possible. Furthermore, there was also another, related feature I was using the Game Maker
+    engine for. I had already created over a hundred template rooms in Game Maker, and I was
+    using Game Maker functions to generate and copy those rooms on the fly. Not only would this
+    new plan require completely reprogramming the room transition logic from scratch to keep all of
+    the game objects in a single Game Maker room, but it would require reprogramming the room
+    generation logic myself as well to not just duplicate one of the many existing rooms I created but
+    instead somehow add all of its objects to the current, single Game Maker room.
+  %p
+    It sounded like an incredibly daunting task, but I kept coming back to the idea in my mind. I
+    decided to just start by trying out a little part of it. After all, the project was dead in the water
+    currently; testing something out that didn't end up working couldn't hurt anything. And if I ran
+    into any one piece of that above plan that didn't work, then the whole approach wouldn't work
+    anyway. So I figured I'd just try out one little piece of that plan, confirm it was not an approach
+    that would work, and then I could stop wondering about it again.
+  %p
+    Except that's not what happened at all. Working on one little piece lead to working on another
+    little piece, until before I knew it I had re-written not just the entire game again, I had also
+    re-written large swaths of the built in Game Maker engine's functions so that I could better
+    control what the engine was doing with the memory I was using. And it worked! Much to my
+    surprise, all of it worked. I am skipping over the solid month or so of hard work I did to get to that
+    end state for the sake of this story, of course, but trust me when I say it was a lot of hard work.
+    There was still the second problem about the room generation to solve, however. My new
+    version of the game that used only one room worked just fine for preserving state between the
+    different areas a player could travel to in the game, but it still relied on the built in engine to
+    initially generate those rooms from among the ones I'd already spent countless hours crafting in
+    the Game Maker engine. This means that - while an order of magnitude smaller - there
+    %i was
+    still a slight memory leak over time. Probably not big enough to actually affect a
+    player unless they restarted the game dozens of times in a single play session. But that wasn't
+    good enough for me; if I couldn't fix the memory leak problem in its entirety then why bother
+    fixing it at all?
+  %p
+    But I was on a bit of a roll at this point. Feeling creatively empowered by my strange
+    out-of-the-box solution for quelling the worst of the memory leak issues caused by Game
+    Maker's persistence feature, I started brainstorming how to fix this last issue. Certainly one way
+    would be to re-create all of the premade rooms in some other format that's NOT a Game Maker
+    room asset. This would be a huge amount of painful re-work, but would allow the game to
+    theoretically read the rooms in from a file to generate them and thus get around having to use
+    the built-in engine functions at all - which in turn would eliminate the memory leak.
+    Okay, but wait - the Game Maker rooms are ALREADY files - .xml files, to be exact. Can I just
+    write code that would interpret those xml files and do what I needed them to do in order to
+    generate the room? That would remove a lot of the painstaking duplication effort from the
+    equation. Well, maybe I could - but what exactly did I need to get out of these files in the first
+    place? There was a LOT of extraneous information saved in these .xml room files. If all I am
+    using them for anymore is the initial generation, didn't I essentially just need a list of all the
+    objects that room contained and their initial coordinates? Just those three data points for each
+    object that I wished to create as part of the room at the time of room generation and nothing
+    else. Couldn't I create a script that would just rip that information out of these files and nothing
+    else?
+  %p
+    And that's exactly what I did. And wouldn't you know it, it worked. And that is exactly what
+    allowed me to get to the point of releasing EIH to the world today. A lot of work, a lot
+    %i more
+    rework, and a pretty painful way to ultimately end up learning a lesson I already
+    knew was true: if you want something to work right, you should really just do it yourself. I hope
+    that you, or someone somewhere, enjoys playing EIH even for a little bit. But if that never
+    happens, I will still be proud of myself for having seen it through to the end and for ultimately
+    getting to a working version of the project that matches my initial vision for it. If nothing else, I've
+    certainly learned the value of proper persistence.
