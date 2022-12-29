@@ -9,6 +9,7 @@ module GamesHelper
   # Returns download filename associated with a game
   def download_filename_for(game)
     return "" if game.nil? || game.filename.nil?
+    return "https://tylorlilley.itch.io/#{game.filename}" if game.itch?
     "https://tylorlilley.s3.amazonaws.com/games/tylorlilley_#{game.filename}.zip"
   end
 

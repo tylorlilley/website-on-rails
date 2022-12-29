@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_28_205645) do
+ActiveRecord::Schema.define(version: 2022_12_29_210344) do
 
   create_table "games", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2022_12_28_205645) do
     t.integer "image_height"
     t.string "slug"
     t.boolean "mac_version"
+    t.boolean "itch"
   end
 
   create_table "posts", force: :cascade do |t|

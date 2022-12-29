@@ -18,10 +18,14 @@
           = render partial: 'screenshot', locals: { num: 4, size: 0.5, classes: "mx-auto" }
   .col-12.mx-auto
     %br
-    %section.game.rider
-      = tag.h2 link_to "Download #{@game.name} Now", download_filename_for(@game), target: "_blank"
-  - if @game.mac_version
-    .col-12.mx-auto
-      %br
+    - if @game.itch
       %section.game.rider
-        = tag.h2 link_to "Download #{@game.name} (Mac) Now", download_mac_filename_for(@game), target: "_blank"
+        = tag.h2 link_to "Download #{@game.name} at itch.io Now", download_filename_for(@game), target: "_blank"
+    - else
+      %section.game.rider
+        = tag.h2 link_to "Download #{@game.name} Now", download_filename_for(@game), target: "_blank"
+      - if @game.mac_version
+        .col-12.mx-auto
+          %br
+          %section.game.rider
+            = tag.h2 link_to "Download #{@game.name} (Mac) Now", download_mac_filename_for(@game), target: "_blank"
