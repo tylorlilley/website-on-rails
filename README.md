@@ -2,6 +2,11 @@
 Ruby on rails app for my personal website: http://tylorlilley.com
 Updated whenever it feels right!
 
+## Pushing new version to production
+```
+git push heroku master
+```
+
 ## Adding a new post
 To add a new post, simply insert a new post record into the database, providing its title and date. Its slug will be generated automatically.
 
@@ -61,7 +66,3 @@ If the optional itch flag is not given as true, a zip file formated as "tylorlil
 
 ## Conclusion
 That's all, folks!
-
-
-Post.create(title: "Thy Dungeonman 1 & 2 for Playdate", date: "2023-07-16") #Create the post on the server
-Game.create(name: "Thy Dungeonman 1 & 2 for Playdate", date: "2023-07-16"), tagline: "Re-experience these 2004 classics on a funky new handheld device!", filename: "thy-dungeonman-for-playdate", image_height: 240, image_width: 400, mac_version: false, itch: true) #Create the game on the server
