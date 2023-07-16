@@ -1,9 +1,9 @@
 %p
   Hey everyone! I recently received my 
   = link_to("Playdate", "https://play.date/")
-  and after a few years of waiting and I decided to start learning how to program games for the little device! Don't worry if you don't have one yourself, though, because you can still play my game using the free 
+  after a few years of waiting and I decided to start learning how to program games for the little device! Don't worry if you don't have one yourself, though, because you can still play my game using the free 
   = link_to("Playdate Simulator", "https://help.play.date/manual/simulator/")
-  application that Panic has made publicly available in order to play it on your computer. It loses a bit of the charm over actually playing it on a physical device (especially because the original games are already availble to play in their original Flash forms on the computer), but the option is still available to you if you want it!
+  application that Panic has made publicly available in order to play it on your computer. It loses a bit of the charm over actually playing it on a physical device (especially because the original games are already available to play in their original Flash forms on the computer), but the option is still available to you if you want it!
 
 - unless intro
   .container.post-image
@@ -13,7 +13,9 @@
   %p
     Since I've never programmed in Lua before, or for a physical device like the Playdate, I decided the best way to get my feet wet would be to start by porting an existing, simple game over to the Playdate. I chose 
     = link_to("Thy Dungeonman", "/games/thy-dungeonman")
-    (and its sequel, Thy Dungeonman 2) to port over. These are some oldschool text adventure games that were originally flash games created by Jonathan Howe along with Mike and Matt Chapman for the 
+    (and its sequel, 
+    = link_to("Thy Dungeonman 2", "/games/thy-dungeonman") + .")"
+    to port over. These are some old school text adventure games that were originally flash games created by Jonathan Howe along with Mike and Matt Chapman for the 
     = link_to("Homestar Runner", "https://homestarrunner.com/")
     website.
   %p
@@ -23,7 +25,7 @@
   %p 
     What could be next, you say? Well, it would be natural to leverage this text engine to do something like port over my old Ruby implementation of the
     = link_to("Island of D", "/posts/2016-10-06-game-section-updated")
-    text adventure game. But I am also itching to try something that's a little more my own - perhaps a sequal to
+    text adventure game. But I am also itching to try something that's a little more my own - perhaps a sequel to
     = link_to("Mighty Dive Bomber", "/games/mighty-dive-bomber")
     or even a portable version of
     = link_to("EIH", "/games/eih") + '?'
