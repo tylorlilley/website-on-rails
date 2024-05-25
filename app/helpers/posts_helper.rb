@@ -38,15 +38,12 @@ module PostsHelper
     rescue Sprockets::Rails::Helper::AssetNotFound
       begin
         image_path(path + ".jpg")
-        rescue Sprockets::Rails::Helper::AssetNotFound
-          begin
-            image_path(path + ".gif")
-          rescue Sprockets::Rails::Helper::AssetNotFound
-            ""
-          end
-        end
       rescue Sprockets::Rails::Helper::AssetNotFound
-        ""
+        begin
+          image_path(path + ".gif")
+        rescue Sprockets::Rails::Helper::AssetNotFound
+          ""
+        end
       end
     end
   end
