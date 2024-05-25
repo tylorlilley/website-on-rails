@@ -1,0 +1,23 @@
+%p
+  I've been continuing to work on new projects for the
+  = link_to("Playdate", "https://play.date/")
+  after releasing my     
+  = link_to("previous project", "/games/thy-dungeonman")
+  last July. I haven't had a lot of free time with which to work on a project like this, so it's been slow going. But it's come far enough that I thought it might be nice to post a little teaser for you all to see! Check it out:
+
+- unless intro
+  .container.post-image
+    .row
+      .col-12
+        = image_tag(image_for(@post), alt: "A photograph of a new version of EIH running on the PlayDate console", size: '800x480')
+  %p
+    I've continued to enjoy learning Lua and getting used to using other tools to make games for the PlayDate. For this project, I had to learn how to use an external level editor (in my case I chose
+    = link_to("LDtk", "https://ldtk.io/")+ ')'
+      to lay out the tiles for levels that would end up getting imported into the game. This was a fun process, but there is still a lot to do - namely, making a lot more levels, as well as setting up the system to randomize them rather than pulling them in at a set pattern. I also haven't implemented the transitions from one level/screen to the next yet, which I expect will also take a decent amount of work. I'm ready to tackle these challengs - if only I had more time!
+  %p
+    One thing I did spend a lot of time on and got working nicely was the lightning system. The system is written custom for the needs of this game, and it allows for dynamically sized and shrinking sources of light that can "combine" with other light sources on screen fluidly. I also added an ability to stop and use the crank to crank the lantern and "recharge" the player's light radius back to fill size. Only time will tell if that feature reamins fun enough to keep in the full version of the game or not, but when developing for the PlayDate it's hard not to want to use the crank for everything! I am proud of the look that the lighting system was able to acheive. Here's an example of it in %action:
+    = image_tag(image_for(@post, 2), alt: "An animated gif of the black and white PIH prototype that shows off the dynamic lighting system of the game", size: '800x480')
+  %p 
+    There's still a lot of work to be done before this game is even in a playable state, let alone one that replicates all of the features that the original
+    = link_to("EIH", "/games/eih") + '.'
+    already had to offer. But it's not looking like I will have a lot of time in the near future to work on a project like this, and I wanted to show off what I had already accomplished in the meantime. If you'd be excited to play a game like this, feel free to reach out and let me know!
