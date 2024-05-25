@@ -33,11 +33,11 @@ module ApplicationHelper
   end
 
   # Returns the first section of a block of content formated into a paragraph
-  def formated_intro(content, link_destination)
-    return "" if content.blank? || content.split("%p").second.blank?
+  def formated_intro(content, link_destination, split_amount)
+    return "" if content.blank? || content.split("%p\n").second.blank?
     link_destination ||= "#"
     appended_link = "... #{link_to "(view more)", link_destination}"
-    intro = content.split("%p\n").second[0...-2] + appended_link
+    intro = content.split("%p\n").second[0...split_amount] + appended_link
     begin
       Haml::Engine.new( "%p\n"+intro ).render(self)
     rescue Haml::SyntaxError
