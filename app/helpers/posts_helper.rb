@@ -15,7 +15,7 @@ module PostsHelper
   # Returns the first section of a post's content
   def formated_intro_for(post)
     return "" if post.nil?
-    formated_intro(content_for(post), post, -4)
+    formated_intro(content_for(post), post, -5)
   end
 
   # Returns the body of the post formatted with HTML tags
@@ -38,6 +38,13 @@ module PostsHelper
     rescue Sprockets::Rails::Helper::AssetNotFound
       begin
         image_path(path + ".jpg")
+        rescue Sprockets::Rails::Helper::AssetNotFound
+          begin
+            image_path(path + ".gif")
+          rescue Sprockets::Rails::Helper::AssetNotFound
+            ""
+          end
+        end
       rescue Sprockets::Rails::Helper::AssetNotFound
         ""
       end
