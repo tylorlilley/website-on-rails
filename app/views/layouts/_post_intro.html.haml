@@ -1,4 +1,4 @@
 %span<
-  = render(partial: "posts/content/#{post.slug}", locals: {intro: true})[0...-2]
+  = render(partial: "posts/content/#{post.slug}", locals: {intro: true})[0...-4]
 = surround "...(", ")" do
   = link_to("view more", post)

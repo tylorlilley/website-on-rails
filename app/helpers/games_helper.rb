@@ -52,7 +52,7 @@ module GamesHelper
   # Returns the first section of a game's description
   def formated_teaser_for(game)
     return "" if game.nil?
-    formated_intro(description_for(game), game, -2)
+    formated_intro(description_for(game), game)
   end
 
   # Returns the game description formatted with HTML tags

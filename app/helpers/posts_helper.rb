@@ -15,7 +15,7 @@ module PostsHelper
   # Returns the first section of a post's content
   def formated_intro_for(post)
     return "" if post.nil?
-    formated_intro(content_for(post), post, -5)
+    formated_intro(content_for(post), post)
   end
 
   # Returns the body of the post formatted with HTML tags
