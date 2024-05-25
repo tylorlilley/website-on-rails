@@ -19,9 +19,7 @@
   %p
     This difference in graphical capabilities also applies to the lighting system in the original game, which dimmed the white and red colors the further away something was from a light source until those colors were just as black as the rest of the screen graphics. This was something I was most interested in tackling first when thinking about a potential EIH remake for the PlayDate, and unlike some of the other things I talked about above, this is actually something I completely implemented. And I am really happy with the results! The new lighting system is custom written to support the needs of this game while also functioning within the aforementioned confines of the PlayDates two-color screen. It allows for dynamically sized and shrinking sources of light that can "combine" with other light sources on screen fluidly. I also added an ability to stop and use the crank to crank the lantern and "recharge" the player's light radius back to fill size. Only time will tell if that feature remains fun enough to keep in the full version of the game or not, but when developing for the PlayDate it's hard not to want to use the crank for everything! I am proud of the look that the lighting system was able to acheive. Here's an example of it in action:
   .container.post-image
-    .row
-      .col-12  
-      = image_tag(image_for(@post, 2), alt: "An animated gif of the black and white PIH prototype that shows off the dynamic lighting system of the game", size: '800x480')
+    = image_tag(image_for(@post, 2), alt: "An animated gif of the black and white PIH prototype that shows off the dynamic lighting system of the game", size: '800x480')
   %p 
     There's still a lot of work to be done before this game is even in a playable state, let alone one that replicates all of the features that the original
     = link_to("EIH", "/games/eih") + '.'
