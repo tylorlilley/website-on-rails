@@ -42,7 +42,11 @@ module PostsHelper
         begin
           image_path(path + ".gif")
         rescue Sprockets::Rails::Helper::AssetNotFound
-          ""
+           begin
+            image_path(path + ".webp")
+          rescue Sprockets::Rails::Helper::AssetNotFound
+            ""
+          end
         end
       end
     end
