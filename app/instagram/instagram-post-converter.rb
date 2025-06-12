@@ -17,10 +17,10 @@ class InstagramPost
 
         content = """
 - unless intro
-    .container.post-image
-        .row
-        .col-12
-            = image_tag(image_for(@post), alt: \"An image originally posted to Instagram on #{post_date}\")
+  .container.post-image
+    .row
+    .col-12
+      = image_tag(image_for(@post), alt: \"An image originally posted to Instagram on #{post_date}\")
 
 %p
   #{intro}
@@ -35,7 +35,7 @@ class InstagramPost
             content << "\n    #{first_line}" unless first_line.nil? or first_line == ''
             content << "\n    .container{class: (\"hashtag\")}" if lines.length > 0
             lines.each do |line|
-                content << "\n      =\"#{line}\"" if line
+                content << "\n      =\"\#{line}\"" if line
             end
         end
 
