@@ -18,8 +18,5 @@
   "version": "1.22.17",
   "devDependencies": {
     "webpack-dev-server": "^3.8.1"
-  },
-  "engines": {
-    "node": "14.18.2"
   }
 }

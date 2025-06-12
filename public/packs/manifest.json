@@ -1,24 +1,24 @@
 {
-  "application.js": "/packs/js/application-175eacfc213af76ba1c2.js",
-  "application.js.map": "/packs/js/application-175eacfc213af76ba1c2.js.map",
+  "application.js": "/packs/js/application-2c9a7dfd5f16a8432e59.js",
+  "application.js.map": "/packs/js/application-2c9a7dfd5f16a8432e59.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-175eacfc213af76ba1c2.js"
+        "/packs/js/application-2c9a7dfd5f16a8432e59.js"
       ],
       "js.map": [
-        "/packs/js/application-175eacfc213af76ba1c2.js.map"
+        "/packs/js/application-2c9a7dfd5f16a8432e59.js.map"
       ]
     },
     "tiny_towns_randomizer": {
       "js": [
-        "/packs/js/tiny_towns_randomizer-48812782d6612c18fd17.js"
+        "/packs/js/tiny_towns_randomizer-59c41d1230aef299f71d.js"
       ],
       "js.map": [
-        "/packs/js/tiny_towns_randomizer-48812782d6612c18fd17.js.map"
+        "/packs/js/tiny_towns_randomizer-59c41d1230aef299f71d.js.map"
       ]
     }
   },
-  "tiny_towns_randomizer.js": "/packs/js/tiny_towns_randomizer-48812782d6612c18fd17.js",
-  "tiny_towns_randomizer.js.map": "/packs/js/tiny_towns_randomizer-48812782d6612c18fd17.js.map"
+  "tiny_towns_randomizer.js": "/packs/js/tiny_towns_randomizer-59c41d1230aef299f71d.js",
+  "tiny_towns_randomizer.js.map": "/packs/js/tiny_towns_randomizer-59c41d1230aef299f71d.js.map"
 }
