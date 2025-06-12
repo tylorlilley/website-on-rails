@@ -31,11 +31,11 @@ class InstagramPost
         description_paragraphs.each do |paragraph|
             lines = paragraph.split('#')
             first_line = lines.shift
-            content << "\n  %P"
+            content << "  %P"
             content << "\n    #{first_line}" unless first_line.nil? or first_line == ''
             content << "\n    .container{class: (\"hashtag\")}" if lines.length > 0
             lines.each do |line|
-                content << "\n      =\"\#{line}\"" if line
+                content << "\n      =\"##{line}\"" if line
             end
         end
 
