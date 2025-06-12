@@ -1,0 +1,16 @@
+
+- unless intro
+  .container.post-image
+    .row
+    .col-12
+      = image_tag(image_for(@post), alt: "A photo of Tylor in front of a CRT displaying the final boss chamber of Castlevania for the NES")
+
+%p
+  Just beat Castlevania on a single credit for the first time! Check out that high score.
+
+- unless intro
+  %p
+    .container{class: ("hashtag")}
+      ="#Castlevania"
+      ="#NES"
+      ="#crtgaming"
