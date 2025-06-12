@@ -31,15 +31,16 @@ class InstagramPost
         description_paragraphs.each do |paragraph|
             lines = paragraph.split('#')
             first_line = lines.shift
-            content << "  %p"
+            content << "\n  %P"
             content << "\n    #{first_line}" unless first_line.nil? or first_line == ''
+            content << "\n    .container{class: (\"hashtag\")}" if lines.length > 0
             lines.each do |line|
-                content << "\n    .hashtag #{line}"
+                content << "\n      =\"#{line}\"" if line
             end
         end
 
         file_prefix = photo_file_path.split('.').last
-        FileUtils.copy photo_file_path, "./converted_images/_#{post_date}-instagram.#{file_prefix}"
+        FileUtils.copy photo_file_path, "./converted_images/#{post_date}-instagram-1.#{file_prefix}"
 
         output_file = File.new("./converted_posts/_#{post_date}-instagram.html.haml", "w")
         output_file.write(content)
