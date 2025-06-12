@@ -11,12 +11,18 @@
     "coffeescript": "1.12.7",
     "jquery": "^3.6.0",
     "jquery-ujs": "^1.2.2",
+    "node": "^24.2.0",
     "popper.js": "^1.16.0",
+    "sass": "^1.89.2",
     "serialize-javascript": "^3.1.0",
     "turbolinks": "^5.2.0"
   },
   "version": "1.22.17",
   "devDependencies": {
     "webpack-dev-server": "^3.8.1"
+  },
+  "engines": {
+    "node": "22.x",
+    "npm": "10.x"
   }
 }
