@@ -2,4 +2,4 @@
 %label.btn.btn-light
   = link_to "/randomizers/tiny_towns/toggle_expansion?expansion=#{expansion}", style: 'color: black !important; border-bottom: 0px !important;' do
     %input{ type: "button", style:"display: none", name: "expansions", id: "expansions-#{expansion}", alt: "Toggle #{expansion_label}",
-            autocomplete: "off", value: expansion, checked: YAML.load(@randomizer["settings"]["expansions"][expansion]) ? true : nil} #{expansion_label}
+            autocomplete: "off", value: expansion, checked: YAML.load(@randomizer["settings"]["expansions"][expansion], aliases: true) ? true : nil} #{expansion_label}

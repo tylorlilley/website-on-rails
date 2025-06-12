@@ -10,5 +10,5 @@
           .icon.icon-right{ alt: "Randomize Player #{player}" }
             = svg 'loop-circular'
     %ul.list-group
-      = render partial: "randomizers/tiny_towns/building", locals: {color: "purple", number: (2*(player-1)), hidden: YAML.load(@randomizer["players"]["#{player}"]["hidden"])}
-      = render partial: "randomizers/tiny_towns/building", locals: {color: "purple", number: (2*(player-1))+1, hidden: YAML.load(@randomizer["players"]["#{player}"]["hidden"])}
+      = render partial: "randomizers/tiny_towns/building", locals: {color: "purple", number: (2*(player-1)), hidden: YAML.load(@randomizer["players"]["#{player}"]["hidden"], aliases: true)}
+      = render partial: "randomizers/tiny_towns/building", locals: {color: "purple", number: (2*(player-1))+1, hidden: YAML.load(@randomizer["players"]["#{player}"]["hidden"], aliases: true)}

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.0'
+ruby '3.2.8'
 
 gem 'rails',                      '6.1.4'
 gem 'haml',                       '5.1.2'
@@ -20,10 +20,12 @@ gem 'coffee-rails',               '5.0.0'
 gem 'webpacker',                  '5.2.2'
 gem 'turbolinks',                 '5.2.0'
 gem 'jbuilder',                   '2.9.1'
+gem 'psych',                      '3.3.2'
+gem 'concurrent-ruby',            '1.3.4'
 
 group :development, :test do
-  gem 'sqlite3', '1.4.2'
-  gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3', '~> 1.4'
+  gem 'byebug',  '12.0', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
@@ -40,12 +42,12 @@ group :test do
   gem 'rails-controller-testing', '1.0.4'
   gem 'minitest',                 '5.11.3'
   gem 'minitest-reporters',       '1.3.8'
-  gem 'guard',                    '2.15.0'
+  gem 'guard',                    '2.19'
   gem 'guard-minitest',           '2.4.6'
 end
 
 group :production do
-  gem 'pg', '1.1.4'
+  gem 'pg', '1.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
