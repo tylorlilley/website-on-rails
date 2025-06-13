@@ -12,7 +12,7 @@ module ApplicationHelper
 
   def svg_file_path(name)
     file_path = "#{Rails.root}/app/assets/images/svg/#{name}.svg"
-    return File.read(file_path).html_safe if File.exists?(file_path)
+    return File.read(file_path).html_safe if File.exist?(file_path)
     '(not found)'
   end
 

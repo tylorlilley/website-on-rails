@@ -114,7 +114,7 @@ class TinyTownsRandomizerController < ApplicationController
 
   def number_of_players
     @number_of_players = randomizer["players"].values.reduce(0) do |total_players, player|
-      YAML.load(player["active"], aliases: true) ? total_players + 1 : total_players
+      YAML.load(player["active"]) ? total_players + 1 : total_players
     end
   end
 
@@ -192,7 +192,7 @@ class TinyTownsRandomizerController < ApplicationController
   end
 
   def set_all_players_hidden_status
-    randomizer["settings"]["hidden_players"] = JSON.generate !YAML.load(randomizer["settings"]["hidden_players"], aliases: true)
+    randomizer["settings"]["hidden_players"] = JSON.generate !YAML.load(randomizer["settings"]["hidden_players"])
     randomizer["players"].merge!(randomizer["players"]) do |player_number, player|
       { "active" => player["active"], "hidden" =>  randomizer["settings"]["hidden_players"] }
     end
@@ -213,11 +213,11 @@ class TinyTownsRandomizerController < ApplicationController
   end
 
   def set_player_hidden_status(player_number)
-    randomizer["players"][player_number]["hidden"] = JSON.generate !YAML.load(randomizer["players"][player_number]["hidden"], aliases: true)
+    randomizer["players"][player_number]["hidden"] = JSON.generate !YAML.load(randomizer["players"][player_number]["hidden"])
   end
 
   def set_expansion_active_status(expansion)
-    randomizer["settings"]["expansions"][expansion] = JSON.generate !YAML.load(randomizer["settings"]["expansions"][expansion], aliases: true)
+    randomizer["settings"]["expansions"][expansion] = JSON.generate !YAML.load(randomizer["settings"]["expansions"][expansion])
     update_buildings
   end
 
