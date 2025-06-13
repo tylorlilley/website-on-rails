@@ -1,5 +1,5 @@
 {
-  "name": "website_on_rails",
+  "name": "sample_app",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
@@ -16,8 +16,12 @@
     "serialize-javascript": "^3.1.0",
     "turbolinks": "^5.2.0"
   },
-  "version": "2.0.0",
+  "version": "1.22.17",
   "devDependencies": {
     "webpack-dev-server": "^3.8.1"
+  },
+  "engines": {
+    "node": "22.16.0",
+    "npm": "10.9.2"
   }
 }
