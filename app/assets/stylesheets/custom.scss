@@ -1,4 +1,3 @@
-
 @import "bootstrap";
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
@@ -7,13 +6,12 @@
 
 /* mixins, variables, etc. */
 
-$light-shade:   #EFF0F0;
-$light-accent:  #8EA1B2;
-$brand:         #4C7799;
-$dark-accent:   #345468;
-$dark-shade:    #191A1F;
-$faded:         #BACAD8;
-
+$light-shade: #eff0f0;
+$light-accent: #8ea1b2;
+$brand: #4c7799;
+$dark-accent: #345468;
+$dark-shade: #191a1f;
+$faded: #bacad8;
 
 $gray-medium-light: #eaeaea;
 $gray-bg-checker-front: lighten($dark-shade, 4%);
@@ -33,33 +31,65 @@ body {
   /* checkerboard background */
   background-color: $gray-bg-checker-back !important;
   background-image:
-     -moz-linear-gradient(45deg, $gray-bg-checker-front 25%, transparent 25%),
-     -moz-linear-gradient(-45deg, $gray-bg-checker-front 25%, transparent 25%),
-     -moz-linear-gradient(45deg, transparent 75%, $gray-bg-checker-front 75%),
-     -moz-linear-gradient(-45deg, transparent 75%, $gray-bg-checker-front 75%);
-   background-image:
-     -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, $gray-bg-checker-front), color-stop(.25, transparent)),
-     -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, $gray-bg-checker-front), color-stop(.25, transparent)),
-     -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, $gray-bg-checker-front)),
-     -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, $gray-bg-checker-front));
+    -moz-linear-gradient(45deg, $gray-bg-checker-front 25%, transparent 25%),
+    -moz-linear-gradient(-45deg, $gray-bg-checker-front 25%, transparent 25%),
+    -moz-linear-gradient(45deg, transparent 75%, $gray-bg-checker-front 75%),
+    -moz-linear-gradient(-45deg, transparent 75%, $gray-bg-checker-front 75%);
+  background-image:
+    -webkit-gradient(
+      linear,
+      0 100%,
+      100% 0,
+      color-stop(0.25, $gray-bg-checker-front),
+      color-stop(0.25, transparent)
+    ),
+    -webkit-gradient(
+        linear,
+        0 0,
+        100% 100%,
+        color-stop(0.25, $gray-bg-checker-front),
+        color-stop(0.25, transparent)
+      ),
+    -webkit-gradient(
+        linear,
+        0 100%,
+        100% 0,
+        color-stop(0.75, transparent),
+        color-stop(0.75, $gray-bg-checker-front)
+      ),
+    -webkit-gradient(
+        linear,
+        0 0,
+        100% 100%,
+        color-stop(0.75, transparent),
+        color-stop(0.75, $gray-bg-checker-front)
+      );
 
-   -moz-background-size: $checker-size $checker-size;
-   background-size: $checker-size $checker-size;
-   -webkit-background-size: $checker-size $checker-size+1; /* override value for shitty webkit */
+  -moz-background-size: $checker-size $checker-size;
+  background-size: $checker-size $checker-size;
+  -webkit-background-size: $checker-size $checker-size + 1; /* override value for shitty webkit */
 
-   background-position:0 0, $checker-size/2 0, $checker-size/2 0-($checker-size/2), 0px $checker-size/2;
+  background-position:
+    0 0,
+    $checker-size/2 0,
+    $checker-size/2 0-($checker-size/2),
+    0px $checker-size/2;
 }
 
 .jumbotron.custom {
   /* Jumbotron properties */
-  padding: 48px;
-  margin: 0 5% 0 5%;
+  padding: clamp(8px, 5vw, 48px);
+  margin: auto;
+  max-width: clamp(8px, 95%, 1200px);
   border-radius: 24px !important;
   background-color: $light-shade !important;
   font-size: 1.5em;
   line-height: 1.7em;
 
   /* Standard jumbotron parts */
+  .container-fluid {
+    padding: 0;
+  }
   .title {
     text-align: center;
     display: block;
@@ -79,13 +109,22 @@ body {
     line-height: 1.4em;
   }
   .post-image {
-    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     padding: 2%;
-    max-width: 98%;
-    max-height: 98%;
+    gap: 1vw;
+
     img {
-      max-width: 98%;
-      max-height: 98%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .col-12 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1vw;
     }
   }
   .table {
@@ -108,6 +147,7 @@ body {
     text-indent: 2em;
   }
   h1 {
+    padding: 0 2px;
     color: $dark-accent !important;
     font-size: 2.7em;
     letter-spacing: -2px;
@@ -180,7 +220,8 @@ textarea {
 
 /* header */
 
-.navbar{
+.navbar {
+  height: clamp(64px, 4vw, 64px);
   background-color: $brand;
   a {
     color: $light-shade !important;
@@ -208,7 +249,6 @@ textarea {
     text-decoration: none;
   }
 }
-
 
 /* footer */
 
@@ -257,4 +297,37 @@ footer {
   margin-right: 24px;
   border-color: $light-shade !important;
   width: 30%;
+}
+
+/* fill screen with jumbotron in mobile view and double navbar size */
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 0;
+  }
+
+  .jumbotron-column {
+    padding-top: 128px;
+  }
+
+  .jumbotron.custom {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(48px, 5vw, 32px);
+    font-size: 2em;
+  }
+
+  .navbar {
+    height: 96px;
+  }
+
+  button {
+    height: 100%;
+    width: 92px;
+  }
+
+  #logo {
+    font-size: 3em;
+  }
 }

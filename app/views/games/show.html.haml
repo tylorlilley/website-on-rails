@@ -8,7 +8,7 @@
       = render partial:'screenshot', locals: { num: 1, size: 1, caption: formated_tagline_for(@game) }
       = render partial: "games/description/#{@game.slug}"
   .col-12.mx-auto
-    .container
+    .container-fluid
       .row.justify-content-center
         .col-12.col-xl-auto.mx-auto
           = render partial: 'screenshot', locals: { num: 2, size: 0.5, classes: "mx-auto" }

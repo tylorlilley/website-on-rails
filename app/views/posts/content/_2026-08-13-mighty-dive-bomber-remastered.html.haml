@@ -1,18 +1,21 @@
 - unless intro
   .container.post-image
+    <iframe width="512" height="480" src="https://www.youtube.com/embed/xoUUREOqp2w" allowfullscreen></iframe>
+
+  .container.post-image
     .row
     .col-12
-      <iframe width="512" height="480" src="https://www.youtube.com/embed/xoUUREOqp2w" allowfullscreen></iframe>
       = image_tag(image_for(@post), alt: "A splash image of Mighty Dive Bomber used to announce the remastered version of the previous games", size: '768x720')
 
 %p
-  Hot off the anticipated release of Lenora Lilley in the last post, I am excited to announce something I have been working on for awhile! It isn't <i>quite</i> as significant of a release as the one from my last post, but for longtime fans of my games it should be an exciting one nonetheless. I have been working on remastering the
+  Hot off the anticipated release of Lenora Lilley announced in the last post, I am excited to announce another release for something I have been working on for awhile! While it isn't <i>quite</i> as significant as the announcement from my last post, I still think longtime fans of my games will find it to be an exciting one nonetheless. I have been working on remastering the
   = link_to("Mighty Dive Bomber", "/games/mighty-dive-bomber")
   game I released way back in 2018, to make it into a much more modern looking version! Check out just a few sneak peaks of this work in progress in the screenshots below.
   
 - unless intro
-  = image_tag(image_for(@post, 2), alt: "A screenshot of the title screen of Mighty Dive Bomber Remastered", size: '512x480')
-  = image_tag(image_for(@post, 3), alt: "A screenshot of the first level of Mighty Dive Bomber Remastered", size: '512x480')
+  .container.post-image
+    = image_tag(image_for(@post, 2), alt: "A screenshot of the title screen of Mighty Dive Bomber Remastered", size: '512x480')
+    = image_tag(image_for(@post, 3), alt: "A screenshot of the first level of Mighty Dive Bomber Remastered", size: '512x480')
 
   %p
     The screenshots simply do not do justice to the improvements made. The game no longer confines the graphics to a grid; there is a smooth interpolation between each point and over double the amount of player states and animations for the main character. Plenty more particle effects and other bits of visual flare have been added to. A lot of love has been put into recreating this and lovingly porting ALL The levels from both

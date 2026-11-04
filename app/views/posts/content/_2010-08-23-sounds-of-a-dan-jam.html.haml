@@ -1,7 +1,7 @@
 - unless intro
-  .container.post-image
+  .container.post-image{style: "width: 45%"}
     .row
       .col-12
-        = link_to(image_tag(image_for(@post), alt: "The album cover for Constant Flux's Sounds of a Dan Jam", style: "width: 45%"), "https://tylorlilley.s3.amazonaws.com/files/Sounds-of-a-Dan-Jam.zip")
+        = link_to(image_tag(image_for(@post), alt: "The album cover for Constant Flux's Sounds of a Dan Jam"), "https://tylorlilley.s3.amazonaws.com/files/Sounds-of-a-Dan-Jam.zip")
 
 .container{class: ("text-center" unless intro)} Sounds of a Dan Jam: Constant Flux Virtual album.
