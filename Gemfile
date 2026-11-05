@@ -22,6 +22,7 @@ gem 'turbolinks',                 '5.2.0'
 gem 'jbuilder',                   '>= 2.12', '< 3'
 gem 'psych',                      '3.3.2'
 gem 'concurrent-ruby',            '>= 1.3.7'
+gem "json",                       '~> 2.21'
 gem "benchmark"
 gem "mutex_m"
 
