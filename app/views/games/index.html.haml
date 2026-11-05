@@ -4,6 +4,6 @@
   %br
 %section.game.content
   - @games.each_with_index do |game, index|
-    .container
+    .container.games-page
       = render partial: 'teaser', locals: { game: game, index: index }
       %br

@@ -7,7 +7,8 @@
 /* mixins, variables, etc. */
 
 $light-shade: #eff0f0;
-$light-accent: #8ea1b2;
+$light-accent-old: #8ea1b2;
+$light-accent: #798997;
 $brand: #4c7799;
 $dark-accent: #345468;
 $dark-shade: #191a1f;
@@ -19,7 +20,6 @@ $gray-bg-checker-back: lighten($dark-shade, 0%);
 $checker-size: 32px;
 
 /* universal */
-
 html {
   font-size: 14px;
 }
@@ -119,38 +119,6 @@ body {
     font-size: 66% !important;
     color: $faded !important;
   }
-  .game-listing {
-    display: flex;
-    align-items: stretch;
-
-    .section-image {
-      flex-shrink: 0;
-    }
-
-    .section-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    &.image-left {
-      .section-image {
-        order: 1;
-      }
-      .section-text {
-        order: 2;
-      }
-    }
-
-    &.image-right {
-      .section-image {
-        order: 2;
-      }
-      .section-text {
-        order: 1;
-      }
-    }
-  }
 
   /* Standard html elements */
   p {
@@ -206,6 +174,7 @@ body {
   background-color: $brand !important;
   border-color: $brand !important;
   .caption {
+    margin: 2px;
     color: $light-shade !important;
     font-style: italic;
     font-size: 0.8em;
@@ -288,6 +257,50 @@ footer {
   }
 }
 
+/* games page */
+
+.game-listing {
+  display: flex;
+  align-items: stretch;
+
+  .section-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &.image-left {
+    .section-image {
+      order: 1;
+    }
+    .section-text {
+      order: 2;
+    }
+  }
+
+  &.image-right {
+    .section-image {
+      order: 2;
+    }
+    .section-text {
+      order: 1;
+    }
+  }
+}
+
+.container.games-page {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* follow me page */
 
 .container .row .text-left {
@@ -310,7 +323,6 @@ footer {
 }
 
 /* fill screen with jumbotron in mobile view and double navbar size */
-
 @media (max-width: 991.98px) {
   body {
     padding-top: 0;
@@ -407,17 +419,21 @@ footer {
       text-align: center;
     }
 
-    ul {
+    .container nav ul {
+      float: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-nav nav ul li {
       float: none;
       display: block;
-      text-align: center;
-
-      li {
-        font-size: 125%;
-        float: none;
-        display: inline-block;
-        margin: 0 0.5vw 4vw 0.5vw;
-      }
+      margin: 0 0.5rem 1rem;
     }
 
     .footer-signoff {
@@ -429,15 +445,38 @@ footer {
     }
   }
 
+  footer .footer-nav nav ul {
+    float: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2vw;
+  }
+
+  footer .footer-nav nav ul li {
+    float: none;
+    display: block;
+    margin: 0 0.5vw;
+    white-space: nowrap;
+  }
+
   .game-listing {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     .section-image,
     .section-text {
       width: 100%;
       float: none !important;
     }
+  }
+
+  .game-listing .section-image > .d-block.d-xl-none {
+    width: 100%;
   }
 
   .jumbotron.custom .game-listing.image-left > .section-image,
