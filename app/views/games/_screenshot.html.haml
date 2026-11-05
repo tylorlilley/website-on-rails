@@ -12,7 +12,7 @@
   %br
 .d-none.d-xl-inline
   .rounded.thumbnail{class: "float-left #{classes}", width: "#{screenshot_width_for(@game)*size}px", height: "#{screenshot_height_for(@game)*size}px",
-                             style: "max-width: #{screenshot_width_for(@game)*size}px"}
+                             style: "max-width: clamp(128px, #{screenshot_width_for(@game)*size}px, 600px)"}
     = image_tag(image_path(screenshot_filename_for(@game, num)), alt: formated_name_for(@game), class: "img-thumbnail")
     - unless caption.blank?
       .caption= caption

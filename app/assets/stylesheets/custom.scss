@@ -141,6 +141,38 @@ body {
     font-size: 66% !important;
     color: $faded !important;
   }
+  .game-listing {
+    display: flex;
+    align-items: stretch;
+
+    .section-image {
+      flex-shrink: 0;
+    }
+
+    .section-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.image-left {
+      .section-image {
+        order: 1;
+      }
+      .section-text {
+        order: 2;
+      }
+    }
+
+    &.image-right {
+      .section-image {
+        order: 2;
+      }
+      .section-text {
+        order: 1;
+      }
+    }
+  }
 
   /* Standard html elements */
   p {
@@ -367,5 +399,26 @@ footer {
         margin: 15px;
       }
     }
+  }
+
+  .game-listing {
+    display: flex;
+    flex-direction: column;
+
+    .section-image,
+    .section-text {
+      width: 100%;
+      float: none !important;
+    }
+  }
+
+  .jumbotron.custom .game-listing.image-left > .section-image,
+  .jumbotron.custom .game-listing.image-right > .section-image {
+    order: 1;
+  }
+
+  .jumbotron.custom .game-listing.image-left > .section-text,
+  .jumbotron.custom .game-listing.image-right > .section-text {
+    order: 2;
   }
 }

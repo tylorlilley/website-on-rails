@@ -2,11 +2,13 @@
 - pull_left = (index % 2 == 1)
 .row
   .col-xs-12.mx-auto
-    .section
-      = render(partial: 'screenshot', locals: { num: 1, size: 0.5, inverse: true,
-        caption: formated_tagline_for(game), classes: "#{pull_left ? "float-left" : "float-right"}" })
-      %h3
-        = link_to game.name, game
-      %h2{:style => "margin-top: -24px"}
-        = formated_release_date_for(game)
-      .game.description= formated_teaser_for(game)
+    .game-listing{ class: (pull_left ? "image-left" : "image-right") }
+      .section-image
+        = render(partial: 'screenshot', locals: { num: 1, size: 1, inverse: true,
+          caption: formated_tagline_for(game), classes: "#{pull_left ? "float-left" : "float-right"}" })
+      .section-text
+        %h3
+          = link_to game.name, game
+        %h2{:style => "margin-top: -24px"}
+          = formated_release_date_for(game)
+        .game.description= formated_teaser_for(game)
