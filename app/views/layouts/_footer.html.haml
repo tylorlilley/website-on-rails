@@ -1,8 +1,13 @@
 %footer.footer
-  %small Website created and maintained by Tylor Lilley.
-  %nav
-    %ul
-      %li= link_to "About",   about_path
-      %li= link_to "Contact", contact_path
-      %li= link_to "Follow", follow_path
-      %li= link_to "Privacy Policy", privacy_path
+  .footer-signoff
+    %small Website created, designed, and maintained by Tylor Lilley.
+  .footer-nav
+    %nav
+      %ul
+        %li= link_to("ABOUT", about_path)
+        %li= ' | '
+        %li= link_to("CONTACT", contact_path)
+        %li= ' | '
+        %li= link_to("FOLLOW", follow_path)
+        %li= ' | '
+        %li= link_to("PRIVACY POLICY", privacy_path)
